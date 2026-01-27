@@ -1,0 +1,205 @@
+{
+  "start_time": "2026-01-20T09:13:35.493Z",
+  "start_year": 2010,
+  "end_year": 2025,
+  "step": 5,
+  "total_combinations": 32,
+  "completed": 32,
+  "failed": 0,
+  "results": [
+    {
+      "year": 2010,
+      "league": "PL",
+      "status": "completed",
+      "timestamp": "2026-01-20T09:13:37.366Z"
+    },
+    {
+      "year": 2010,
+      "league": "CL",
+      "status": "completed",
+      "timestamp": "2026-01-20T09:13:40.320Z"
+    },
+    {
+      "year": 2011,
+      "league": "PL",
+      "status": "completed",
+      "timestamp": "2026-01-20T09:13:44.961Z"
+    },
+    {
+      "year": 2011,
+      "league": "CL",
+      "status": "completed",
+      "timestamp": "2026-01-20T09:13:48.077Z"
+    },
+    {
+      "year": 2012,
+      "league": "PL",
+      "status": "completed",
+      "timestamp": "2026-01-20T09:13:51.587Z"
+    },
+    {
+      "year": 2012,
+      "league": "CL",
+      "status": "completed",
+      "timestamp": "2026-01-20T09:13:54.401Z"
+    },
+    {
+      "year": 2013,
+      "league": "PL",
+      "status": "completed",
+      "timestamp": "2026-01-20T09:13:56.803Z"
+    },
+    {
+      "year": 2013,
+      "league": "CL",
+      "status": "completed",
+      "timestamp": "2026-01-20T09:13:59.136Z"
+    },
+    {
+      "year": 2014,
+      "league": "PL",
+      "status": "completed",
+      "timestamp": "2026-01-20T09:14:01.566Z"
+    },
+    {
+      "year": 2014,
+      "league": "CL",
+      "status": "completed",
+      "timestamp": "2026-01-20T09:14:03.998Z"
+    },
+    {
+      "year": 2015,
+      "league": "PL",
+      "status": "completed",
+      "timestamp": "2026-01-20T09:14:06.405Z"
+    },
+    {
+      "year": 2015,
+      "league": "CL",
+      "status": "completed",
+      "timestamp": "2026-01-20T09:14:08.959Z"
+    },
+    {
+      "year": 2016,
+      "league": "PL",
+      "status": "completed",
+      "timestamp": "2026-01-20T09:14:11.257Z"
+    },
+    {
+      "year": 2016,
+      "league": "CL",
+      "status": "completed",
+      "timestamp": "2026-01-20T09:14:13.599Z"
+    },
+    {
+      "year": 2017,
+      "league": "PL",
+      "status": "completed",
+      "timestamp": "2026-01-20T09:14:16.078Z"
+    },
+    {
+      "year": 2017,
+      "league": "CL",
+      "status": "completed",
+      "timestamp": "2026-01-20T09:14:18.519Z"
+    },
+    {
+      "year": 2018,
+      "league": "PL",
+      "status": "completed",
+      "timestamp": "2026-01-20T09:14:21.886Z"
+    },
+    {
+      "year": 2018,
+      "league": "CL",
+      "status": "completed",
+      "timestamp": "2026-01-20T09:14:24.433Z"
+    },
+    {
+      "year": 2019,
+      "league": "PL",
+      "status": "completed",
+      "timestamp": "2026-01-20T09:14:26.736Z"
+    },
+    {
+      "year": 2019,
+      "league": "CL",
+      "status": "completed",
+      "timestamp": "2026-01-20T09:14:29.203Z"
+    },
+    {
+      "year": 2020,
+      "league": "PL",
+      "status": "completed",
+      "timestamp": "2026-01-20T09:14:32.338Z"
+    },
+    {
+      "year": 2020,
+      "league": "CL",
+      "status": "completed",
+      "timestamp": "2026-01-20T09:14:36.251Z"
+    },
+    {
+      "year": 2021,
+      "league": "PL",
+      "status": "completed",
+      "timestamp": "2026-01-20T09:14:39.856Z"
+    },
+    {
+      "year": 2021,
+      "league": "CL",
+      "status": "completed",
+      "timestamp": "2026-01-20T09:14:42.250Z"
+    },
+    {
+      "year": 2022,
+      "league": "PL",
+      "status": "completed",
+      "timestamp": "2026-01-20T09:14:44.854Z"
+    },
+    {
+      "year": 2022,
+      "league": "CL",
+      "status": "completed",
+      "timestamp": "2026-01-20T09:14:49.007Z"
+    },
+    {
+      "year": 2023,
+      "league": "PL",
+      "status": "completed",
+      "timestamp": "2026-01-20T09:14:53.908Z"
+    },
+    {
+      "year": 2023,
+      "league": "CL",
+      "status": "completed",
+      "timestamp": "2026-01-20T09:14:56.637Z"
+    },
+    {
+      "year": 2024,
+      "league": "PL",
+      "status": "completed",
+      "timestamp": "2026-01-20T09:14:59.024Z"
+    },
+    {
+      "year": 2024,
+      "league": "CL",
+      "status": "completed",
+      "timestamp": "2026-01-20T09:15:01.657Z"
+    },
+    {
+      "year": 2025,
+      "league": "PL",
+      "status": "completed",
+      "timestamp": "2026-01-20T09:15:04.270Z"
+    },
+    {
+      "year": 2025,
+      "league": "CL",
+      "status": "completed",
+      "timestamp": "2026-01-20T09:15:06.742Z"
+    }
+  ],
+  "end_time": "2026-01-20T09:15:07.769Z",
+  "duration_seconds": 92
+}

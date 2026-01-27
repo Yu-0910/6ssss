@@ -1,0 +1,43 @@
+{
+  "year": 2024,
+  "league": "PL",
+  "check_date": "2026-01-19T16:26:34.069Z",
+  "raw_exists": true,
+  "calculated_exists": true,
+  "raw_count": 362,
+  "calculated_count": 362,
+  "missing_players": [],
+  "team_comparison": {
+    "オリックス・バファローズ": {
+      "raw": 65,
+      "calculated": 65,
+      "diff": 0
+    },
+    "北海道日本ハムファイターズ": {
+      "raw": 61,
+      "calculated": 61,
+      "diff": 0
+    },
+    "千葉ロッテマリーンズ": {
+      "raw": 58,
+      "calculated": 58,
+      "diff": 0
+    },
+    "埼玉西武ライオンズ": {
+      "raw": 63,
+      "calculated": 63,
+      "diff": 0
+    },
+    "東北楽天ゴールデンイーグルス": {
+      "raw": 57,
+      "calculated": 57,
+      "diff": 0
+    },
+    "福岡ソフトバンクホークス": {
+      "raw": 58,
+      "calculated": 58,
+      "diff": 0
+    }
+  },
+  "errors": []
+}

@@ -1,0 +1,43 @@
+{
+  "year": 2022,
+  "league": "PL",
+  "check_date": "2026-01-19T15:35:43.696Z",
+  "scraped_exists": true,
+  "current_exists": true,
+  "scraped_count": 368,
+  "current_count": 368,
+  "missing_players": [],
+  "team_comparison": {
+    "オリックス・バファローズ": {
+      "scraped": 63,
+      "current": 63,
+      "diff": 0
+    },
+    "北海道日本ハムファイターズ": {
+      "scraped": 68,
+      "current": 68,
+      "diff": 0
+    },
+    "千葉ロッテマリーンズ": {
+      "scraped": 60,
+      "current": 60,
+      "diff": 0
+    },
+    "埼玉西武ライオンズ": {
+      "scraped": 56,
+      "current": 56,
+      "diff": 0
+    },
+    "東北楽天ゴールデンイーグルス": {
+      "scraped": 62,
+      "current": 62,
+      "diff": 0
+    },
+    "福岡ソフトバンクホークス": {
+      "scraped": 59,
+      "current": 59,
+      "diff": 0
+    }
+  },
+  "errors": []
+}

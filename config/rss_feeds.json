@@ -1,0 +1,100 @@
+{
+  "feeds": [
+    {
+      "name": "日刊スポーツ 野球",
+      "url": "https://www.nikkansports.com/baseball/atom.xml",
+      "enabled": true
+    },
+    {
+      "name": "日刊スポーツ プロ野球",
+      "url": "https://www.nikkansports.com/baseball/professional/atom.xml",
+      "enabled": true
+    },
+    {
+      "name": "日刊スポーツ MLB",
+      "url": "https://www.nikkansports.com/baseball/mlb/atom.xml",
+      "enabled": false,
+      "disabled": true,
+      "comment": "日刊スポーツプロ野球のみ残すため無効化"
+    },
+    {
+      "name": "Number Web（プロ野球）",
+      "url": "https://number.bunshun.jp/list/rsssports?w=%E3%83%97%E3%83%AD%E9%87%8E%E7%90%83",
+      "enabled": false,
+      "disabled": true,
+      "comment": "auone.jpから取得するため無効化"
+    },
+    {
+      "name": "スポーツ報知（Google News経由）",
+      "url": "https://news.google.com/rss/search?q=site%3Ahochi.news%20(%E3%83%97%E3%83%AD%E9%87%8E%E7%90%83%20OR%20NPB%20OR%20%E9%87%8E%E7%90%83)&hl=ja&gl=JP&ceid=JP:ja",
+      "enabled": false,
+      "disabled": true,
+      "allowedDomains": ["hochi.news"]
+    },
+    {
+      "name": "サンケイスポーツ（Google News経由）",
+      "url": "https://news.google.com/rss/search?q=site%3Asanspo.com%20(%E3%83%97%E3%83%AD%E9%87%8E%E7%90%83%20OR%20NPB%20OR%20%E9%87%8E%E7%90%83)&hl=ja&gl=JP&ceid=JP:ja",
+      "enabled": false,
+      "disabled": true,
+      "allowedDomains": ["www.sanspo.com", "sanspo.com"]
+    },
+    {
+      "name": "Yahoo Topics Sports",
+      "type": "yahoo_topics",
+      "url": "https://news.yahoo.co.jp/rss/topics/sports.xml",
+      "enabled": false,
+      "disabled": true,
+      "allowedDomains": ["hochi.news", "sanspo.com", "www.sanspo.com"],
+      "comment": "Yahoo Topics RSSは無効化。dmenuに移行"
+    }
+  ],
+  "disabledFeeds": [
+    {
+      "name": "Number Web（プロ野球）",
+      "url": "TODO: Number WebのRSS案内ページからURLを確認して追加",
+      "enabled": false,
+      "comment": "URLを特定中"
+    },
+    {
+      "name": "TEST_NHK",
+      "url": "https://www.nhk.or.jp/rss/news/cat0.xml",
+      "enabled": false,
+      "comment": "テスト用RSSフィード"
+    },
+    {
+      "name": "スポーツニッポン",
+      "url": "https://www.sponichi.co.jp/baseball/news.rdf",
+      "enabled": false,
+      "comment": "無効URL（404エラー）"
+    },
+    {
+      "name": "日刊スポーツ（旧RSS）",
+      "url": "https://www.nikkansports.com/baseball/news/rss.xml",
+      "enabled": false,
+      "comment": "無効URL（404エラー）"
+    },
+    {
+      "name": "スポーツ報知",
+      "url": "https://hochi.news/sports/baseball/rss.xml",
+      "enabled": false,
+      "comment": "無効URL（404エラー）"
+    },
+    {
+      "name": "デイリースポーツ",
+      "url": "https://www.daily.co.jp/baseball/rss.xml",
+      "enabled": false,
+      "comment": "無効URL（404エラー）"
+    },
+    {
+      "name": "サンケイスポーツ",
+      "url": "https://www.sanspo.com/baseball/rss.xml",
+      "enabled": false,
+      "comment": "無効URL（404エラー）"
+    }
+  ],
+  "settings": {
+    "maxArticles": 50,
+    "cacheDuration": 3600000,
+    "timeout": 10000
+  }
+}

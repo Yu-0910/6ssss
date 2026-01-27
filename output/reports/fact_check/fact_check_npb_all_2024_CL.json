@@ -1,0 +1,2080 @@
+{
+  "check_date": "2026-01-20T09:15:01.584Z",
+  "target_year": 2024,
+  "target_league": "CL",
+  "fetched_count": 0,
+  "failed_fetch_count": 1,
+  "csv_count": 343,
+  "missing_in_csv_count": 0,
+  "failed_to_fetch_count": 343,
+  "failed_fetches": [
+    {
+      "year": 2024,
+      "league": "CL",
+      "url": "https://npb.jp/bis/2024/stats/cl/batting.html",
+      "status": 0,
+      "error": "ALL_URLS_FAILED"
+    }
+  ],
+  "missing_in_csv": [],
+  "failed_to_fetch": [
+    {
+      "player_id": "1005113",
+      "name": "中島　宏之",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "1005134",
+      "name": "高橋　昂也",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "1005136",
+      "name": "高橋　礼",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "1005159",
+      "name": "鈴木　叶",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "1105138",
+      "name": "泉　圭輔",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "1105159",
+      "name": "石黒　佑弥",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "1305130",
+      "name": "植田　海",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "1305131",
+      "name": "大島　洋平",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "1305138",
+      "name": "大貫　晋一",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "1405116",
+      "name": "松山　竜平",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "1405130",
+      "name": "野間　峻祥",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "1405138",
+      "name": "林　晃汰",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "1405139",
+      "name": "森　唯斗",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "1405151",
+      "name": "韮澤　雄也",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "1405155",
+      "name": "中村　健人",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "1405157",
+      "name": "野口　恭佑",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "1505132",
+      "name": "オコエ　瑠偉",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "1605138",
+      "name": "増田　陸",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "1705132",
+      "name": "小澤　怜史",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "1705138",
+      "name": "小園　海斗",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "1705155",
+      "name": "桐敷　拓馬",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "1805136",
+      "name": "宮本　丈",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "1805157",
+      "name": "松井　颯",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "1905136",
+      "name": "清水　達也",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "1905139",
+      "name": "平良　拳太郎",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "3005159",
+      "name": "C.ロドリゲス",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "3105151",
+      "name": "山瀬　慎之助",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "3105157",
+      "name": "村松　開人",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "3105159",
+      "name": "松本　健吾",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "3205159",
+      "name": "M.フォード",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "3305153",
+      "name": "山﨑　伊織",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "3505159",
+      "name": "R.ウィック",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "3705157",
+      "name": "F.グリフィン",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "3905157",
+      "name": "J.ビーズリー",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "11015151",
+      "name": "坂本　裕哉",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "11315115",
+      "name": "石川　雅規",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "11315130",
+      "name": "石田　健大",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "11315138",
+      "name": "漆原　大晟",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "11415134",
+      "name": "床田　寛樹",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "11515130",
+      "name": "岡本　和真",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "11515133",
+      "name": "大野　雄大",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "11515137",
+      "name": "小川　泰弘",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "11515155",
+      "name": "岡留　英貴",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "11515157",
+      "name": "門脇　誠",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "11615134",
+      "name": "長谷川　宙輝",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "11615157",
+      "name": "橋本　星哉",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "11715134",
+      "name": "京山　将弥",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "11715138",
+      "name": "川原　陸",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "11815134",
+      "name": "星　知弥",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "11815136",
+      "name": "増田　珠",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "11915130",
+      "name": "齋藤　綱記",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "11915132",
+      "name": "坂本　誠志郎",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "11915134",
+      "name": "坂倉　将吾",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "11915153",
+      "name": "木澤　尚文",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "13115153",
+      "name": "牧　秀悟",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "13315151",
+      "name": "E.ウレーニャ",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "13315153",
+      "name": "村上　頌樹",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "13715132",
+      "name": "D.ビシエド",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "13715157",
+      "name": "J.B.ウェンデルケン",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "13715159",
+      "name": "A.ケイ",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "21025135",
+      "name": "田島　慎二",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "21025137",
+      "name": "福谷　浩司",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "21025157",
+      "name": "田中　幹也",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "21125137",
+      "name": "石山　泰稚",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "21125151",
+      "name": "石原　貴規",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "21125159",
+      "name": "石田　裕太郎",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "21225133",
+      "name": "西川　遥輝",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "21225136",
+      "name": "中川　虎大",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "21225137",
+      "name": "松葉　貴大",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "21325134",
+      "name": "大山　悠輔",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "21325136",
+      "name": "大城　卓三",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "21325138",
+      "name": "大盛　穂",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "21325139",
+      "name": "梅野　隆太郎",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "21425116",
+      "name": "丸　佳浩",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "21425135",
+      "name": "野村　祐輔",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "21425151",
+      "name": "橋本　侑樹",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "21425153",
+      "name": "颯",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "21525136",
+      "name": "北村　拓己",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "21525138",
+      "name": "勝野　昌慶",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "21525139",
+      "name": "加治屋　蓮",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "21625130",
+      "name": "塹江　敦哉",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "21625134",
+      "name": "藤嶋　健人",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "21625151",
+      "name": "堀田　賢慎",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "21625157",
+      "name": "樋口　正修",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "21725139",
+      "name": "今野　龍太",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "21825134",
+      "name": "松原　聖弥",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "21825153",
+      "name": "平内　龍太",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "21825155",
+      "name": "前川　右京",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "21825157",
+      "name": "松尾　汐恩",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "21925132",
+      "name": "重信　慎之介",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "21925139",
+      "name": "高梨　裕稔",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "23125136",
+      "name": "山本　祐大",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "23125159",
+      "name": "松本　凌人",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "23225157",
+      "name": "A.バルドナード",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "23225159",
+      "name": "C.モンテス",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "23525153",
+      "name": "J.オスナ",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "23525159",
+      "name": "J.エスパーダ",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "23725159",
+      "name": "J.シャイナー",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "23925134",
+      "name": "R.マルティネス",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "31135114",
+      "name": "會澤　翼",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "31135119",
+      "name": "青木　宣親",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "31135133",
+      "name": "秋山　翔吾",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "31135134",
+      "name": "アドゥワ　誠",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "31235133",
+      "name": "中﨑　翔太",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "31235159",
+      "name": "滝田　一希",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "31335116",
+      "name": "岩嵜　翔",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "31335135",
+      "name": "今村　信貴",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "31335137",
+      "name": "上本　崇司",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "31335139",
+      "name": "岩崎　優",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "31335151",
+      "name": "井上　広大",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "31335159",
+      "name": "井上　絢登",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "31435155",
+      "name": "豊田　寛",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "31435159",
+      "name": "常廣　羽也斗",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "31535138",
+      "name": "小幡　竜平",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "31635110",
+      "name": "涌井　秀章",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "31635132",
+      "name": "原　樹理",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "31635134",
+      "name": "畠　世周",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "31635159",
+      "name": "西舘　勇陽",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "31735112",
+      "name": "川端　慎吾",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "31735132",
+      "name": "木下　拓哉",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "31735138",
+      "name": "木浪　聖也",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "31735151",
+      "name": "奥川　恭伸",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "31835134",
+      "name": "細川　成也",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "31835157",
+      "name": "船迫　大雅",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "31935138",
+      "name": "島内　颯太郎",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "31935139",
+      "name": "関根　大気",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "31935153",
+      "name": "喜多　隆介",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "31935155",
+      "name": "小園　健太",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "33035159",
+      "name": "M.ヤフーレ",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "33135132",
+      "name": "山崎　晃大朗",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "33135151",
+      "name": "森　敬斗",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "33135159",
+      "name": "又木　鉄平",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "33235159",
+      "name": "E.ヘルナンデス",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "33535157",
+      "name": "吉野　光樹",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "33535159",
+      "name": "度会　隆輝",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "33735153",
+      "name": "サイスニード",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "33735159",
+      "name": "J.ゲラ",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "33935159",
+      "name": "A.ディカーソン",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "41045138",
+      "name": "戸郷　翔征",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "41045153",
+      "name": "佐藤　輝明",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "41045159",
+      "name": "髙　太一",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "41145134",
+      "name": "石垣　雅海",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "41145151",
+      "name": "伊勢　大夢",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "41145153",
+      "name": "石井　大智",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "41145159",
+      "name": "石原　勇輝",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "41245132",
+      "name": "戸柱　恭孝",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "41245133",
+      "name": "西田　明央",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "41245137",
+      "name": "三嶋　一輝",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "41245151",
+      "name": "玉村　昇悟",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "41245157",
+      "name": "仲地　礼亜",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "41345136",
+      "name": "大竹　耕太郎",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "41345151",
+      "name": "宇草　孔基",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "41445136",
+      "name": "馬場　皐輔",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "41445153",
+      "name": "中野　拓夢",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "41445159",
+      "name": "仲田　侑仁",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "41545130",
+      "name": "加藤　匠馬",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "41545151",
+      "name": "大西　広樹",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "41545153",
+      "name": "大道　温貴",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "41645132",
+      "name": "福　敬登",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "41745134",
+      "name": "才木　浩人",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "41745137",
+      "name": "菅野　智之",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "41745155",
+      "name": "黒原　拓未",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "41845130",
+      "name": "山﨑　康晃",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "41845136",
+      "name": "村上　宗隆",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "41945131",
+      "name": "筒香　嘉智",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "41945132",
+      "name": "柴田　竜拓",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "41945139",
+      "name": "田口　麗斗",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "43145136",
+      "name": "湯浅　大",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "43145153",
+      "name": "丸山　翔大",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "43145157",
+      "name": "森下　翔太",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "43245157",
+      "name": "E.ロドリゲス",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "43545151",
+      "name": "Y.ディアス",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "43745159",
+      "name": "A.ジャクソン",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "51055132",
+      "name": "高橋　奎二",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "51055133",
+      "name": "島本　浩也",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "51055153",
+      "name": "榮枝　裕貴",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "51055155",
+      "name": "末包　昇大",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "51155136",
+      "name": "東　克樹",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "51155151",
+      "name": "東妻　純平",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "51155153",
+      "name": "赤羽　由紘",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "51155155",
+      "name": "赤星　優志",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "51255118",
+      "name": "中村　悠平",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "51255157",
+      "name": "富田　蓮",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "51355134",
+      "name": "梅野　雄吾",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "51355139",
+      "name": "岩貞　祐太",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "51355151",
+      "name": "井上　温大",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "51355155",
+      "name": "岩田　幸宏",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "51355157",
+      "name": "内田　湘大",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "51455137",
+      "name": "宮﨑　敏郎",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "51455151",
+      "name": "長岡　秀樹",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "51455153",
+      "name": "土田　龍空",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "51555136",
+      "name": "金久保　優斗",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "51555151",
+      "name": "蝦名　達夫",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "51555155",
+      "name": "梶原　昂希",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "51655134",
+      "name": "濵口　遥大",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "51655153",
+      "name": "中山　礼都",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "51655157",
+      "name": "長谷部　銀次",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "51655159",
+      "name": "土生　翔太",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "51755135",
+      "name": "桑原　将志",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "51855132",
+      "name": "増田　大輝",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "51855136",
+      "name": "松本　直樹",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "51855138",
+      "name": "宮城　滝太",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "51855151",
+      "name": "宮川　哲",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "51955114",
+      "name": "坂本　勇人",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "51955138",
+      "name": "清水　昇",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "51955155",
+      "name": "小森　航大郎",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "51955157",
+      "name": "澤井　廉",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "51955159",
+      "name": "佐々木　俊輔",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "53155151",
+      "name": "森下　暢仁",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "53355157",
+      "name": "門別　啓人",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "53555153",
+      "name": "若林　楽人",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "53555157",
+      "name": "吉村　貢司郎",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "53755153",
+      "name": "D.サンタナ",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "53955151",
+      "name": "R.コルニエル",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "61065116",
+      "name": "中田　翔",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "61065131",
+      "name": "原口　文仁",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "61165153",
+      "name": "石川　達也",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "61165159",
+      "name": "泉口　友汰",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "61265153",
+      "name": "髙橋　宏斗",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "61265155",
+      "name": "田村　俊介",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "61265157",
+      "name": "中村　貴浩",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "61265159",
+      "name": "辻本　倫太郎",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "61365132",
+      "name": "宇佐見　真吾",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "61365134",
+      "name": "尾仲　祐哉",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "61365139",
+      "name": "大瀬良　大地",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "61465112",
+      "name": "大和",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "61565114",
+      "name": "梶谷　隆幸",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "61565135",
+      "name": "菊池　涼介",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "61565136",
+      "name": "楠本　泰史",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "61865157",
+      "name": "松山　晋也",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "61965131",
+      "name": "堂林　翔太",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "61965139",
+      "name": "田中　広輔",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "63165134",
+      "name": "柳　裕也",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "63365153",
+      "name": "山野　太一",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "71075138",
+      "name": "近本　光司",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "71175132",
+      "name": "青柳　晃洋",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "71175153",
+      "name": "秋広　優人",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "71275118",
+      "name": "西　勇輝",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "71275151",
+      "name": "武岡　龍世",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "71375134",
+      "name": "大江　竜聖",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "71375136",
+      "name": "遠藤　淳志",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "71375153",
+      "name": "伊藤　将司",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "71375155",
+      "name": "鵜飼　航丞",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "71475138",
+      "name": "羽月　隆太郎",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "71575132",
+      "name": "小笠原　慎之介",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "71575134",
+      "name": "矢崎　拓也",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "71575136",
+      "name": "神里　和毅",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "71575157",
+      "name": "河野　佳",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "71575159",
+      "name": "尾田　剛樹",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "71675134",
+      "name": "浜地　真澄",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "71775136",
+      "name": "ケムナ　誠",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "71775139",
+      "name": "九里　亜蓮",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "71775151",
+      "name": "小野寺　暖",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "71875134",
+      "name": "堀岡　隼人",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "71875155",
+      "name": "ブライト　健太",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "71975134",
+      "name": "佐々木　千隼",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "71975136",
+      "name": "塩見　泰隆",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "71975159",
+      "name": "佐藤　啓介",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "73075157",
+      "name": "J.ミエセス",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "73175153",
+      "name": "松木平　優太",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "73175155",
+      "name": "松本　竜也",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "73375134",
+      "name": "吉川　尚輝",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "73375151",
+      "name": "T.オースティン",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "73375153",
+      "name": "森浦　大輔",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "73975155",
+      "name": "K.ケラー",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "73975157",
+      "name": "S.ノイジー",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "73975159",
+      "name": "T.ハーン",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "81085153",
+      "name": "佐藤　蓮",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "81085155",
+      "name": "大勢",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "81185116",
+      "name": "伊藤　光",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "81185133",
+      "name": "磯村　嘉孝",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "81185134",
+      "name": "糸原　健斗",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "81185138",
+      "name": "梅津　晃大",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "81185159",
+      "name": "伊藤　琉偉",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "81285132",
+      "name": "中川　皓太",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "81285136",
+      "name": "中村　奨成",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "81285138",
+      "name": "根尾　昂",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "81285155",
+      "name": "徳山　壮磨",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "81385130",
+      "name": "太田　賢吾",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "81385155",
+      "name": "岡田　悠希",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "81485157",
+      "name": "萩尾　匡也",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "81585132",
+      "name": "川越　誠司",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "81585134",
+      "name": "京田　陽太",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "81585136",
+      "name": "熊谷　敬宥",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "81585138",
+      "name": "上茶谷　大河",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "81585151",
+      "name": "岡林　勇希",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "81585157",
+      "name": "久保　修",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "81685139",
+      "name": "渡邉　諒",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "81685157",
+      "name": "福永　裕基",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "81785133",
+      "name": "駿太",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "81785136",
+      "name": "阪口　皓亮",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "81885138",
+      "name": "横川　凱",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "81985118",
+      "name": "立岡　宗一郎",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "81985155",
+      "name": "柴田　大地",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "83185153",
+      "name": "三好　大倫",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "83185155",
+      "name": "味谷　大誠",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "83285157",
+      "name": "M.フェリス",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "91095134",
+      "name": "高梨　雄平",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "91095135",
+      "name": "高橋　周平",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "91095136",
+      "name": "髙橋　遥人",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "91095138",
+      "name": "知野　直人",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "91095139",
+      "name": "西浦　直亨",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "91095157",
+      "name": "田中　千晴",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "91195138",
+      "name": "石橋　康太",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "91195151",
+      "name": "石川　昂弥",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "91195157",
+      "name": "浅野　翔吾",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "91195159",
+      "name": "石上　泰輝",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "91395132",
+      "name": "板山　祐太郎",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "91395139",
+      "name": "上林　誠知",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "91395153",
+      "name": "伊藤　優輔",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "91495134",
+      "name": "長坂　拳弥",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "91495138",
+      "name": "濱田　太貴",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "91495151",
+      "name": "西　純矢",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "91595135",
+      "name": "嘉弥真　新也",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "91595136",
+      "name": "岸田　行倫",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "91595153",
+      "name": "内山　壮真",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "91695153",
+      "name": "並木　秀尊",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "91695157",
+      "name": "林　琢真",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "91795134",
+      "name": "郡　拓也",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "91795139",
+      "name": "小林　誠司",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "91795151",
+      "name": "及川　雅貴",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "91795155",
+      "name": "京本　眞",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "91895133",
+      "name": "山田　哲人",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "91895153",
+      "name": "二俣　翔一",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "91895157",
+      "name": "益田　武尚",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "91995131",
+      "name": "長野　久義",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "91995134",
+      "name": "佐野　恵太",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "91995136",
+      "name": "島田　海吏",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "91995139",
+      "name": "祖父江　大輔",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "91995153",
+      "name": "栗林　良吏",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "93095157",
+      "name": "Y.メンデス",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "93095159",
+      "name": "M.レイノルズ",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "93195132",
+      "name": "山本　泰寛",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "93195134",
+      "name": "森原　康平",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "93195136",
+      "name": "山本　大貴",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "93195153",
+      "name": "松本　隆之介",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "93195155",
+      "name": "丸山　和郁",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "93295157",
+      "name": "H.メヒア",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "93395153",
+      "name": "矢野　雅哉",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "93395155",
+      "name": "森　翔平",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "93395157",
+      "name": "山浅　龍之介",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "93795157",
+      "name": "O.カリステ",
+      "year": 2024,
+      "league": "CL"
+    },
+    {
+      "player_id": "93995159",
+      "name": "T.ハッチ",
+      "year": 2024,
+      "league": "CL"
+    }
+  ]
+}

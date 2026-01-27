@@ -1,0 +1,1211 @@
+{
+  "check_date": "2026-01-19T16:27:31.240Z",
+  "total_checks": 150,
+  "success_count": 150,
+  "missing_count": 0,
+  "error_count": 0,
+  "not_found_count": 0,
+  "missing_players_total": 0,
+  "results": [
+    {
+      "year": 1950,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 181,
+      "calculatedCount": 181
+    },
+    {
+      "year": 1950,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 215,
+      "calculatedCount": 215
+    },
+    {
+      "year": 1951,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 175,
+      "calculatedCount": 175
+    },
+    {
+      "year": 1951,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 180,
+      "calculatedCount": 180
+    },
+    {
+      "year": 1952,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 175,
+      "calculatedCount": 175
+    },
+    {
+      "year": 1952,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 200,
+      "calculatedCount": 200
+    },
+    {
+      "year": 1953,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 194,
+      "calculatedCount": 194
+    },
+    {
+      "year": 1953,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 213,
+      "calculatedCount": 213
+    },
+    {
+      "year": 1954,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 194,
+      "calculatedCount": 194
+    },
+    {
+      "year": 1954,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 278,
+      "calculatedCount": 278
+    },
+    {
+      "year": 1955,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 213,
+      "calculatedCount": 213
+    },
+    {
+      "year": 1955,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 300,
+      "calculatedCount": 300
+    },
+    {
+      "year": 1956,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 210,
+      "calculatedCount": 210
+    },
+    {
+      "year": 1956,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 310,
+      "calculatedCount": 310
+    },
+    {
+      "year": 1957,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 200,
+      "calculatedCount": 200
+    },
+    {
+      "year": 1957,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 271,
+      "calculatedCount": 271
+    },
+    {
+      "year": 1958,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 212,
+      "calculatedCount": 212
+    },
+    {
+      "year": 1958,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 230,
+      "calculatedCount": 230
+    },
+    {
+      "year": 1959,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 207,
+      "calculatedCount": 207
+    },
+    {
+      "year": 1959,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 217,
+      "calculatedCount": 217
+    },
+    {
+      "year": 1960,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 211,
+      "calculatedCount": 211
+    },
+    {
+      "year": 1960,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 216,
+      "calculatedCount": 216
+    },
+    {
+      "year": 1961,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 233,
+      "calculatedCount": 233
+    },
+    {
+      "year": 1961,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 224,
+      "calculatedCount": 224
+    },
+    {
+      "year": 1962,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 242,
+      "calculatedCount": 242
+    },
+    {
+      "year": 1962,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 235,
+      "calculatedCount": 235
+    },
+    {
+      "year": 1963,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 236,
+      "calculatedCount": 236
+    },
+    {
+      "year": 1963,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 229,
+      "calculatedCount": 229
+    },
+    {
+      "year": 1964,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 285,
+      "calculatedCount": 285
+    },
+    {
+      "year": 1964,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 238,
+      "calculatedCount": 238
+    },
+    {
+      "year": 1965,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 291,
+      "calculatedCount": 291
+    },
+    {
+      "year": 1965,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 230,
+      "calculatedCount": 230
+    },
+    {
+      "year": 1966,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 288,
+      "calculatedCount": 288
+    },
+    {
+      "year": 1966,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 221,
+      "calculatedCount": 221
+    },
+    {
+      "year": 1967,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 289,
+      "calculatedCount": 289
+    },
+    {
+      "year": 1967,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 236,
+      "calculatedCount": 236
+    },
+    {
+      "year": 1968,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 278,
+      "calculatedCount": 278
+    },
+    {
+      "year": 1968,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 235,
+      "calculatedCount": 235
+    },
+    {
+      "year": 1969,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 235,
+      "calculatedCount": 235
+    },
+    {
+      "year": 1969,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 232,
+      "calculatedCount": 232
+    },
+    {
+      "year": 1970,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 225,
+      "calculatedCount": 225
+    },
+    {
+      "year": 1970,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 244,
+      "calculatedCount": 244
+    },
+    {
+      "year": 1971,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 237,
+      "calculatedCount": 237
+    },
+    {
+      "year": 1971,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 238,
+      "calculatedCount": 238
+    },
+    {
+      "year": 1972,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 241,
+      "calculatedCount": 241
+    },
+    {
+      "year": 1972,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 232,
+      "calculatedCount": 232
+    },
+    {
+      "year": 1973,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 232,
+      "calculatedCount": 232
+    },
+    {
+      "year": 1973,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 283,
+      "calculatedCount": 283
+    },
+    {
+      "year": 1974,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 239,
+      "calculatedCount": 239
+    },
+    {
+      "year": 1974,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 281,
+      "calculatedCount": 281
+    },
+    {
+      "year": 1975,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 201,
+      "calculatedCount": 201
+    },
+    {
+      "year": 1975,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 240,
+      "calculatedCount": 240
+    },
+    {
+      "year": 1976,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 221,
+      "calculatedCount": 221
+    },
+    {
+      "year": 1976,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 244,
+      "calculatedCount": 244
+    },
+    {
+      "year": 1977,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 230,
+      "calculatedCount": 230
+    },
+    {
+      "year": 1977,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 248,
+      "calculatedCount": 248
+    },
+    {
+      "year": 1978,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 250,
+      "calculatedCount": 250
+    },
+    {
+      "year": 1978,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 250,
+      "calculatedCount": 250
+    },
+    {
+      "year": 1979,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 249,
+      "calculatedCount": 249
+    },
+    {
+      "year": 1979,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 219,
+      "calculatedCount": 219
+    },
+    {
+      "year": 1980,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 260,
+      "calculatedCount": 260
+    },
+    {
+      "year": 1980,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 234,
+      "calculatedCount": 234
+    },
+    {
+      "year": 1981,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 255,
+      "calculatedCount": 255
+    },
+    {
+      "year": 1981,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 236,
+      "calculatedCount": 236
+    },
+    {
+      "year": 1982,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 266,
+      "calculatedCount": 266
+    },
+    {
+      "year": 1982,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 221,
+      "calculatedCount": 221
+    },
+    {
+      "year": 1983,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 269,
+      "calculatedCount": 269
+    },
+    {
+      "year": 1983,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 237,
+      "calculatedCount": 237
+    },
+    {
+      "year": 1984,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 267,
+      "calculatedCount": 267
+    },
+    {
+      "year": 1984,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 241,
+      "calculatedCount": 241
+    },
+    {
+      "year": 1985,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 289,
+      "calculatedCount": 289
+    },
+    {
+      "year": 1985,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 247,
+      "calculatedCount": 247
+    },
+    {
+      "year": 1986,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 284,
+      "calculatedCount": 284
+    },
+    {
+      "year": 1986,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 254,
+      "calculatedCount": 254
+    },
+    {
+      "year": 1987,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 295,
+      "calculatedCount": 295
+    },
+    {
+      "year": 1987,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 246,
+      "calculatedCount": 246
+    },
+    {
+      "year": 1988,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 292,
+      "calculatedCount": 292
+    },
+    {
+      "year": 1988,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 254,
+      "calculatedCount": 254
+    },
+    {
+      "year": 1989,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 299,
+      "calculatedCount": 299
+    },
+    {
+      "year": 1989,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 303,
+      "calculatedCount": 303
+    },
+    {
+      "year": 1990,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 319,
+      "calculatedCount": 319
+    },
+    {
+      "year": 1990,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 325,
+      "calculatedCount": 325
+    },
+    {
+      "year": 1991,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 326,
+      "calculatedCount": 326
+    },
+    {
+      "year": 1991,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 307,
+      "calculatedCount": 307
+    },
+    {
+      "year": 1992,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 303,
+      "calculatedCount": 303
+    },
+    {
+      "year": 1992,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 308,
+      "calculatedCount": 308
+    },
+    {
+      "year": 1993,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 317,
+      "calculatedCount": 317
+    },
+    {
+      "year": 1993,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 281,
+      "calculatedCount": 281
+    },
+    {
+      "year": 1994,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 307,
+      "calculatedCount": 307
+    },
+    {
+      "year": 1994,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 304,
+      "calculatedCount": 304
+    },
+    {
+      "year": 1995,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 326,
+      "calculatedCount": 326
+    },
+    {
+      "year": 1995,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 313,
+      "calculatedCount": 313
+    },
+    {
+      "year": 1996,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 331,
+      "calculatedCount": 331
+    },
+    {
+      "year": 1996,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 317,
+      "calculatedCount": 317
+    },
+    {
+      "year": 1997,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 335,
+      "calculatedCount": 335
+    },
+    {
+      "year": 1997,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 338,
+      "calculatedCount": 338
+    },
+    {
+      "year": 1998,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 309,
+      "calculatedCount": 309
+    },
+    {
+      "year": 1998,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 331,
+      "calculatedCount": 331
+    },
+    {
+      "year": 1999,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 326,
+      "calculatedCount": 326
+    },
+    {
+      "year": 1999,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 354,
+      "calculatedCount": 354
+    },
+    {
+      "year": 2000,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 349,
+      "calculatedCount": 349
+    },
+    {
+      "year": 2000,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 347,
+      "calculatedCount": 347
+    },
+    {
+      "year": 2001,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 346,
+      "calculatedCount": 346
+    },
+    {
+      "year": 2001,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 366,
+      "calculatedCount": 366
+    },
+    {
+      "year": 2002,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 370,
+      "calculatedCount": 370
+    },
+    {
+      "year": 2002,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 418,
+      "calculatedCount": 418
+    },
+    {
+      "year": 2003,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 355,
+      "calculatedCount": 355
+    },
+    {
+      "year": 2003,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 417,
+      "calculatedCount": 417
+    },
+    {
+      "year": 2004,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 364,
+      "calculatedCount": 364
+    },
+    {
+      "year": 2004,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 417,
+      "calculatedCount": 417
+    },
+    {
+      "year": 2005,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 295,
+      "calculatedCount": 295
+    },
+    {
+      "year": 2005,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 302,
+      "calculatedCount": 302
+    },
+    {
+      "year": 2006,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 304,
+      "calculatedCount": 304
+    },
+    {
+      "year": 2006,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 293,
+      "calculatedCount": 293
+    },
+    {
+      "year": 2007,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 300,
+      "calculatedCount": 300
+    },
+    {
+      "year": 2007,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 301,
+      "calculatedCount": 301
+    },
+    {
+      "year": 2008,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 316,
+      "calculatedCount": 316
+    },
+    {
+      "year": 2008,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 310,
+      "calculatedCount": 310
+    },
+    {
+      "year": 2009,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 324,
+      "calculatedCount": 324
+    },
+    {
+      "year": 2009,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 306,
+      "calculatedCount": 306
+    },
+    {
+      "year": 2010,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 331,
+      "calculatedCount": 331
+    },
+    {
+      "year": 2010,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 327,
+      "calculatedCount": 327
+    },
+    {
+      "year": 2011,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 324,
+      "calculatedCount": 324
+    },
+    {
+      "year": 2011,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 310,
+      "calculatedCount": 310
+    },
+    {
+      "year": 2012,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 319,
+      "calculatedCount": 319
+    },
+    {
+      "year": 2012,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 330,
+      "calculatedCount": 330
+    },
+    {
+      "year": 2013,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 343,
+      "calculatedCount": 343
+    },
+    {
+      "year": 2013,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 330,
+      "calculatedCount": 330
+    },
+    {
+      "year": 2014,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 324,
+      "calculatedCount": 324
+    },
+    {
+      "year": 2014,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 331,
+      "calculatedCount": 331
+    },
+    {
+      "year": 2015,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 324,
+      "calculatedCount": 324
+    },
+    {
+      "year": 2015,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 334,
+      "calculatedCount": 334
+    },
+    {
+      "year": 2016,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 343,
+      "calculatedCount": 343
+    },
+    {
+      "year": 2016,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 337,
+      "calculatedCount": 337
+    },
+    {
+      "year": 2017,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 330,
+      "calculatedCount": 330
+    },
+    {
+      "year": 2017,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 334,
+      "calculatedCount": 334
+    },
+    {
+      "year": 2018,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 330,
+      "calculatedCount": 330
+    },
+    {
+      "year": 2018,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 336,
+      "calculatedCount": 336
+    },
+    {
+      "year": 2019,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 348,
+      "calculatedCount": 348
+    },
+    {
+      "year": 2019,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 354,
+      "calculatedCount": 354
+    },
+    {
+      "year": 2020,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 334,
+      "calculatedCount": 334
+    },
+    {
+      "year": 2020,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 333,
+      "calculatedCount": 333
+    },
+    {
+      "year": 2021,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 338,
+      "calculatedCount": 338
+    },
+    {
+      "year": 2021,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 352,
+      "calculatedCount": 352
+    },
+    {
+      "year": 2022,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 354,
+      "calculatedCount": 354
+    },
+    {
+      "year": 2022,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 368,
+      "calculatedCount": 368
+    },
+    {
+      "year": 2023,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 331,
+      "calculatedCount": 331
+    },
+    {
+      "year": 2023,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 349,
+      "calculatedCount": 349
+    },
+    {
+      "year": 2024,
+      "league": "CL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 343,
+      "calculatedCount": 343
+    },
+    {
+      "year": 2024,
+      "league": "PL",
+      "status": "ok",
+      "missingCount": 0,
+      "rawCount": 362,
+      "calculatedCount": 362
+    }
+  ]
+}

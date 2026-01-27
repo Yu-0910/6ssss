@@ -1,0 +1,1966 @@
+{
+  "check_date": "2026-01-20T09:14:03.879Z",
+  "target_year": 2014,
+  "target_league": "CL",
+  "fetched_count": 0,
+  "failed_fetch_count": 1,
+  "csv_count": 324,
+  "missing_in_csv_count": 0,
+  "failed_to_fetch_count": 324,
+  "failed_fetches": [
+    {
+      "year": 2014,
+      "league": "CL",
+      "url": "https://npb.jp/bis/2014/stats/cl/batting.html",
+      "status": 0,
+      "error": "ALL_URLS_FAILED"
+    }
+  ],
+  "missing_in_csv": [],
+  "failed_to_fetch": [
+    {
+      "player_id": "1005114",
+      "name": "高崎　健太郎",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "1005117",
+      "name": "雄平",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "1005139",
+      "name": "西原　圭大",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "1103888",
+      "name": "新井　貴浩",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "1105112",
+      "name": "新井　良太",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "1105115",
+      "name": "天谷　宗一郎",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "1105131",
+      "name": "荒木　貴裕",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "1105133",
+      "name": "荒波　翔",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "1205114",
+      "name": "堂上　直倫",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "1205115",
+      "name": "林　昌範",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "1205117",
+      "name": "永川　勝浩",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "1205135",
+      "name": "徳山　武陽",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "1305110",
+      "name": "片岡　治大",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "1305114",
+      "name": "上野　弘文",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "1305116",
+      "name": "大田　阿斗里",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "1305117",
+      "name": "江草　仁貴",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "1305118",
+      "name": "上本　博紀",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "1305119",
+      "name": "香月　良太",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "1305131",
+      "name": "大島　洋平",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "1305133",
+      "name": "榎田　大樹",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "1403862",
+      "name": "山本昌",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "1405116",
+      "name": "松山　竜平",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "1405135",
+      "name": "西森　将司",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "1505133",
+      "name": "加賀美　希昇",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "1605114",
+      "name": "松本　哲也",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "1605135",
+      "name": "松田　遼馬",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "1605137",
+      "name": "D.カブレラ",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "1705116",
+      "name": "小林　太志",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "1705117",
+      "name": "木村　昇吾",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "1705131",
+      "name": "国吉　佑樹",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "1705133",
+      "name": "久古　健太郎",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "1805114",
+      "name": "横川　史学",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "1905119",
+      "name": "堂上　剛裕",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "3505133",
+      "name": "E.ソト",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "11015112",
+      "name": "高宮　和也",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "11015116",
+      "name": "田中　健二朗",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "11213880",
+      "name": "横山　竜士",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "11313884",
+      "name": "岩村　明憲",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "11315112",
+      "name": "今井　啓介",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "11315115",
+      "name": "石川　雅規",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "11415139",
+      "name": "萬谷　康平",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "11515110",
+      "name": "雄太",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "11515115",
+      "name": "大竹　寛",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "11515118",
+      "name": "小熊　凌祐",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "11515131",
+      "name": "岡田　俊哉",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "11515133",
+      "name": "大野　雄大",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "11515137",
+      "name": "小川　泰弘",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "11615117",
+      "name": "森岡　良介",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "11615131",
+      "name": "山本　哲哉",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "11615137",
+      "name": "谷内　亮太",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "11715113",
+      "name": "狩野　恵輔",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "11715118",
+      "name": "小杉　陽太",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "11715133",
+      "name": "川﨑　成晃",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "11815139",
+      "name": "L.アンダーソン",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "11915114",
+      "name": "小嶋　達也",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "11915116",
+      "name": "篠田　純平",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "11915117",
+      "name": "G　後藤　武敏",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "13115139",
+      "name": "C.ナーブソン",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "13315133",
+      "name": "W.バレンティン",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "13315135",
+      "name": "L.ミレッジ",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "13315137",
+      "name": "キラ・カアイフエ",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "13515135",
+      "name": "B.エルドレッド",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "13515139",
+      "name": "Y.グリエル",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "21023885",
+      "name": "中村　紀洋",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "21025116",
+      "name": "中井　大介",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "21025135",
+      "name": "田島　慎二",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "21025137",
+      "name": "福谷　浩司",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "21125113",
+      "name": "阿部　慎之助",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "21125118",
+      "name": "伊藤　準規",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "21125133",
+      "name": "池ノ内　亮介",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "21125135",
+      "name": "一岡　竜司",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "21125137",
+      "name": "石山　泰稚",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "21223884",
+      "name": "森野　将彦",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "21225115",
+      "name": "久本　祐一",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "21225135",
+      "name": "戸田　隆矢",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "21323884",
+      "name": "小笠原　道大",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "21323888",
+      "name": "加藤　健",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "21325111",
+      "name": "河内　貴哉",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "21325139",
+      "name": "梅野　隆太郎",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "21425116",
+      "name": "丸　佳浩",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "21425135",
+      "name": "野村　祐輔",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "21525113",
+      "name": "加藤　康介",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "21525131",
+      "name": "加賀　繁",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "21525137",
+      "name": "金田　和之",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "21625112",
+      "name": "村中　恭兵",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "21625116",
+      "name": "山内　壮馬",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "21625118",
+      "name": "八木　亮祐",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "21625133",
+      "name": "宮國　椋丞",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "21723882",
+      "name": "鶴岡　一成",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "21725111",
+      "name": "髙橋　尚成",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "21725112",
+      "name": "黒羽根　利規",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "21725117",
+      "name": "久保　裕也",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "21725118",
+      "name": "柴田　講平",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "21725137",
+      "name": "白崎　浩之",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "21823888",
+      "name": "松元　ユウイチ",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "21825133",
+      "name": "吉川　大幾",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "21925110",
+      "name": "田中　浩康",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "21925112",
+      "name": "梵　英心",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "21925119",
+      "name": "鳥谷　敬",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "23125118",
+      "name": "T.ブランコ",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "23525133",
+      "name": "チェン・グァンユウ",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "23525139",
+      "name": "D.ヒース",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "31035112",
+      "name": "武内　晋一",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "31035119",
+      "name": "西村　健太朗",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "31035133",
+      "name": "七條　祐樹",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "31035135",
+      "name": "高木　京介",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "31135114",
+      "name": "會澤　翼",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "31135118",
+      "name": "赤川　克紀",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "31135131",
+      "name": "赤田　龍一郎",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "31235113",
+      "name": "畠山　和洋",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "31235118",
+      "name": "中田　廉",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "31235133",
+      "name": "中﨑　翔太",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "31335112",
+      "name": "今成　亮太",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "31335114",
+      "name": "隠善　智也",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "31335118",
+      "name": "岩﨑　恭平",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "31335135",
+      "name": "今村　信貴",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "31335137",
+      "name": "上本　崇司",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "31335139",
+      "name": "岩崎　優",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "31433884",
+      "name": "和田　一浩",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "31435112",
+      "name": "福田　聡志",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "31435116",
+      "name": "藤村　大介",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "31435117",
+      "name": "西岡　剛",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "31435118",
+      "name": "野本　圭",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "31435131",
+      "name": "松井　淳",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "31435133",
+      "name": "福井　優也",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "31435139",
+      "name": "三上　朋也",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "31533886",
+      "name": "倉　義和",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "31535117",
+      "name": "長田　秀一郎",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "31635114",
+      "name": "福田　永将",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "31635115",
+      "name": "山井　大介",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "31635137",
+      "name": "山中　浩史",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "31735112",
+      "name": "川端　慎吾",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "31735135",
+      "name": "木谷　良平",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "31835139",
+      "name": "A.エルナンデス",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "31935115",
+      "name": "杉内　俊哉",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "31935117",
+      "name": "小林　正人",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "31935119",
+      "name": "須永　英輝",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "31935139",
+      "name": "関根　大気",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "33135112",
+      "name": "渡辺　亮",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "33335135",
+      "name": "O.ロマン",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "41045112",
+      "name": "鶴　直人",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "41045137",
+      "name": "藤浪　晋太郎",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "41143886",
+      "name": "井端　弘和",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "41145115",
+      "name": "安藤　優也",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "41145135",
+      "name": "伊藤　和雄",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "41245133",
+      "name": "西田　明央",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "41245137",
+      "name": "三嶋　一輝",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "41343886",
+      "name": "川上　憲伸",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "41345118",
+      "name": "大田　泰示",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "41345135",
+      "name": "乙坂　智",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "41443880",
+      "name": "相川　亮二",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "41443885",
+      "name": "三浦　大輔",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "41545110",
+      "name": "工藤　隆人",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "41743880",
+      "name": "多村　仁志",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "41745119",
+      "name": "白濱　裕太",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "41745137",
+      "name": "菅野　智之",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "41845112",
+      "name": "吉見　一起",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "41845139",
+      "name": "M.ゴメス",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "41945110",
+      "name": "玉置　隆",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "41945114",
+      "name": "清水　誉",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "41945131",
+      "name": "筒香　嘉智",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "43345139",
+      "name": "F.セペダ",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "51053888",
+      "name": "藤井　彰人",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "51055116",
+      "name": "谷　哲也",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "51055131",
+      "name": "中澤　雅人",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "51055135",
+      "name": "髙城　俊人",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "51155110",
+      "name": "赤松　真人",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "51155111",
+      "name": "朝倉　健太",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "51155114",
+      "name": "青木　高広",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "51155117",
+      "name": "阿部　健太",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "51155131",
+      "name": "秋山　拓巳",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "51255114",
+      "name": "寺内　崇幸",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "51255118",
+      "name": "中村　悠平",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "51255119",
+      "name": "三瀬　幸司",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "51255131",
+      "name": "俊介",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "51255135",
+      "name": "土田　瑞起",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "51255139",
+      "name": "平田　真吾",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "51355112",
+      "name": "岩田　稔",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "51355115",
+      "name": "石原　慶幸",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "51355118",
+      "name": "岩田　慎司",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "51355131",
+      "name": "今村　猛",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "51355139",
+      "name": "岩貞　祐太",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "51455110",
+      "name": "松岡　健一",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "51455112",
+      "name": "藤井　淳志",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "51455118",
+      "name": "橋本　到",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "51455131",
+      "name": "松井　雅人",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "51455137",
+      "name": "宮﨑　敏郎",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "51555110",
+      "name": "菊地　和正",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "51555118",
+      "name": "笠原　将生",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "51555131",
+      "name": "小川　龍也",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "51555133",
+      "name": "大原　慎司",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "51655114",
+      "name": "前田　健太",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "51655117",
+      "name": "矢野　謙次",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "51655118",
+      "name": "松本　啓二朗",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "51655133",
+      "name": "三ツ俣　大樹",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "51655135",
+      "name": "古野　正人",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "51655137",
+      "name": "若松　駿太",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "51753888",
+      "name": "實松　一成",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "51755116",
+      "name": "小窪　哲也",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "51755135",
+      "name": "桑原　将志",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "51855112",
+      "name": "山口　俊",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "51855139",
+      "name": "呉　昇桓",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "51953886",
+      "name": "高橋　由伸",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "51955114",
+      "name": "坂本　勇人",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "51955131",
+      "name": "田上　健一",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "51955133",
+      "name": "小山　雄輝",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "51955137",
+      "name": "髙橋　大樹",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "53155131",
+      "name": "M.マートン",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "53155137",
+      "name": "H.ルナ",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "53155139",
+      "name": "Z.フィリップス",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "53355139",
+      "name": "R.ロサリオ",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "61065110",
+      "name": "能見　篤史",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "61065117",
+      "name": "武山　真吾",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "61065135",
+      "name": "田原　誠次",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "61165112",
+      "name": "飯原　誉士",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "61165114",
+      "name": "今浪　隆博",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "61165137",
+      "name": "井納　翔一",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "61265111",
+      "name": "迎　祐一郎",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "61265112",
+      "name": "平田　良介",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "61265114",
+      "name": "中東　直己",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "61265139",
+      "name": "又吉　克樹",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "61365139",
+      "name": "大瀬良　大地",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "61465112",
+      "name": "大和",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "61465118",
+      "name": "藤江　均",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "61465135",
+      "name": "比屋根　渉",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "61565110",
+      "name": "久保　康友",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "61565114",
+      "name": "梶谷　隆幸",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "61565119",
+      "name": "坂　克彦",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "61565135",
+      "name": "菊池　涼介",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "61665133",
+      "name": "武藤　祐太",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "61763884",
+      "name": "鈴木　尚広",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "61763888",
+      "name": "建山　義紀",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "61765110",
+      "name": "鈴木　義広",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "61765115",
+      "name": "真田　裕貴",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "61765135",
+      "name": "歳内　宏明",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "61765139",
+      "name": "杉浦　稔大",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "61865139",
+      "name": "A.ゴメス",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "61963888",
+      "name": "福留　孝介",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "61965131",
+      "name": "堂林　翔太",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "61965139",
+      "name": "田中　広輔",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "63165135",
+      "name": "S.マシソン",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "63165139",
+      "name": "G.モスコーソ",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "71075131",
+      "name": "中田　亮二",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "71075133",
+      "name": "須田　幸太",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "71075137",
+      "name": "濱田　達郎",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "71173882",
+      "name": "荒木　雅博",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "71175114",
+      "name": "浅尾　拓也",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "71175137",
+      "name": "安部　建輝",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "71275113",
+      "name": "廣瀬　純",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "71375114",
+      "name": "上田　剛史",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "71375116",
+      "name": "内村　賢介",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "71375118",
+      "name": "岩本　貴裕",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "71375133",
+      "name": "岩本　輝",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "71375135",
+      "name": "江柄子　裕樹",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "71375137",
+      "name": "江村　将也",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "71375139",
+      "name": "岩橋　慶侍",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "71475118",
+      "name": "日高　亮",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "71475131",
+      "name": "松井　佑介",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "71475139",
+      "name": "嶺井　博希",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "71775131",
+      "name": "鬼屋敷　正人",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "71775139",
+      "name": "九里　亜蓮",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "71875112",
+      "name": "山口　鉄也",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "71875131",
+      "name": "T.バーネット",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "71875139",
+      "name": "C.カーペンター",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "71975115",
+      "name": "髙橋　聡文",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "73175118",
+      "name": "N.パヤノ",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "73375116",
+      "name": "A.バルディリス",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "81085114",
+      "name": "田中　大輔",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "81085133",
+      "name": "靍岡　賢二郎",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "81085137",
+      "name": "古本　武尊",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "81183888",
+      "name": "岩瀬　仁紀",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "81185110",
+      "name": "梅津　智弘",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "81185119",
+      "name": "内海　哲也",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "81185135",
+      "name": "伊藤　隼太",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "81285137",
+      "name": "溝脇　隼人",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "81385110",
+      "name": "亀井　善行",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "81385137",
+      "name": "緒方　凌介",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "81485116",
+      "name": "三輪　正義",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "81485117",
+      "name": "村田　修一",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "81485139",
+      "name": "山本　翔也",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "81585112",
+      "name": "川島　慶三",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "81685112",
+      "name": "柳田　殖生",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "81685118",
+      "name": "山崎　憲晴",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "81685133",
+      "name": "森越　祐人",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "81783884",
+      "name": "関本　賢太郎",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "81785131",
+      "name": "庄司　隼人",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "81785137",
+      "name": "鈴木　誠也",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "81785139",
+      "name": "鈴木　翔太",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "81885139",
+      "name": "C.セドン",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "81983882",
+      "name": "日高　剛",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "81983888",
+      "name": "福原　忍",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "81985111",
+      "name": "野口　祥順",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "81985114",
+      "name": "下園　辰哉",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "81985118",
+      "name": "立岡　宗一郎",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "81985133",
+      "name": "澤村　拓一",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "83185133",
+      "name": "B.バリントン",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "83185135",
+      "name": "K.ミコライオ",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "85583868",
+      "name": "谷繁　元信",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "91095118",
+      "name": "土屋　健二",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "91095135",
+      "name": "高橋　周平",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "91095139",
+      "name": "西浦　直亨",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "91193884",
+      "name": "石井　義人",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "91195110",
+      "name": "石川　雄洋",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "91195116",
+      "name": "安部　友裕",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "91195117",
+      "name": "新垣　渚",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "91195131",
+      "name": "阿南　徹",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "91195133",
+      "name": "荒木　郁也",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "91195139",
+      "name": "秋吉　亮",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "91295131",
+      "name": "二神　一人",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "91295139",
+      "name": "藤井　亮太",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "91393886",
+      "name": "小田　幸平",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "91395115",
+      "name": "井手　正太郎",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "91395119",
+      "name": "押本　健彦",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "91593888",
+      "name": "金城　龍彦",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "91595131",
+      "name": "小野　淳平",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "91695135",
+      "name": "飛雄馬",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "91795139",
+      "name": "小林　誠司",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "91895133",
+      "name": "山田　哲人",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "91995119",
+      "name": "筒井　和也",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "91995131",
+      "name": "長野　久義",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "91995139",
+      "name": "祖父江　大輔",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "93195131",
+      "name": "R.メッセンジャー",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "93195137",
+      "name": "J.ロペス",
+      "year": 2014,
+      "league": "CL"
+    },
+    {
+      "player_id": "93395135",
+      "name": "J.ソーサ",
+      "year": 2014,
+      "league": "CL"
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+[
+  {
+    "year": 1940,
+    "min_games": 104,
+    "max_games": 105,
+    "diff": 1,
+    "mode_games": 104,
+    "mode_count": 7,
+    "deviations": [
+      {
+        "team": "翼",
+        "games": 105,
+        "delta": 1
+      },
+      {
+        "team": "南海",
+        "games": 105,
+        "delta": 1
+      }
+    ]
+  },
+  {
+    "year": 1941,
+    "min_games": 84,
+    "max_games": 87,
+    "diff": 3,
+    "mode_games": 85,
+    "mode_count": 3,
+    "deviations": [
+      {
+        "team": "東京巨人",
+        "games": 86,
+        "delta": 1
+      },
+      {
+        "team": "大洋",
+        "games": 87,
+        "delta": 2
+      },
+      {
+        "team": "南海",
+        "games": 84,
+        "delta": -1
+      },
+      {
+        "team": "阪神",
+        "games": 84,
+        "delta": -1
+      },
+      {
+        "team": "名古屋",
+        "games": 84,
+        "delta": -1
+      }
+    ]
+  },
+  {
+    "year": 1949,
+    "min_games": 133,
+    "max_games": 138,
+    "diff": 5,
+    "mode_games": 134,
+    "mode_count": 2,
+    "deviations": [
+      {
+        "team": "阪急ブレーブス",
+        "games": 136,
+        "delta": 2
+      },
+      {
+        "team": "南海ホークス",
+        "games": 135,
+        "delta": 1
+      },
+      {
+        "team": "中日ドラゴンズ",
+        "games": 137,
+        "delta": 3
+      },
+      {
+        "team": "大阪タイガース",
+        "games": 137,
+        "delta": 3
+      },
+      {
+        "team": "東急フライヤーズ",
+        "games": 138,
+        "delta": 4
+      },
+      {
+        "team": "大陽ロビンス",
+        "games": 133,
+        "delta": -1
+      }
+    ]
+  }
+]

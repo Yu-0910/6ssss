@@ -1,0 +1,57 @@
+{
+  "OPS": "ops",
+  "打率": "avg",
+  "安打": "hits",
+  "本塁打": "hr",
+  "打点": "rbi",
+  "試合": "games",
+  "打席": "pa",
+  "打数": "ab",
+  "単打": "singles",
+  "二塁打": "doubles",
+  "三塁打": "triples",
+  "得点": "runs",
+  "出塁率": "obp",
+  "長打率": "slg",
+  "四球": "bb",
+  "敬遠": "ibb",
+  "死球": "hbp",
+  "三振": "so",
+  "塁打": "tb",
+  "盗塁": "sb",
+  "盗塁死": "cs",
+  "犠打": "sh",
+  "犠飛": "sf",
+  "併殺打": "gidp",
+  "IsoP": "isop",
+  "IsoD": "isod",
+  "BB%": "bbPct",
+  "K%": "kPct",
+  "BB/K": "bbk",
+  "RC": "rc",
+  "XR": "xr",
+  "BABIP": "babip",
+  "SecA": "seca",
+  "TA": "ta",
+  "NOI": "noi",
+  "GPA": "gpa"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

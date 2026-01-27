@@ -1,0 +1,2002 @@
+{
+  "check_date": "2026-01-20T09:14:24.269Z",
+  "target_year": 2018,
+  "target_league": "CL",
+  "fetched_count": 0,
+  "failed_fetch_count": 1,
+  "csv_count": 330,
+  "missing_in_csv_count": 0,
+  "failed_to_fetch_count": 330,
+  "failed_fetches": [
+    {
+      "year": 2018,
+      "league": "CL",
+      "url": "https://npb.jp/bis/2018/stats/cl/batting.html",
+      "status": 0,
+      "error": "ALL_URLS_FAILED"
+    }
+  ],
+  "missing_in_csv": [],
+  "failed_to_fetch": [
+    {
+      "player_id": "1005117",
+      "name": "雄平",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "1005132",
+      "name": "髙山　俊",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "1005134",
+      "name": "高橋　昂也",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "1103888",
+      "name": "新井　貴浩",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "1105115",
+      "name": "天谷　宗一郎",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "1105130",
+      "name": "飯塚　悟史",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "1105131",
+      "name": "荒木　貴裕",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "1105133",
+      "name": "荒波　翔",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "1105135",
+      "name": "石川　慎吾",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "1105137",
+      "name": "飯田　優也",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "1205114",
+      "name": "堂上　直倫",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "1205117",
+      "name": "永川　勝浩",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "1305118",
+      "name": "上本　博紀",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "1305130",
+      "name": "植田　海",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "1305131",
+      "name": "大島　洋平",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "1305132",
+      "name": "今永　昇太",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "1305136",
+      "name": "大下　佑馬",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "1405116",
+      "name": "松山　竜平",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "1405130",
+      "name": "野間　峻祥",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "1405135",
+      "name": "西森　将司",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "1605134",
+      "name": "福永　春吾",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "1705131",
+      "name": "国吉　佑樹",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "1705134",
+      "name": "古賀　優大",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "1805132",
+      "name": "三ツ間　卓也",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "1805136",
+      "name": "宮本　丈",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "1905136",
+      "name": "清水　達也",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "1905139",
+      "name": "平良　拳太郎",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "3105136",
+      "name": "山本　拓実",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "3505132",
+      "name": "R.ドリス",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "3505136",
+      "name": "N.ソト",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "3705134",
+      "name": "S.パットン",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "3905136",
+      "name": "J.ウルキデス",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "11015116",
+      "name": "田中　健二朗",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "11215137",
+      "name": "北條　史也",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "11313888",
+      "name": "上原　浩治",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "11315115",
+      "name": "石川　雅規",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "11315130",
+      "name": "石田　健大",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "11415137",
+      "name": "美間　優槻",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "11515115",
+      "name": "大竹　寛",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "11515118",
+      "name": "小熊　凌祐",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "11515130",
+      "name": "岡本　和真",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "11515131",
+      "name": "岡田　俊哉",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "11515133",
+      "name": "大野　雄大",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "11515134",
+      "name": "笠井　崇正",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "11515137",
+      "name": "小川　泰弘",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "11615131",
+      "name": "山本　哲哉",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "11615137",
+      "name": "谷内　亮太",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "11615139",
+      "name": "陽川　尚将",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "11715134",
+      "name": "京山　将弥",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "11815114",
+      "name": "山田　大樹",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "11815134",
+      "name": "星　知弥",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "11915117",
+      "name": "G　後藤　武敏",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "11915132",
+      "name": "坂本　誠志郎",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "11915134",
+      "name": "坂倉　将吾",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "11915139",
+      "name": "砂田　毅樹",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "13315133",
+      "name": "W.バレンティン",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "13315136",
+      "name": "若林　晃弘",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "13515132",
+      "name": "J.ジャクソン",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "13515134",
+      "name": "A.カミネロ",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "13515135",
+      "name": "B.エルドレッド",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "13515136",
+      "name": "M.カラシティー",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "13715132",
+      "name": "D.ビシエド",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "13915134",
+      "name": "マルティネス",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "21025116",
+      "name": "中井　大介",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "21025132",
+      "name": "竹安　大知",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "21025135",
+      "name": "田島　慎二",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "21025137",
+      "name": "福谷　浩司",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "21125113",
+      "name": "阿部　慎之助",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "21125118",
+      "name": "伊藤　準規",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "21125135",
+      "name": "一岡　竜司",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "21125136",
+      "name": "石川　翔",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "21125137",
+      "name": "石山　泰稚",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "21225135",
+      "name": "戸田　隆矢",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "21325130",
+      "name": "江越　大賀",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "21325134",
+      "name": "大山　悠輔",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "21325136",
+      "name": "大城　卓三",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "21325139",
+      "name": "梅野　隆太郎",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "21425116",
+      "name": "丸　佳浩",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "21425135",
+      "name": "野村　祐輔",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "21425136",
+      "name": "沼田　拓巳",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "21525131",
+      "name": "加賀　繁",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "21525136",
+      "name": "北村　拓己",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "21625112",
+      "name": "村中　恭兵",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "21625132",
+      "name": "廣岡　大志",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "21625133",
+      "name": "宮國　椋丞",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "21625134",
+      "name": "藤嶋　健人",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "21825112",
+      "name": "陽　岱鋼",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "21825133",
+      "name": "吉川　大幾",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "21825137",
+      "name": "C.マギー",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "21925110",
+      "name": "田中　浩康",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "21925117",
+      "name": "坂口　智隆",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "21925119",
+      "name": "鳥谷　敬",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "21925130",
+      "name": "篠原　慎平",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "21925132",
+      "name": "重信　慎之介",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "23125136",
+      "name": "山本　祐大",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "23325134",
+      "name": "J.ウィーランド",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "23725136",
+      "name": "W.ロサリオ",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "23925132",
+      "name": "X.バティスタ",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "23925134",
+      "name": "R.マルティネス",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "23925136",
+      "name": "J.ヘルウェグ",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "31035112",
+      "name": "武内　晋一",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "31035118",
+      "name": "谷元　圭介",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "31035135",
+      "name": "高木　京介",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "31135114",
+      "name": "會澤　翼",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "31135119",
+      "name": "青木　宣親",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "31135134",
+      "name": "アドゥワ　誠",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "31233888",
+      "name": "松坂　大輔",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "31235113",
+      "name": "畠山　和洋",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "31235118",
+      "name": "中田　廉",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "31235130",
+      "name": "田中　貴也",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "31235132",
+      "name": "田村　丈",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "31235133",
+      "name": "中﨑　翔太",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "31235136",
+      "name": "谷川　昌希",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "31335135",
+      "name": "今村　信貴",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "31335137",
+      "name": "上本　崇司",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "31335139",
+      "name": "岩崎　優",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "31435117",
+      "name": "西岡　剛",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "31435118",
+      "name": "野本　圭",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "31435133",
+      "name": "福井　優也",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "31435139",
+      "name": "三上　朋也",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "31535131",
+      "name": "岡本　洋介",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "31535134",
+      "name": "笠原　祥太郎",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "31635114",
+      "name": "福田　永将",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "31635115",
+      "name": "山井　大介",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "31635132",
+      "name": "原　樹理",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "31635134",
+      "name": "畠　世周",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "31635137",
+      "name": "山中　浩史",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "31735112",
+      "name": "川端　慎吾",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "31735116",
+      "name": "桑原　謙太朗",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "31735132",
+      "name": "木下　拓哉",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "31735136",
+      "name": "鍬原　拓也",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "31835134",
+      "name": "細川　成也",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "31935139",
+      "name": "関根　大気",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "33135132",
+      "name": "山崎　晃大朗",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "33535136",
+      "name": "O.ガルシア",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "33935134",
+      "name": "C.C.メルセデス",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "41045118",
+      "name": "中川　大志",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "41045135",
+      "name": "田代　将太郎",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "41045137",
+      "name": "藤浪　晋太郎",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "41145130",
+      "name": "石川　駿",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "41145135",
+      "name": "伊藤　和雄",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "41245132",
+      "name": "戸柱　恭孝",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "41245133",
+      "name": "西田　明央",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "41245137",
+      "name": "三嶋　一輝",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "41345130",
+      "name": "遠藤　一星",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "41345135",
+      "name": "乙坂　智",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "41445136",
+      "name": "馬場　皐輔",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "41545110",
+      "name": "工藤　隆人",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "41545134",
+      "name": "木下　雄介",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "41645132",
+      "name": "福　敬登",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "41745134",
+      "name": "才木　浩人",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "41745137",
+      "name": "菅野　智之",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "41845112",
+      "name": "吉見　一起",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "41845114",
+      "name": "吉川　光夫",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "41845130",
+      "name": "山﨑　康晃",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "41845136",
+      "name": "村上　宗隆",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "41945131",
+      "name": "筒香　嘉智",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "41945132",
+      "name": "柴田　竜拓",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "41945139",
+      "name": "田口　麗斗",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "43345136",
+      "name": "Z.アルモンテ",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "43545134",
+      "name": "A.ゲレーロ",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "43745134",
+      "name": "D.ブキャナン",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "43945132",
+      "name": "A.メヒア",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "51055116",
+      "name": "谷　哲也",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "51055131",
+      "name": "中澤　雅人",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "51055132",
+      "name": "高橋　奎二",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "51055133",
+      "name": "島本　浩也",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "51055135",
+      "name": "髙城　俊人",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "51155131",
+      "name": "秋山　拓巳",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "51155136",
+      "name": "東　克樹",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "51255118",
+      "name": "中村　悠平",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "51255131",
+      "name": "俊介",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "51255133",
+      "name": "中谷　将大",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "51255134",
+      "name": "谷岡　竜平",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "51255139",
+      "name": "平田　真吾",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "51355112",
+      "name": "岩田　稔",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "51355115",
+      "name": "石原　慶幸",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "51355131",
+      "name": "今村　猛",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "51355134",
+      "name": "梅野　雄吾",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "51355139",
+      "name": "岩貞　祐太",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "51455110",
+      "name": "松岡　健一",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "51455112",
+      "name": "藤井　淳志",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "51455131",
+      "name": "松井　雅人",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "51455134",
+      "name": "長井　良太",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "51455137",
+      "name": "宮﨑　敏郎",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "51655130",
+      "name": "藤井　皓哉",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "51655134",
+      "name": "濵口　遥大",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "51655135",
+      "name": "古野　正人",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "51755116",
+      "name": "小窪　哲也",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "51755135",
+      "name": "桑原　将志",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "51855112",
+      "name": "山口　俊",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "51855130",
+      "name": "守屋　功輝",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "51855136",
+      "name": "松本　直樹",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "51955114",
+      "name": "坂本　勇人",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "51955137",
+      "name": "髙橋　大樹",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "51955139",
+      "name": "曽根　海成",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "53355130",
+      "name": "K.ジョンソン",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "53555136",
+      "name": "L.カンポス",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "53755136",
+      "name": "S.モヤ",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "53955136",
+      "name": "G.フランスア",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "61065110",
+      "name": "能見　篤史",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "61065117",
+      "name": "武山　真吾",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "61065131",
+      "name": "原口　文仁",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "61065135",
+      "name": "田原　誠次",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "61165110",
+      "name": "鵜久森　淳志",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "61165132",
+      "name": "阿部　寿樹",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "61165137",
+      "name": "井納　翔一",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "61265112",
+      "name": "平田　良介",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "61265139",
+      "name": "又吉　克樹",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "61365118",
+      "name": "大野　奨太",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "61365132",
+      "name": "宇佐見　真吾",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "61365134",
+      "name": "尾仲　祐哉",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "61365139",
+      "name": "大瀬良　大地",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "61465112",
+      "name": "大和",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "61465135",
+      "name": "比屋根　渉",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "61565114",
+      "name": "梶谷　隆幸",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "61565135",
+      "name": "菊池　涼介",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "61565136",
+      "name": "楠本　泰史",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "61665114",
+      "name": "森福　允彦",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "61665133",
+      "name": "武藤　祐太",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "61665139",
+      "name": "和田　恋",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "61765116",
+      "name": "佐藤　祥万",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "61963888",
+      "name": "福留　孝介",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "61965131",
+      "name": "堂林　翔太",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "61965136",
+      "name": "博志",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "61965139",
+      "name": "田中　広輔",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "63165134",
+      "name": "柳　裕也",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "63165135",
+      "name": "S.マシソン",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "63365134",
+      "name": "E.エスコバー",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "71073888",
+      "name": "藤川　球児",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "71075133",
+      "name": "須田　幸太",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "71075134",
+      "name": "髙田　萌生",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "71075139",
+      "name": "中村　祐太",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "71173882",
+      "name": "荒木　雅博",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "71175114",
+      "name": "浅尾　拓也",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "71175132",
+      "name": "青柳　晃洋",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "71375114",
+      "name": "上田　剛史",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "71375118",
+      "name": "岩本　貴裕",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "71475112",
+      "name": "藤岡　好明",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "71475131",
+      "name": "松井　佑介",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "71475132",
+      "name": "西川　龍馬",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "71475134",
+      "name": "中尾　輝",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "71475139",
+      "name": "嶺井　博希",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "71575132",
+      "name": "小笠原　慎之介",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "71575135",
+      "name": "亀澤　恭平",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "71575136",
+      "name": "神里　和毅",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "71775139",
+      "name": "九里　亜蓮",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "71975115",
+      "name": "髙橋　聡文",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "71975132",
+      "name": "佐藤　優",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "71975136",
+      "name": "塩見　泰隆",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "71975137",
+      "name": "田川　賢吾",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "73375134",
+      "name": "吉川　尚輝",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "73575136",
+      "name": "D.ジー",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "73775136",
+      "name": "D.モレノ",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "81085117",
+      "name": "館山　昌平",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "81085136",
+      "name": "田中　俊太",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "81183888",
+      "name": "岩瀬　仁紀",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "81185112",
+      "name": "井野　卓",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "81185116",
+      "name": "伊藤　光",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "81185119",
+      "name": "内海　哲也",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "81185130",
+      "name": "石崎　剛",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "81185133",
+      "name": "磯村　嘉孝",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "81185134",
+      "name": "糸原　健斗",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "81185135",
+      "name": "伊藤　隼太",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "81285118",
+      "name": "野上　亮磨",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "81285132",
+      "name": "中川　皓太",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "81285134",
+      "name": "寺島　成輝",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "81285135",
+      "name": "中後　悠平",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "81385110",
+      "name": "亀井　善行",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "81385134",
+      "name": "小野　泰己",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "81485116",
+      "name": "三輪　正義",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "81485139",
+      "name": "山本　翔也",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "81585131",
+      "name": "河野　元貴",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "81585134",
+      "name": "京田　陽太",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "81585136",
+      "name": "熊谷　敬宥",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "81685118",
+      "name": "山崎　憲晴",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "81685132",
+      "name": "船越　涼太",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "81685133",
+      "name": "森越　祐人",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "81785116",
+      "name": "由規",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "81785130",
+      "name": "近藤　弘基",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "81785131",
+      "name": "庄司　隼人",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "81785137",
+      "name": "鈴木　誠也",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "81785139",
+      "name": "鈴木　翔太",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "81885130",
+      "name": "山下　幸輝",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "81885132",
+      "name": "望月　惇志",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "81985118",
+      "name": "立岡　宗一郎",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "81985133",
+      "name": "澤村　拓一",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "81985137",
+      "name": "辻　東倫",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "83585136",
+      "name": "D.ハフ",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "83785132",
+      "name": "M.マテオ",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "83785133",
+      "name": "E.バリオス",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "83985132",
+      "name": "S.アダメス",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "83985136",
+      "name": "J.ロドリゲス",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "91095132",
+      "name": "高橋　樹也",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "91095135",
+      "name": "高橋　周平",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "91095136",
+      "name": "髙橋　遥人",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "91095139",
+      "name": "西浦　直亨",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "91195110",
+      "name": "石川　雄洋",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "91195116",
+      "name": "安部　友裕",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "91195119",
+      "name": "糸井　嘉男",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "91195130",
+      "name": "飯田　哲矢",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "91195134",
+      "name": "池田　駿",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "91195139",
+      "name": "秋吉　亮",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "91295133",
+      "name": "中村　恭平",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "91295139",
+      "name": "藤井　亮太",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "91395110",
+      "name": "岡﨑　太一",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "91395132",
+      "name": "板山　祐太郎",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "91395134",
+      "name": "大村　孟",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "91495134",
+      "name": "長坂　拳弥",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "91595114",
+      "name": "大引　啓次",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "91595130",
+      "name": "風張　蓮",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "91595132",
+      "name": "岡田　明丈",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "91595139",
+      "name": "奥村　展征",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "91695135",
+      "name": "飛雄馬",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "91795115",
+      "name": "近藤　一樹",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "91795130",
+      "name": "倉本　寿彦",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "91795137",
+      "name": "下水流　昂",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "91795139",
+      "name": "小林　誠司",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "91895130",
+      "name": "薮田　和樹",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "91895133",
+      "name": "山田　哲人",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "91895136",
+      "name": "宮本　秀明",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "91995131",
+      "name": "長野　久義",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "91995134",
+      "name": "佐野　恵太",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "91995136",
+      "name": "島田　海吏",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "91995139",
+      "name": "祖父江　大輔",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "93195131",
+      "name": "R.メッセンジャー",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "93195132",
+      "name": "山本　泰寛",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "93195137",
+      "name": "J.ロペス",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "93795136",
+      "name": "T.ヤングマン",
+      "year": 2018,
+      "league": "CL"
+    },
+    {
+      "player_id": "93995136",
+      "name": "E.ナバーロ",
+      "year": 2018,
+      "league": "CL"
+    }
+  ]
+}

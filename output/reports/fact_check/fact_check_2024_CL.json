@@ -1,0 +1,43 @@
+{
+  "year": 2024,
+  "league": "CL",
+  "check_date": "2026-01-19T15:35:33.174Z",
+  "scraped_exists": true,
+  "current_exists": true,
+  "scraped_count": 343,
+  "current_count": 343,
+  "missing_players": [],
+  "team_comparison": {
+    "中日ドラゴンズ": {
+      "scraped": 59,
+      "current": 59,
+      "diff": 0
+    },
+    "広島東洋カープ": {
+      "scraped": 59,
+      "current": 59,
+      "diff": 0
+    },
+    "東京ヤクルトスワローズ": {
+      "scraped": 60,
+      "current": 60,
+      "diff": 0
+    },
+    "横浜DeNAベイスターズ": {
+      "scraped": 57,
+      "current": 57,
+      "diff": 0
+    },
+    "読売ジャイアンツ": {
+      "scraped": 59,
+      "current": 59,
+      "diff": 0
+    },
+    "阪神タイガース": {
+      "scraped": 49,
+      "current": 49,
+      "diff": 0
+    }
+  },
+  "errors": []
+}

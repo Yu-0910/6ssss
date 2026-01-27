@@ -1,0 +1,437 @@
+﻿year,league,player_name,duplicate_count,entry_index,team,playerId,romanName,metric,rank,value,source_file
+1985,CL,高木 豊,2,1,横浜DeNAベイスターズ,player-4,,BABIP,4,0.336,BABIP.json
+1985,CL,高木 豊,2,2,横浜ベイスターズ,player-5,,BABIP,5,0.336,BABIP.json
+1985,CL,屋鋪 要,2,1,横浜DeNAベイスターズ,player-6,,BABIP,6,0.333,BABIP.json
+1985,CL,屋鋪 要,2,2,横浜ベイスターズ,player-7,,BABIP,7,0.333,BABIP.json
+1985,CL,加藤 博一,2,1,横浜DeNAベイスターズ,player-11,,BABIP,11,0.317,BABIP.json
+1985,CL,加藤 博一,2,2,横浜ベイスターズ,player-12,,BABIP,12,0.317,BABIP.json
+1985,CL,レオン,2,1,横浜DeNAベイスターズ,player-20,,BABIP,20,0.302,BABIP.json
+1985,CL,レオン,2,2,横浜ベイスターズ,player-21,,BABIP,21,0.302,BABIP.json
+1985,CL,田代 富雄,2,1,横浜DeNAベイスターズ,player-28,,BABIP,28,0.284,BABIP.json
+1985,CL,田代 富雄,2,2,横浜ベイスターズ,player-29,,BABIP,29,0.284,BABIP.json
+1985,CL,若菜 嘉晴,2,1,横浜DeNAベイスターズ,player-32,,BABIP,32,0.277,BABIP.json
+1985,CL,若菜 嘉晴,2,2,横浜ベイスターズ,player-33,,BABIP,33,0.277,BABIP.json
+1986,CL,高木 豊,2,1,横浜DeNAベイスターズ,player-2,,BABIP,2,0.368,BABIP.json
+1986,CL,高木 豊,2,2,横浜ベイスターズ,player-3,,BABIP,3,0.368,BABIP.json
+1986,CL,C.ポンセ,2,1,横浜DeNAベイスターズ,player-6,,BABIP,6,0.322,BABIP.json
+1986,CL,C.ポンセ,2,2,横浜ベイスターズ,player-7,,BABIP,7,0.322,BABIP.json
+1986,CL,若菜 嘉晴,2,1,横浜DeNAベイスターズ,player-10,,BABIP,10,0.314,BABIP.json
+1986,CL,若菜 嘉晴,2,2,横浜ベイスターズ,player-11,,BABIP,11,0.314,BABIP.json
+1986,CL,D.ローマン,2,1,横浜DeNAベイスターズ,player-18,,BABIP,18,0.304,BABIP.json
+1986,CL,D.ローマン,2,2,横浜ベイスターズ,player-19,,BABIP,19,0.304,BABIP.json
+1986,CL,屋鋪 要,2,1,横浜DeNAベイスターズ,player-29,,BABIP,29,0.274,BABIP.json
+1986,CL,屋鋪 要,2,2,横浜ベイスターズ,player-30,,BABIP,30,0.274,BABIP.json
+1987,CL,屋鋪 要,2,1,横浜DeNAベイスターズ,player-4,,BABIP,4,0.331,BABIP.json
+1987,CL,屋鋪 要,2,2,横浜ベイスターズ,player-5,,BABIP,5,0.331,BABIP.json
+1987,CL,C.ポンセ,2,1,横浜DeNAベイスターズ,player-10,,BABIP,10,0.32,BABIP.json
+1987,CL,C.ポンセ,2,2,横浜ベイスターズ,player-11,,BABIP,11,0.32,BABIP.json
+1987,CL,高木 豊,2,1,横浜DeNAベイスターズ,player-16,,BABIP,16,0.313,BABIP.json
+1987,CL,高木 豊,2,2,横浜ベイスターズ,player-17,,BABIP,17,0.313,BABIP.json
+1987,CL,高橋 眞裕,2,1,横浜DeNAベイスターズ,player-23,,BABIP,23,0.302,BABIP.json
+1987,CL,高橋 眞裕,2,2,横浜ベイスターズ,player-24,,BABIP,24,0.302,BABIP.json
+1988,CL,J.パチョレック,2,1,横浜DeNAベイスターズ,player-2,,BABIP,2,0.348,BABIP.json
+1988,CL,J.パチョレック,2,2,横浜ベイスターズ,player-3,,BABIP,3,0.348,BABIP.json
+1988,CL,高橋 眞裕,2,1,横浜DeNAベイスターズ,player-4,,BABIP,4,0.348,BABIP.json
+1988,CL,高橋 眞裕,2,2,横浜ベイスターズ,player-5,,BABIP,5,0.348,BABIP.json
+1988,CL,高木 豊,2,1,横浜DeNAベイスターズ,player-8,,BABIP,8,0.321,BABIP.json
+1988,CL,高木 豊,2,2,横浜ベイスターズ,player-9,,BABIP,9,0.321,BABIP.json
+1988,CL,銚子 利夫,2,1,横浜DeNAベイスターズ,player-13,,BABIP,13,0.314,BABIP.json
+1988,CL,銚子 利夫,2,2,横浜ベイスターズ,player-14,,BABIP,14,0.314,BABIP.json
+1988,CL,C.ポンセ,2,1,横浜DeNAベイスターズ,player-24,,BABIP,24,0.279,BABIP.json
+1988,CL,C.ポンセ,2,2,横浜ベイスターズ,player-25,,BABIP,25,0.279,BABIP.json
+1988,CL,屋鋪 要,2,1,横浜DeNAベイスターズ,player-29,,BABIP,29,0.268,BABIP.json
+1988,CL,屋鋪 要,2,2,横浜ベイスターズ,player-30,,BABIP,30,0.268,BABIP.json
+1989,CL,J.パチョレック,2,1,横浜DeNAベイスターズ,player-4,,BABIP,4,0.35,BABIP.json
+1989,CL,J.パチョレック,2,2,横浜ベイスターズ,player-5,,BABIP,5,0.35,BABIP.json
+1989,CL,山崎 賢一,2,1,横浜DeNAベイスターズ,player-7,,BABIP,7,0.336,BABIP.json
+1989,CL,山崎 賢一,2,2,横浜ベイスターズ,player-8,,BABIP,8,0.336,BABIP.json
+1989,CL,銚子 利夫,2,1,横浜DeNAベイスターズ,player-15,,BABIP,15,0.319,BABIP.json
+1989,CL,銚子 利夫,2,2,横浜ベイスターズ,player-16,,BABIP,16,0.319,BABIP.json
+1989,CL,高木 豊,2,1,横浜DeNAベイスターズ,player-17,,BABIP,17,0.317,BABIP.json
+1989,CL,高木 豊,2,2,横浜ベイスターズ,player-18,,BABIP,18,0.317,BABIP.json
+1989,CL,C.ポンセ,2,1,横浜DeNAベイスターズ,player-30,,BABIP,30,0.273,BABIP.json
+1989,CL,C.ポンセ,2,2,横浜ベイスターズ,player-31,,BABIP,31,0.273,BABIP.json
+1989,PL,松永 浩美,2,1,オリックスブルーウェーブ,player-3,,BABIP,3,0.341,BABIP.json
+1989,PL,松永 浩美,2,2,オリックス・バファローズ,player-4,,BABIP,4,0.341,BABIP.json
+1989,PL,門田 博光,2,1,オリックスブルーウェーブ,player-6,,BABIP,6,0.333,BABIP.json
+1989,PL,門田 博光,2,2,オリックス・バファローズ,player-7,,BABIP,7,0.333,BABIP.json
+1989,PL,石嶺 和彦,2,1,オリックスブルーウェーブ,player-18,,BABIP,18,0.287,BABIP.json
+1989,PL,石嶺 和彦,2,2,オリックス・バファローズ,player-19,,BABIP,19,0.287,BABIP.json
+1989,PL,藤井 康雄,2,1,オリックスブルーウェーブ,player-21,,BABIP,21,0.286,BABIP.json
+1989,PL,藤井 康雄,2,2,オリックス・バファローズ,player-22,,BABIP,22,0.286,BABIP.json
+1989,PL,ブーマー,2,1,オリックスブルーウェーブ,player-24,,BABIP,24,0.282,BABIP.json
+1989,PL,ブーマー,2,2,オリックス・バファローズ,player-25,,BABIP,25,0.282,BABIP.json
+1989,PL,福良 淳一,2,1,オリックスブルーウェーブ,player-31,,BABIP,31,0.268,BABIP.json
+1989,PL,福良 淳一,2,2,オリックス・バファローズ,player-32,,BABIP,32,0.268,BABIP.json
+1990,CL,高木 豊,2,1,横浜DeNAベイスターズ,player-2,,BABIP,2,0.353,BABIP.json
+1990,CL,高木 豊,2,2,横浜ベイスターズ,player-3,,BABIP,3,0.353,BABIP.json
+1990,CL,J.パチョレック,2,1,横浜DeNAベイスターズ,player-4,,BABIP,4,0.332,BABIP.json
+1990,CL,J.パチョレック,2,2,横浜ベイスターズ,player-5,,BABIP,5,0.332,BABIP.json
+1990,CL,清水 義之,2,1,横浜DeNAベイスターズ,player-19,,BABIP,19,0.301,BABIP.json
+1990,CL,清水 義之,2,2,横浜ベイスターズ,player-20,,BABIP,20,0.301,BABIP.json
+1990,CL,J.マイヤー,2,1,横浜DeNAベイスターズ,player-24,,BABIP,24,0.285,BABIP.json
+1990,CL,J.マイヤー,2,2,横浜ベイスターズ,player-25,,BABIP,25,0.285,BABIP.json
+1990,CL,山崎 賢一,2,1,横浜DeNAベイスターズ,player-27,,BABIP,27,0.283,BABIP.json
+1990,CL,山崎 賢一,2,2,横浜ベイスターズ,player-28,,BABIP,28,0.283,BABIP.json
+1990,CL,高橋 眞裕,2,1,横浜DeNAベイスターズ,player-29,,BABIP,29,0.276,BABIP.json
+1990,CL,高橋 眞裕,2,2,横浜ベイスターズ,player-30,,BABIP,30,0.276,BABIP.json
+1990,PL,松永 浩美,2,1,オリックスブルーウェーブ,player-3,,BABIP,3,0.332,BABIP.json
+1990,PL,松永 浩美,2,2,オリックス・バファローズ,player-4,,BABIP,4,0.332,BABIP.json
+1990,PL,小川 博文,2,1,オリックスブルーウェーブ,player-6,,BABIP,6,0.319,BABIP.json
+1990,PL,小川 博文,2,2,オリックス・バファローズ,player-7,,BABIP,7,0.319,BABIP.json
+1990,PL,門田 博光,2,1,オリックスブルーウェーブ,player-10,,BABIP,10,0.314,BABIP.json
+1990,PL,門田 博光,2,2,オリックス・バファローズ,player-11,,BABIP,11,0.314,BABIP.json
+1990,PL,藤井 康雄,2,1,オリックスブルーウェーブ,player-24,,BABIP,24,0.294,BABIP.json
+1990,PL,藤井 康雄,2,2,オリックス・バファローズ,player-25,,BABIP,25,0.294,BABIP.json
+1990,PL,石嶺 和彦,2,1,オリックスブルーウェーブ,player-34,,BABIP,34,0.256,BABIP.json
+1990,PL,石嶺 和彦,2,2,オリックス・バファローズ,player-35,,BABIP,35,0.256,BABIP.json
+1991,CL,高木 豊,2,1,横浜DeNAベイスターズ,player-2,,BABIP,2,0.364,BABIP.json
+1991,CL,高木 豊,2,2,横浜ベイスターズ,player-3,,BABIP,3,0.364,BABIP.json
+1991,CL,R.J.レイノルズ,2,1,横浜DeNAベイスターズ,player-4,,BABIP,4,0.352,BABIP.json
+1991,CL,R.J.レイノルズ,2,2,横浜ベイスターズ,player-5,,BABIP,5,0.352,BABIP.json
+1991,CL,J.パチョレック,2,1,横浜DeNAベイスターズ,player-13,,BABIP,13,0.321,BABIP.json
+1991,CL,J.パチョレック,2,2,横浜ベイスターズ,player-14,,BABIP,14,0.321,BABIP.json
+1991,CL,宮里 太,2,1,横浜DeNAベイスターズ,player-18,,BABIP,18,0.309,BABIP.json
+1991,CL,宮里 太,2,2,横浜ベイスターズ,player-19,,BABIP,19,0.309,BABIP.json
+1991,CL,清水 義之,2,1,横浜DeNAベイスターズ,player-25,,BABIP,25,0.292,BABIP.json
+1991,CL,清水 義之,2,2,横浜ベイスターズ,player-26,,BABIP,26,0.292,BABIP.json
+1991,PL,松永 浩美,2,1,オリックスブルーウェーブ,player-1,,BABIP,1,0.351,BABIP.json
+1991,PL,松永 浩美,2,2,オリックス・バファローズ,player-2,,BABIP,2,0.351,BABIP.json
+1991,PL,小川 博文,2,1,オリックスブルーウェーブ,player-13,,BABIP,13,0.296,BABIP.json
+1991,PL,小川 博文,2,2,オリックス・バファローズ,player-14,,BABIP,14,0.296,BABIP.json
+1991,PL,本西 厚博,2,1,オリックスブルーウェーブ,player-16,,BABIP,16,0.292,BABIP.json
+1991,PL,本西 厚博,2,2,オリックス・バファローズ,player-17,,BABIP,17,0.292,BABIP.json
+1991,PL,中嶋 聡,2,1,オリックスブルーウェーブ,player-20,,BABIP,20,0.29,BABIP.json
+1991,PL,中嶋 聡,2,2,オリックス・バファローズ,player-21,,BABIP,21,0.29,BABIP.json
+1991,PL,福良 淳一,2,1,オリックスブルーウェーブ,player-26,,BABIP,26,0.284,BABIP.json
+1991,PL,福良 淳一,2,2,オリックス・バファローズ,player-27,,BABIP,27,0.284,BABIP.json
+1991,PL,ブーマー,2,1,オリックスブルーウェーブ,player-28,,BABIP,28,0.283,BABIP.json
+1991,PL,ブーマー,2,2,オリックス・バファローズ,player-29,,BABIP,29,0.283,BABIP.json
+1991,PL,石嶺 和彦,2,1,オリックスブルーウェーブ,player-35,,BABIP,35,0.26,BABIP.json
+1991,PL,石嶺 和彦,2,2,オリックス・バファローズ,player-36,,BABIP,36,0.26,BABIP.json
+1991,PL,高橋 智,2,1,オリックスブルーウェーブ,player-38,,BABIP,38,0.256,BABIP.json
+1991,PL,高橋 智,2,2,オリックス・バファローズ,player-39,,BABIP,39,0.256,BABIP.json
+1991,PL,藤井 康雄,2,1,オリックスブルーウェーブ,player-43,,BABIP,43,0.234,BABIP.json
+1991,PL,藤井 康雄,2,2,オリックス・バファローズ,player-44,,BABIP,44,0.234,BABIP.json
+1992,CL,高木 豊,2,1,横浜DeNAベイスターズ,player-8,,BABIP,8,0.33,BABIP.json
+1992,CL,高木 豊,2,2,横浜ベイスターズ,player-9,,BABIP,9,0.33,BABIP.json
+1992,CL,L.シーツ,2,1,横浜DeNAベイスターズ,player-18,,BABIP,18,0.305,BABIP.json
+1992,CL,L.シーツ,2,2,横浜ベイスターズ,player-19,,BABIP,19,0.305,BABIP.json
+1992,CL,R.J.レイノルズ,2,1,横浜DeNAベイスターズ,player-23,,BABIP,23,0.282,BABIP.json
+1992,CL,R.J.レイノルズ,2,2,横浜ベイスターズ,player-24,,BABIP,24,0.282,BABIP.json
+1992,PL,K.トーベ,2,1,オリックスブルーウェーブ,player-3,,BABIP,3,0.347,BABIP.json
+1992,PL,K.トーベ,2,2,オリックス・バファローズ,player-4,,BABIP,4,0.347,BABIP.json
+1992,PL,松永 浩美,2,1,オリックスブルーウェーブ,player-5,,BABIP,5,0.343,BABIP.json
+1992,PL,松永 浩美,2,2,オリックス・バファローズ,player-6,,BABIP,6,0.343,BABIP.json
+1992,PL,高橋 智,2,1,オリックスブルーウェーブ,player-7,,BABIP,7,0.339,BABIP.json
+1992,PL,高橋 智,2,2,オリックス・バファローズ,player-8,,BABIP,8,0.339,BABIP.json
+1992,PL,福良 淳一,2,1,オリックスブルーウェーブ,player-15,,BABIP,15,0.317,BABIP.json
+1992,PL,福良 淳一,2,2,オリックス・バファローズ,player-16,,BABIP,16,0.317,BABIP.json
+1992,PL,中嶋 聡,2,1,オリックスブルーウェーブ,player-27,,BABIP,27,0.289,BABIP.json
+1992,PL,中嶋 聡,2,2,オリックス・バファローズ,player-28,,BABIP,28,0.289,BABIP.json
+1992,PL,石嶺 和彦,2,1,オリックスブルーウェーブ,player-33,,BABIP,33,0.276,BABIP.json
+1992,PL,石嶺 和彦,2,2,オリックス・バファローズ,player-34,,BABIP,34,0.276,BABIP.json
+1993,CL,R.ローズ,2,1,横浜DeNAベイスターズ,player-2,,BABIP,2,0.341,BABIP.json
+1993,CL,R.ローズ,2,2,横浜ベイスターズ,player-3,,BABIP,3,0.341,BABIP.json
+1993,CL,畠山 準,2,1,横浜DeNAベイスターズ,player-8,,BABIP,8,0.334,BABIP.json
+1993,CL,畠山 準,2,2,横浜ベイスターズ,player-9,,BABIP,9,0.334,BABIP.json
+1993,CL,高木 豊,2,1,横浜DeNAベイスターズ,player-12,,BABIP,12,0.313,BABIP.json
+1993,CL,高木 豊,2,2,横浜ベイスターズ,player-13,,BABIP,13,0.313,BABIP.json
+1993,CL,石井 琢朗,2,1,横浜DeNAベイスターズ,player-19,,BABIP,19,0.303,BABIP.json
+1993,CL,石井 琢朗,2,2,横浜ベイスターズ,player-20,,BABIP,20,0.303,BABIP.json
+1993,CL,進藤 達哉,2,1,横浜DeNAベイスターズ,player-33,,BABIP,33,0.246,BABIP.json
+1993,CL,進藤 達哉,2,2,横浜ベイスターズ,player-34,,BABIP,34,0.246,BABIP.json
+1993,PL,高橋 智,2,1,オリックスブルーウェーブ,player-15,,BABIP,15,0.298,BABIP.json
+1993,PL,高橋 智,2,2,オリックス・バファローズ,player-16,,BABIP,16,0.298,BABIP.json
+1993,PL,小川 博文,2,1,オリックスブルーウェーブ,player-17,,BABIP,17,0.292,BABIP.json
+1993,PL,小川 博文,2,2,オリックス・バファローズ,player-18,,BABIP,18,0.292,BABIP.json
+1993,PL,福良 淳一,2,1,オリックスブルーウェーブ,player-21,,BABIP,21,0.289,BABIP.json
+1993,PL,福良 淳一,2,2,オリックス・バファローズ,player-22,,BABIP,22,0.289,BABIP.json
+1993,PL,藤井 康雄,2,1,オリックスブルーウェーブ,player-30,,BABIP,30,0.272,BABIP.json
+1993,PL,藤井 康雄,2,2,オリックス・バファローズ,player-31,,BABIP,31,0.272,BABIP.json
+1993,PL,石嶺 和彦,2,1,オリックスブルーウェーブ,player-32,,BABIP,32,0.271,BABIP.json
+1993,PL,石嶺 和彦,2,2,オリックス・バファローズ,player-33,,BABIP,33,0.271,BABIP.json
+1994,CL,畠山 準,2,1,横浜DeNAベイスターズ,player-1,,BABIP,1,0.359,BABIP.json
+1994,CL,畠山 準,2,2,横浜ベイスターズ,player-2,,BABIP,2,0.359,BABIP.json
+1994,CL,駒田 徳広,2,1,横浜DeNAベイスターズ,player-13,,BABIP,13,0.324,BABIP.json
+1994,CL,駒田 徳広,2,2,横浜ベイスターズ,player-14,,BABIP,14,0.324,BABIP.json
+1994,CL,R.ローズ,2,1,横浜DeNAベイスターズ,player-17,,BABIP,17,0.316,BABIP.json
+1994,CL,R.ローズ,2,2,横浜ベイスターズ,player-18,,BABIP,18,0.316,BABIP.json
+1994,CL,G.ブラッグス,2,1,横浜DeNAベイスターズ,player-19,,BABIP,19,0.315,BABIP.json
+1994,CL,G.ブラッグス,2,2,横浜ベイスターズ,player-20,,BABIP,20,0.315,BABIP.json
+1994,CL,谷繁 元信,2,1,横浜DeNAベイスターズ,player-24,,BABIP,24,0.295,BABIP.json
+1994,CL,谷繁 元信,2,2,横浜ベイスターズ,player-25,,BABIP,25,0.295,BABIP.json
+1994,CL,石井 琢朗,2,1,横浜DeNAベイスターズ,player-27,,BABIP,27,0.288,BABIP.json
+1994,CL,石井 琢朗,2,2,横浜ベイスターズ,player-28,,BABIP,28,0.288,BABIP.json
+1994,PL,イチロー,2,1,オリックスブルーウェーブ,player-1,,BABIP,1,0.409,BABIP.json
+1994,PL,イチロー,2,2,オリックス・バファローズ,player-2,,BABIP,2,0.409,BABIP.json
+1994,PL,小川 博文,2,1,オリックスブルーウェーブ,player-6,,BABIP,6,0.344,BABIP.json
+1994,PL,小川 博文,2,2,オリックス・バファローズ,player-7,,BABIP,7,0.344,BABIP.json
+1994,PL,福良 淳一,2,1,オリックスブルーウェーブ,player-8,,BABIP,8,0.327,BABIP.json
+1994,PL,福良 淳一,2,2,オリックス・バファローズ,player-9,,BABIP,9,0.327,BABIP.json
+1994,PL,藤井 康雄,2,1,オリックスブルーウェーブ,player-27,,BABIP,27,0.287,BABIP.json
+1994,PL,藤井 康雄,2,2,オリックス・バファローズ,player-28,,BABIP,28,0.287,BABIP.json
+1995,CL,石井 琢朗,2,1,横浜DeNAベイスターズ,player-2,,BABIP,2,0.354,BABIP.json
+1995,CL,石井 琢朗,2,2,横浜ベイスターズ,player-3,,BABIP,3,0.354,BABIP.json
+1995,CL,波留 敏夫,2,1,横浜DeNAベイスターズ,player-6,,BABIP,6,0.35,BABIP.json
+1995,CL,波留 敏夫,2,2,横浜ベイスターズ,player-7,,BABIP,7,0.35,BABIP.json
+1995,CL,R.ローズ,2,1,横浜DeNAベイスターズ,player-8,,BABIP,8,0.333,BABIP.json
+1995,CL,R.ローズ,2,2,横浜ベイスターズ,player-9,,BABIP,9,0.333,BABIP.json
+1995,CL,駒田 徳広,2,1,横浜DeNAベイスターズ,player-10,,BABIP,10,0.331,BABIP.json
+1995,CL,駒田 徳広,2,2,横浜ベイスターズ,player-11,,BABIP,11,0.331,BABIP.json
+1995,CL,G.ブラッグス,2,1,横浜DeNAベイスターズ,player-16,,BABIP,16,0.309,BABIP.json
+1995,CL,G.ブラッグス,2,2,横浜ベイスターズ,player-17,,BABIP,17,0.309,BABIP.json
+1995,CL,進藤 達哉,2,1,横浜DeNAベイスターズ,player-35,,BABIP,35,0.227,BABIP.json
+1995,CL,進藤 達哉,2,2,横浜ベイスターズ,player-36,,BABIP,36,0.227,BABIP.json
+1995,PL,イチロー,2,1,オリックスブルーウェーブ,player-4,,BABIP,4,0.342,BABIP.json
+1995,PL,イチロー,2,2,オリックス・バファローズ,player-5,,BABIP,5,0.342,BABIP.json
+1995,PL,小川 博文,2,1,オリックスブルーウェーブ,player-9,,BABIP,9,0.314,BABIP.json
+1995,PL,小川 博文,2,2,オリックス・バファローズ,player-10,,BABIP,10,0.314,BABIP.json
+1995,PL,馬場 敏史,2,1,オリックスブルーウェーブ,player-12,,BABIP,12,0.304,BABIP.json
+1995,PL,馬場 敏史,2,2,オリックス・バファローズ,player-13,,BABIP,13,0.304,BABIP.json
+1995,PL,T.ニール,2,1,オリックスブルーウェーブ,player-22,,BABIP,22,0.285,BABIP.json
+1995,PL,T.ニール,2,2,オリックス・バファローズ,player-23,,BABIP,23,0.285,BABIP.json
+1995,PL,田口 壮,2,1,オリックスブルーウェーブ,player-29,,BABIP,29,0.274,BABIP.json
+1995,PL,田口 壮,2,2,オリックス・バファローズ,player-30,,BABIP,30,0.274,BABIP.json
+1995,PL,藤井 康雄,2,1,オリックスブルーウェーブ,player-33,,BABIP,33,0.27,BABIP.json
+1995,PL,藤井 康雄,2,2,オリックス・バファローズ,player-34,,BABIP,34,0.27,BABIP.json
+1996,CL,鈴木尚,2,1,横浜DeNAベイスターズ,player-3,,BABIP,3,0.35,BABIP.json
+1996,CL,鈴木尚,2,2,横浜ベイスターズ,player-4,,BABIP,4,0.35,BABIP.json
+1996,CL,谷繁 元信,2,1,横浜DeNAベイスターズ,player-6,,BABIP,6,0.348,BABIP.json
+1996,CL,谷繁 元信,2,2,横浜ベイスターズ,player-7,,BABIP,7,0.348,BABIP.json
+1996,CL,駒田 徳広,2,1,横浜DeNAベイスターズ,player-10,,BABIP,10,0.338,BABIP.json
+1996,CL,駒田 徳広,2,2,横浜ベイスターズ,player-11,,BABIP,11,0.338,BABIP.json
+1996,CL,石井 琢朗,2,1,横浜DeNAベイスターズ,player-16,,BABIP,16,0.331,BABIP.json
+1996,CL,石井 琢朗,2,2,横浜ベイスターズ,player-17,,BABIP,17,0.331,BABIP.json
+1996,CL,佐伯 貴弘,2,1,横浜DeNAベイスターズ,player-23,,BABIP,23,0.318,BABIP.json
+1996,CL,佐伯 貴弘,2,2,横浜ベイスターズ,player-24,,BABIP,24,0.318,BABIP.json
+1996,CL,R.ローズ,2,1,横浜DeNAベイスターズ,player-25,,BABIP,25,0.317,BABIP.json
+1996,CL,R.ローズ,2,2,横浜ベイスターズ,player-26,,BABIP,26,0.317,BABIP.json
+1996,CL,G.ブラッグス,2,1,横浜DeNAベイスターズ,player-27,,BABIP,27,0.315,BABIP.json
+1996,CL,G.ブラッグス,2,2,横浜ベイスターズ,player-28,,BABIP,28,0.315,BABIP.json
+1996,PL,イチロー,2,1,オリックスブルーウェーブ,player-1,,BABIP,1,0.374,BABIP.json
+1996,PL,イチロー,2,2,オリックス・バファローズ,player-2,,BABIP,2,0.374,BABIP.json
+1996,PL,T.ニール,2,1,オリックスブルーウェーブ,player-8,,BABIP,8,0.335,BABIP.json
+1996,PL,T.ニール,2,2,オリックス・バファローズ,player-9,,BABIP,9,0.335,BABIP.json
+1996,PL,田口 壮,2,1,オリックスブルーウェーブ,player-14,,BABIP,14,0.303,BABIP.json
+1996,PL,田口 壮,2,2,オリックス・バファローズ,player-15,,BABIP,15,0.303,BABIP.json
+1996,PL,大島 公一,2,1,オリックスブルーウェーブ,player-23,,BABIP,23,0.287,BABIP.json
+1996,PL,大島 公一,2,2,オリックス・バファローズ,player-24,,BABIP,24,0.287,BABIP.json
+1997,CL,鈴木尚,2,1,横浜DeNAベイスターズ,player-1,,BABIP,1,0.368,BABIP.json
+1997,CL,鈴木尚,2,2,横浜ベイスターズ,player-2,,BABIP,2,0.368,BABIP.json
+1997,CL,R.ローズ,2,1,横浜DeNAベイスターズ,player-4,,BABIP,4,0.351,BABIP.json
+1997,CL,R.ローズ,2,2,横浜ベイスターズ,player-5,,BABIP,5,0.351,BABIP.json
+1997,CL,石井 琢朗,2,1,横浜DeNAベイスターズ,player-6,,BABIP,6,0.341,BABIP.json
+1997,CL,石井 琢朗,2,2,横浜ベイスターズ,player-7,,BABIP,7,0.341,BABIP.json
+1997,CL,駒田 徳広,2,1,横浜DeNAベイスターズ,player-8,,BABIP,8,0.336,BABIP.json
+1997,CL,駒田 徳広,2,2,横浜ベイスターズ,player-9,,BABIP,9,0.336,BABIP.json
+1997,CL,波留 敏夫,2,1,横浜DeNAベイスターズ,player-13,,BABIP,13,0.328,BABIP.json
+1997,CL,波留 敏夫,2,2,横浜ベイスターズ,player-14,,BABIP,14,0.328,BABIP.json
+1997,CL,谷繁 元信,2,1,横浜DeNAベイスターズ,player-35,,BABIP,35,0.25,BABIP.json
+1997,CL,谷繁 元信,2,2,横浜ベイスターズ,player-36,,BABIP,36,0.25,BABIP.json
+1997,PL,イチロー,2,1,オリックスブルーウェーブ,player-4,,BABIP,4,0.344,BABIP.json
+1997,PL,イチロー,2,2,オリックス・バファローズ,player-5,,BABIP,5,0.344,BABIP.json
+1997,PL,C.ドネルス,2,1,オリックスブルーウェーブ,player-10,,BABIP,10,0.336,BABIP.json
+1997,PL,C.ドネルス,2,2,オリックス・バファローズ,player-11,,BABIP,11,0.336,BABIP.json
+1997,PL,田口 壮,2,1,オリックスブルーウェーブ,player-16,,BABIP,16,0.322,BABIP.json
+1997,PL,田口 壮,2,2,オリックス・バファローズ,player-17,,BABIP,17,0.322,BABIP.json
+1997,PL,T.ニール,2,1,オリックスブルーウェーブ,player-20,,BABIP,20,0.319,BABIP.json
+1997,PL,T.ニール,2,2,オリックス・バファローズ,player-21,,BABIP,21,0.319,BABIP.json
+1997,PL,大島 公一,2,1,オリックスブルーウェーブ,player-36,,BABIP,36,0.279,BABIP.json
+1997,PL,大島 公一,2,2,オリックス・バファローズ,player-37,,BABIP,37,0.279,BABIP.json
+1998,CL,鈴木尚,2,1,横浜DeNAベイスターズ,player-2,,BABIP,2,0.387,BABIP.json
+1998,CL,鈴木尚,2,2,横浜ベイスターズ,player-3,,BABIP,3,0.387,BABIP.json
+1998,CL,R.ローズ,2,1,横浜DeNAベイスターズ,player-4,,BABIP,4,0.356,BABIP.json
+1998,CL,R.ローズ,2,2,横浜ベイスターズ,player-5,,BABIP,5,0.356,BABIP.json
+1998,CL,石井 琢朗,2,1,横浜DeNAベイスターズ,player-7,,BABIP,7,0.347,BABIP.json
+1998,CL,石井 琢朗,2,2,横浜ベイスターズ,player-8,,BABIP,8,0.347,BABIP.json
+1998,CL,駒田 徳広,2,1,横浜DeNAベイスターズ,player-15,,BABIP,15,0.315,BABIP.json
+1998,CL,駒田 徳広,2,2,横浜ベイスターズ,player-16,,BABIP,16,0.315,BABIP.json
+1998,CL,波留 敏夫,2,1,横浜DeNAベイスターズ,player-17,,BABIP,17,0.308,BABIP.json
+1998,CL,波留 敏夫,2,2,横浜ベイスターズ,player-18,,BABIP,18,0.308,BABIP.json
+1998,CL,谷繁 元信,2,1,横浜DeNAベイスターズ,player-30,,BABIP,30,0.28,BABIP.json
+1998,CL,谷繁 元信,2,2,横浜ベイスターズ,player-31,,BABIP,31,0.28,BABIP.json
+1998,CL,進藤 達哉,2,1,横浜DeNAベイスターズ,player-40,,BABIP,40,0.263,BABIP.json
+1998,CL,進藤 達哉,2,2,横浜ベイスターズ,player-41,,BABIP,41,0.263,BABIP.json
+1998,PL,イチロー,2,1,オリックスブルーウェーブ,player-2,,BABIP,2,0.365,BABIP.json
+1998,PL,イチロー,2,2,オリックス・バファローズ,player-3,,BABIP,3,0.365,BABIP.json
+1998,PL,T.ニール,2,1,オリックスブルーウェーブ,player-10,,BABIP,10,0.329,BABIP.json
+1998,PL,T.ニール,2,2,オリックス・バファローズ,player-11,,BABIP,11,0.329,BABIP.json
+1998,PL,大島 公一,2,1,オリックスブルーウェーブ,player-17,,BABIP,17,0.299,BABIP.json
+1998,PL,大島 公一,2,2,オリックス・バファローズ,player-18,,BABIP,18,0.299,BABIP.json
+1998,PL,田口 壮,2,1,オリックスブルーウェーブ,player-19,,BABIP,19,0.299,BABIP.json
+1998,PL,田口 壮,2,2,オリックス・バファローズ,player-20,,BABIP,20,0.299,BABIP.json
+1998,PL,谷 佳知,2,1,オリックスブルーウェーブ,player-25,,BABIP,25,0.287,BABIP.json
+1998,PL,谷 佳知,2,2,オリックス・バファローズ,player-26,,BABIP,26,0.287,BABIP.json
+1998,PL,藤井 康雄,2,1,オリックスブルーウェーブ,player-30,,BABIP,30,0.283,BABIP.json
+1998,PL,藤井 康雄,2,2,オリックス・バファローズ,player-31,,BABIP,31,0.283,BABIP.json
+1999,CL,鈴木尚,2,1,横浜DeNAベイスターズ,player-1,,BABIP,1,0.382,BABIP.json
+1999,CL,鈴木尚,2,2,横浜ベイスターズ,player-2,,BABIP,2,0.382,BABIP.json
+1999,CL,R.ローズ,2,1,横浜DeNAベイスターズ,player-3,,BABIP,3,0.379,BABIP.json
+1999,CL,R.ローズ,2,2,横浜ベイスターズ,player-4,,BABIP,4,0.379,BABIP.json
+1999,CL,石井 琢朗,2,1,横浜DeNAベイスターズ,player-13,,BABIP,13,0.33,BABIP.json
+1999,CL,石井 琢朗,2,2,横浜ベイスターズ,player-14,,BABIP,14,0.33,BABIP.json
+1999,CL,駒田 徳広,2,1,横浜DeNAベイスターズ,player-15,,BABIP,15,0.329,BABIP.json
+1999,CL,駒田 徳広,2,2,横浜ベイスターズ,player-16,,BABIP,16,0.329,BABIP.json
+1999,CL,波留 敏夫,2,1,横浜DeNAベイスターズ,player-17,,BABIP,17,0.325,BABIP.json
+1999,CL,波留 敏夫,2,2,横浜ベイスターズ,player-18,,BABIP,18,0.325,BABIP.json
+1999,CL,谷繁 元信,2,1,横浜DeNAベイスターズ,player-22,,BABIP,22,0.306,BABIP.json
+1999,CL,谷繁 元信,2,2,横浜ベイスターズ,player-23,,BABIP,23,0.306,BABIP.json
+1999,PL,イチロー,2,1,オリックスブルーウェーブ,player-2,,BABIP,2,0.344,BABIP.json
+1999,PL,イチロー,2,2,オリックス・バファローズ,player-3,,BABIP,3,0.344,BABIP.json
+1999,PL,大島 公一,2,1,オリックスブルーウェーブ,player-5,,BABIP,5,0.324,BABIP.json
+1999,PL,大島 公一,2,2,オリックス・バファローズ,player-6,,BABIP,6,0.324,BABIP.json
+1999,PL,田口 壮,2,1,オリックスブルーウェーブ,player-16,,BABIP,16,0.311,BABIP.json
+1999,PL,田口 壮,2,2,オリックス・バファローズ,player-17,,BABIP,17,0.311,BABIP.json
+1999,PL,H.プリアム,2,1,オリックスブルーウェーブ,player-19,,BABIP,19,0.307,BABIP.json
+1999,PL,H.プリアム,2,2,オリックス・バファローズ,player-20,,BABIP,20,0.307,BABIP.json
+1999,PL,谷 佳知,2,1,オリックスブルーウェーブ,player-23,,BABIP,23,0.297,BABIP.json
+1999,PL,谷 佳知,2,2,オリックス・バファローズ,player-24,,BABIP,24,0.297,BABIP.json
+2000,CL,金城 龍彦,2,1,横浜DeNAベイスターズ,player-1,,BABIP,1,0.397,BABIP.json
+2000,CL,金城 龍彦,2,2,横浜ベイスターズ,player-2,,BABIP,2,0.397,BABIP.json
+2000,CL,R.ローズ,2,1,横浜DeNAベイスターズ,player-4,,BABIP,4,0.342,BABIP.json
+2000,CL,R.ローズ,2,2,横浜ベイスターズ,player-5,,BABIP,5,0.342,BABIP.json
+2000,CL,石井 琢朗,2,1,横浜DeNAベイスターズ,player-8,,BABIP,8,0.34,BABIP.json
+2000,CL,石井 琢朗,2,2,横浜ベイスターズ,player-9,,BABIP,9,0.34,BABIP.json
+2000,CL,鈴木尚,2,1,横浜DeNAベイスターズ,player-19,,BABIP,19,0.318,BABIP.json
+2000,CL,鈴木尚,2,2,横浜ベイスターズ,player-20,,BABIP,20,0.318,BABIP.json
+2000,CL,谷繁 元信,2,1,横浜DeNAベイスターズ,player-24,,BABIP,24,0.297,BABIP.json
+2000,CL,谷繁 元信,2,2,横浜ベイスターズ,player-25,,BABIP,25,0.297,BABIP.json
+2000,CL,佐伯 貴弘,2,1,横浜DeNAベイスターズ,player-27,,BABIP,27,0.295,BABIP.json
+2000,CL,佐伯 貴弘,2,2,横浜ベイスターズ,player-28,,BABIP,28,0.295,BABIP.json
+2000,PL,イチロー,2,1,オリックスブルーウェーブ,player-1,,BABIP,1,0.399,BABIP.json
+2000,PL,イチロー,2,2,オリックス・バファローズ,player-2,,BABIP,2,0.399,BABIP.json
+2000,PL,田口 壮,2,1,オリックスブルーウェーブ,player-13,,BABIP,13,0.318,BABIP.json
+2000,PL,田口 壮,2,2,オリックス・バファローズ,player-14,,BABIP,14,0.318,BABIP.json
+2000,PL,大島 公一,2,1,オリックスブルーウェーブ,player-15,,BABIP,15,0.318,BABIP.json
+2000,PL,大島 公一,2,2,オリックス・バファローズ,player-16,,BABIP,16,0.318,BABIP.json
+2000,PL,塩崎 真,2,1,オリックスブルーウェーブ,player-18,,BABIP,18,0.312,BABIP.json
+2000,PL,塩崎 真,2,2,オリックス・バファローズ,player-19,,BABIP,19,0.312,BABIP.json
+2000,PL,谷 佳知,2,1,オリックスブルーウェーブ,player-20,,BABIP,20,0.309,BABIP.json
+2000,PL,谷 佳知,2,2,オリックス・バファローズ,player-21,,BABIP,21,0.309,BABIP.json
+2000,PL,G.アリアス,2,1,オリックスブルーウェーブ,player-29,,BABIP,29,0.276,BABIP.json
+2000,PL,G.アリアス,2,2,オリックス・バファローズ,player-30,,BABIP,30,0.276,BABIP.json
+2001,CL,鈴木尚,2,1,横浜DeNAベイスターズ,player-2,,BABIP,2,0.36,BABIP.json
+2001,CL,鈴木尚,2,2,横浜ベイスターズ,player-3,,BABIP,3,0.36,BABIP.json
+2001,CL,石井 琢朗,2,1,横浜DeNAベイスターズ,player-8,,BABIP,8,0.331,BABIP.json
+2001,CL,石井 琢朗,2,2,横浜ベイスターズ,player-9,,BABIP,9,0.331,BABIP.json
+2001,CL,佐伯 貴弘,2,1,横浜DeNAベイスターズ,player-11,,BABIP,11,0.33,BABIP.json
+2001,CL,佐伯 貴弘,2,2,横浜ベイスターズ,player-12,,BABIP,12,0.33,BABIP.json
+2001,CL,小川 博文,2,1,横浜DeNAベイスターズ,player-22,,BABIP,22,0.306,BABIP.json
+2001,CL,小川 博文,2,2,横浜ベイスターズ,player-23,,BABIP,23,0.306,BABIP.json
+2001,CL,金城 龍彦,2,1,横浜DeNAベイスターズ,player-27,,BABIP,27,0.302,BABIP.json
+2001,CL,金城 龍彦,2,2,横浜ベイスターズ,player-28,,BABIP,28,0.302,BABIP.json
+2001,CL,谷繁 元信,2,1,横浜DeNAベイスターズ,player-29,,BABIP,29,0.302,BABIP.json
+2001,CL,谷繁 元信,2,2,横浜ベイスターズ,player-30,,BABIP,30,0.302,BABIP.json
+2001,PL,J.ビティエロ,2,1,オリックスブルーウェーブ,player-5,,BABIP,5,0.34,BABIP.json
+2001,PL,J.ビティエロ,2,2,オリックス・バファローズ,player-6,,BABIP,6,0.34,BABIP.json
+2001,PL,谷 佳知,2,1,オリックスブルーウェーブ,player-7,,BABIP,7,0.338,BABIP.json
+2001,PL,谷 佳知,2,2,オリックス・バファローズ,player-8,,BABIP,8,0.338,BABIP.json
+2001,PL,田口 壮,2,1,オリックスブルーウェーブ,player-13,,BABIP,13,0.332,BABIP.json
+2001,PL,田口 壮,2,2,オリックス・バファローズ,player-14,,BABIP,14,0.332,BABIP.json
+2001,PL,塩崎 真,2,1,オリックスブルーウェーブ,player-18,,BABIP,18,0.32,BABIP.json
+2001,PL,塩崎 真,2,2,オリックス・バファローズ,player-19,,BABIP,19,0.32,BABIP.json
+2001,PL,葛城 育郎,2,1,オリックスブルーウェーブ,player-20,,BABIP,20,0.311,BABIP.json
+2001,PL,葛城 育郎,2,2,オリックス・バファローズ,player-21,,BABIP,21,0.311,BABIP.json
+2001,PL,大島 公一,2,1,オリックスブルーウェーブ,player-26,,BABIP,26,0.297,BABIP.json
+2001,PL,大島 公一,2,2,オリックス・バファローズ,player-27,,BABIP,27,0.297,BABIP.json
+2001,PL,G.アリアス,2,1,オリックスブルーウェーブ,player-38,,BABIP,38,0.255,BABIP.json
+2001,PL,G.アリアス,2,2,オリックス・バファローズ,player-39,,BABIP,39,0.255,BABIP.json
+2002,CL,B.ロドリゲス,2,1,横浜DeNAベイスターズ,player-16,,BABIP,16,0.318,BABIP.json
+2002,CL,B.ロドリゲス,2,2,横浜ベイスターズ,player-17,,BABIP,17,0.318,BABIP.json
+2002,CL,石井 琢朗,2,1,横浜DeNAベイスターズ,player-18,,BABIP,18,0.316,BABIP.json
+2002,CL,石井 琢朗,2,2,横浜ベイスターズ,player-19,,BABIP,19,0.316,BABIP.json
+2002,CL,種田 仁,2,1,横浜DeNAベイスターズ,player-21,,BABIP,21,0.307,BABIP.json
+2002,CL,種田 仁,2,2,横浜ベイスターズ,player-22,,BABIP,22,0.307,BABIP.json
+2002,PL,P.バルデス,2,1,福岡ソフトバンクホークス,player-8,,BABIP,8,0.33,BABIP.json
+2002,PL,P.バルデス,2,2,福岡ダイエーホークス,player-9,,BABIP,9,0.33,BABIP.json
+2002,PL,柴原 洋,2,1,福岡ソフトバンクホークス,player-11,,BABIP,11,0.324,BABIP.json
+2002,PL,柴原 洋,2,2,福岡ダイエーホークス,player-12,,BABIP,12,0.324,BABIP.json
+2002,PL,中村 紀洋,2,1,大阪近鉄バファローズ,player-13,,BABIP,13,0.324,BABIP.json
+2002,PL,中村 紀洋,2,2,近鉄バファローズ,player-14,,BABIP,14,0.324,BABIP.json
+2002,PL,吉岡 雄二,2,1,大阪近鉄バファローズ,player-18,,BABIP,18,0.308,BABIP.json
+2002,PL,吉岡 雄二,2,2,近鉄バファローズ,player-19,,BABIP,19,0.308,BABIP.json
+2002,PL,小久保 裕紀,2,1,福岡ソフトバンクホークス,player-20,,BABIP,20,0.299,BABIP.json
+2002,PL,小久保 裕紀,2,2,福岡ダイエーホークス,player-21,,BABIP,21,0.299,BABIP.json
+2002,PL,礒部 公一,2,1,大阪近鉄バファローズ,player-23,,BABIP,23,0.295,BABIP.json
+2002,PL,礒部 公一,2,2,近鉄バファローズ,player-24,,BABIP,24,0.295,BABIP.json
+2002,PL,大村 直之,2,1,大阪近鉄バファローズ,player-28,,BABIP,28,0.289,BABIP.json
+2002,PL,大村 直之,2,2,近鉄バファローズ,player-29,,BABIP,29,0.289,BABIP.json
+2002,PL,井口 資仁,2,1,福岡ソフトバンクホークス,player-30,,BABIP,30,0.284,BABIP.json
+2002,PL,井口 資仁,2,2,福岡ダイエーホークス,player-31,,BABIP,31,0.284,BABIP.json
+2002,PL,T.ローズ,2,1,大阪近鉄バファローズ,player-32,,BABIP,32,0.282,BABIP.json
+2002,PL,T.ローズ,2,2,近鉄バファローズ,player-33,,BABIP,33,0.282,BABIP.json
+2002,PL,城島 健司,2,1,福岡ソフトバンクホークス,player-36,,BABIP,36,0.272,BABIP.json
+2002,PL,城島 健司,2,2,福岡ダイエーホークス,player-37,,BABIP,37,0.272,BABIP.json
+2002,PL,松中 信彦,2,1,福岡ソフトバンクホークス,player-38,,BABIP,38,0.255,BABIP.json
+2002,PL,松中 信彦,2,2,福岡ダイエーホークス,player-39,,BABIP,39,0.255,BABIP.json
+2003,CL,鈴木尚,2,1,横浜DeNAベイスターズ,player-7,,BABIP,7,0.344,BABIP.json
+2003,CL,鈴木尚,2,2,横浜ベイスターズ,player-8,,BABIP,8,0.344,BABIP.json
+2003,CL,金城 龍彦,2,1,横浜DeNAベイスターズ,player-18,,BABIP,18,0.314,BABIP.json
+2003,CL,金城 龍彦,2,2,横浜ベイスターズ,player-19,,BABIP,19,0.314,BABIP.json
+2003,CL,タイロン・ウッズ,2,1,横浜DeNAベイスターズ,player-25,,BABIP,25,0.293,BABIP.json
+2003,CL,タイロン・ウッズ,2,2,横浜ベイスターズ,player-26,,BABIP,26,0.293,BABIP.json
+2003,CL,石井 琢朗,2,1,横浜DeNAベイスターズ,player-31,,BABIP,31,0.253,BABIP.json
+2003,CL,石井 琢朗,2,2,横浜ベイスターズ,player-32,,BABIP,32,0.253,BABIP.json
+2003,PL,柴原 洋,2,1,福岡ソフトバンクホークス,player-2,,BABIP,2,0.375,BABIP.json
+2003,PL,柴原 洋,2,2,福岡ダイエーホークス,player-3,,BABIP,3,0.375,BABIP.json
+2003,PL,村松 有人,2,1,福岡ソフトバンクホークス,player-5,,BABIP,5,0.365,BABIP.json
+2003,PL,村松 有人,2,2,福岡ダイエーホークス,player-6,,BABIP,6,0.365,BABIP.json
+2003,PL,井口 資仁,2,1,福岡ソフトバンクホークス,player-7,,BABIP,7,0.358,BABIP.json
+2003,PL,井口 資仁,2,2,福岡ダイエーホークス,player-8,,BABIP,8,0.358,BABIP.json
+2003,PL,吉岡 雄二,2,1,大阪近鉄バファローズ,player-11,,BABIP,11,0.344,BABIP.json
+2003,PL,吉岡 雄二,2,2,近鉄バファローズ,player-12,,BABIP,12,0.344,BABIP.json
+2003,PL,川﨑 宗則,2,1,福岡ソフトバンクホークス,player-13,,BABIP,13,0.341,BABIP.json
+2003,PL,川﨑 宗則,2,2,福岡ダイエーホークス,player-14,,BABIP,14,0.341,BABIP.json
+2003,PL,松中 信彦,2,1,福岡ソフトバンクホークス,player-20,,BABIP,20,0.327,BABIP.json
+2003,PL,松中 信彦,2,2,福岡ダイエーホークス,player-21,,BABIP,21,0.327,BABIP.json
+2003,PL,大村 直之,2,1,大阪近鉄バファローズ,player-25,,BABIP,25,0.32,BABIP.json
+2003,PL,大村 直之,2,2,近鉄バファローズ,player-26,,BABIP,26,0.32,BABIP.json
+2003,PL,城島 健司,2,1,福岡ソフトバンクホークス,player-28,,BABIP,28,0.312,BABIP.json
+2003,PL,城島 健司,2,2,福岡ダイエーホークス,player-29,,BABIP,29,0.312,BABIP.json
+2003,PL,P.バルデス,2,1,福岡ソフトバンクホークス,player-30,,BABIP,30,0.308,BABIP.json
+2003,PL,P.バルデス,2,2,福岡ダイエーホークス,player-31,,BABIP,31,0.308,BABIP.json
+2003,PL,礒部 公一,2,1,大阪近鉄バファローズ,player-32,,BABIP,32,0.308,BABIP.json
+2003,PL,礒部 公一,2,2,近鉄バファローズ,player-33,,BABIP,33,0.308,BABIP.json
+2003,PL,阿部 真宏,2,1,大阪近鉄バファローズ,player-34,,BABIP,34,0.306,BABIP.json
+2003,PL,阿部 真宏,2,2,近鉄バファローズ,player-35,,BABIP,35,0.306,BABIP.json
+2003,PL,T.ローズ,2,1,大阪近鉄バファローズ,player-39,,BABIP,39,0.273,BABIP.json
+2003,PL,T.ローズ,2,2,近鉄バファローズ,player-40,,BABIP,40,0.273,BABIP.json
+2003,PL,中村 紀洋,2,1,大阪近鉄バファローズ,player-41,,BABIP,41,0.254,BABIP.json
+2003,PL,中村 紀洋,2,2,近鉄バファローズ,player-42,,BABIP,42,0.254,BABIP.json
+2004,CL,佐伯 貴弘,2,1,横浜DeNAベイスターズ,player-1,,BABIP,1,0.375,BABIP.json
+2004,CL,佐伯 貴弘,2,2,横浜ベイスターズ,player-2,,BABIP,2,0.375,BABIP.json
+2004,CL,多村 仁志,2,1,横浜DeNAベイスターズ,player-8,,BABIP,8,0.342,BABIP.json
+2004,CL,多村 仁志,2,2,横浜ベイスターズ,player-9,,BABIP,9,0.342,BABIP.json
+2004,CL,金城 龍彦,2,1,横浜DeNAベイスターズ,player-15,,BABIP,15,0.336,BABIP.json
+2004,CL,金城 龍彦,2,2,横浜ベイスターズ,player-16,,BABIP,16,0.336,BABIP.json
+2004,CL,タイロン・ウッズ,2,1,横浜DeNAベイスターズ,player-17,,BABIP,17,0.336,BABIP.json
+2004,CL,タイロン・ウッズ,2,2,横浜ベイスターズ,player-18,,BABIP,18,0.336,BABIP.json
+2004,CL,石井 琢朗,2,1,横浜DeNAベイスターズ,player-19,,BABIP,19,0.335,BABIP.json
+2004,CL,石井 琢朗,2,2,横浜ベイスターズ,player-20,,BABIP,20,0.335,BABIP.json
+2004,CL,種田 仁,2,1,横浜DeNAベイスターズ,player-26,,BABIP,26,0.322,BABIP.json
+2004,CL,種田 仁,2,2,横浜ベイスターズ,player-27,,BABIP,27,0.322,BABIP.json
+2004,PL,井口 資仁,2,1,福岡ソフトバンクホークス,player-3,,BABIP,3,0.361,BABIP.json
+2004,PL,井口 資仁,2,2,福岡ダイエーホークス,player-4,,BABIP,4,0.361,BABIP.json
+2004,PL,大村 直之,2,1,大阪近鉄バファローズ,player-8,,BABIP,8,0.345,BABIP.json
+2004,PL,大村 直之,2,2,近鉄バファローズ,player-9,,BABIP,9,0.345,BABIP.json
+2004,PL,松中 信彦,2,1,福岡ソフトバンクホークス,player-10,,BABIP,10,0.344,BABIP.json
+2004,PL,松中 信彦,2,2,福岡ダイエーホークス,player-11,,BABIP,11,0.344,BABIP.json
+2004,PL,川﨑 宗則,2,1,福岡ソフトバンクホークス,player-12,,BABIP,12,0.334,BABIP.json
+2004,PL,川﨑 宗則,2,2,福岡ダイエーホークス,player-13,,BABIP,13,0.334,BABIP.json
+2004,PL,水口 栄二,2,1,大阪近鉄バファローズ,player-14,,BABIP,14,0.33,BABIP.json
+2004,PL,水口 栄二,2,2,近鉄バファローズ,player-15,,BABIP,15,0.33,BABIP.json
+2004,PL,北川 博敏,2,1,大阪近鉄バファローズ,player-18,,BABIP,18,0.319,BABIP.json
+2004,PL,北川 博敏,2,2,近鉄バファローズ,player-19,,BABIP,19,0.319,BABIP.json
+2004,PL,礒部 公一,2,1,大阪近鉄バファローズ,player-21,,BABIP,21,0.315,BABIP.json
+2004,PL,礒部 公一,2,2,近鉄バファローズ,player-22,,BABIP,22,0.315,BABIP.json
+2004,PL,城島 健司,2,1,福岡ソフトバンクホークス,player-25,,BABIP,25,0.312,BABIP.json
+2004,PL,城島 健司,2,2,福岡ダイエーホークス,player-26,,BABIP,26,0.312,BABIP.json
+2004,PL,中村 紀洋,2,1,大阪近鉄バファローズ,player-30,,BABIP,30,0.31,BABIP.json
+2004,PL,中村 紀洋,2,2,近鉄バファローズ,player-31,,BABIP,31,0.31,BABIP.json
+2004,PL,J.ズレータ,2,1,福岡ソフトバンクホークス,player-34,,BABIP,34,0.305,BABIP.json
+2004,PL,J.ズレータ,2,2,福岡ダイエーホークス,player-35,,BABIP,35,0.305,BABIP.json
+2004,PL,P.バルデス,2,1,福岡ソフトバンクホークス,player-39,,BABIP,39,0.286,BABIP.json
+2004,PL,P.バルデス,2,2,福岡ダイエーホークス,player-40,,BABIP,40,0.286,BABIP.json
+2004,PL,阿部 真宏,2,1,大阪近鉄バファローズ,player-41,,BABIP,41,0.264,BABIP.json
+2004,PL,阿部 真宏,2,2,近鉄バファローズ,player-42,,BABIP,42,0.264,BABIP.json

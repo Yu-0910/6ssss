@@ -1,0 +1,15 @@
+season_key,year,league,team,games,qual_type,qual_value,threshold,basis,rounding_mode,min_player_games,special_measures,rule_source,qual_pa,source_url
+1952,1952,CL,読売ジャイアンツ,120,AB,300,300,AB_FIXED,floor,,False,my-favorite-giants (npb/regulation.htm) + user supplied 1936-1938 split AB,,https://npb.jp/bis/yearly/centralleague_1952.html
+1952,1952,CL,大阪タイガース,120,AB,300,300,AB_FIXED,floor,,False,my-favorite-giants (npb/regulation.htm) + user supplied 1936-1938 split AB,,https://npb.jp/bis/yearly/centralleague_1952.html
+1952,1952,CL,名古屋ドラゴンズ,120,AB,300,300,AB_FIXED,floor,,False,my-favorite-giants (npb/regulation.htm) + user supplied 1936-1938 split AB,,https://npb.jp/bis/yearly/centralleague_1952.html
+1952,1952,CL,大洋ホエールズ,120,AB,300,300,AB_FIXED,floor,,False,my-favorite-giants (npb/regulation.htm) + user supplied 1936-1938 split AB,,https://npb.jp/bis/yearly/centralleague_1952.html
+1952,1952,CL,国鉄スワローズ,120,AB,300,300,AB_FIXED,floor,,False,my-favorite-giants (npb/regulation.htm) + user supplied 1936-1938 split AB,,https://npb.jp/bis/yearly/centralleague_1952.html
+1952,1952,CL,広島カープ,120,AB,300,300,AB_FIXED,floor,,False,my-favorite-giants (npb/regulation.htm) + user supplied 1936-1938 split AB,,https://npb.jp/bis/yearly/centralleague_1952.html
+1952,1952,CL,松竹ロビンス,120,AB,300,300,AB_FIXED,floor,,False,my-favorite-giants (npb/regulation.htm) + user supplied 1936-1938 split AB,,https://npb.jp/bis/yearly/centralleague_1952.html
+1952,1952,PL,南海ホークス,121,AB,300,300,AB_RANK_TOP4,floor,,False,my-favorite-giants (npb/regulation.htm) + user supplied 1936-1938 split AB + 順位表に基づく修正（1位）,https://npb.jp/bis/yearly/pacificleague_1952.html
+1952,1952,PL,毎日オリオンズ,120,AB,300,300,AB_RANK_TOP4,floor,,False,my-favorite-giants (npb/regulation.htm) + user supplied 1936-1938 split AB + 順位表に基づく修正（2位）,https://npb.jp/bis/yearly/pacificleague_1952.html
+1952,1952,PL,西鉄ライオンズ,120,AB,300,300,AB_RANK_TOP4,floor,,False,my-favorite-giants (npb/regulation.htm) + user supplied 1936-1938 split AB + 順位表に基づく修正（3位）,https://npb.jp/bis/yearly/pacificleague_1952.html
+1952,1952,PL,大映スターズ,121,AB,300,300,AB_RANK_TOP4,floor,,False,my-favorite-giants (npb/regulation.htm) + user supplied 1936-1938 split AB + 順位表に基づく修正（4位）,https://npb.jp/bis/yearly/pacificleague_1952.html
+1952,1952,PL,阪急ブレーブス,108,AB,270,270,AB_RANK_BOTTOM3,floor,,False,my-favorite-giants (npb/regulation.htm) + user supplied 1936-1938 split AB + 順位表に基づく修正（5位）,https://npb.jp/bis/yearly/pacificleague_1952.html
+1952,1952,PL,東急フライヤーズ,108,AB,270,270,AB_RANK_BOTTOM3,floor,,False,my-favorite-giants (npb/regulation.htm) + user supplied 1936-1938 split AB + 順位表に基づく修正（6位）,https://npb.jp/bis/yearly/pacificleague_1952.html
+1952,1952,PL,近鉄パールス,108,AB,270,270,AB_RANK_BOTTOM3,floor,,False,my-favorite-giants (npb/regulation.htm) + user supplied 1936-1938 split AB + 順位表に基づく修正（7位）,https://npb.jp/bis/yearly/pacificleague_1952.html

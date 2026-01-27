@@ -1,0 +1,1984 @@
+{
+  "check_date": "2026-01-20T09:13:37.167Z",
+  "target_year": 2010,
+  "target_league": "PL",
+  "fetched_count": 0,
+  "failed_fetch_count": 1,
+  "csv_count": 327,
+  "missing_in_csv_count": 0,
+  "failed_to_fetch_count": 327,
+  "failed_fetches": [
+    {
+      "year": 2010,
+      "league": "PL",
+      "url": "https://npb.jp/bis/2010/stats/pl/batting.html",
+      "status": 0,
+      "error": "ALL_URLS_FAILED"
+    }
+  ],
+  "missing_in_csv": [],
+  "failed_to_fetch": [
+    {
+      "player_id": "1003886",
+      "name": "中谷　仁",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "1005112",
+      "name": "田中　靖洋",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "1005113",
+      "name": "中島　宏之",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "1105111",
+      "name": "岩隈　久志",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "1105118",
+      "name": "井坂　亮平",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "1205111",
+      "name": "南　竜介",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "1205112",
+      "name": "根元　俊一",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "1205113",
+      "name": "藤田　太陽",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "1205115",
+      "name": "林　昌範",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "1205116",
+      "name": "長谷部　康平",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "1205131",
+      "name": "古川　秀一",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "1303868",
+      "name": "山﨑　武司",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "1305110",
+      "name": "片岡　治大",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "1305115",
+      "name": "今江　年晶",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "1305119",
+      "name": "香月　良太",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "1405111",
+      "name": "吉野　誠",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "1505114",
+      "name": "大嶺　祐太",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "1505118",
+      "name": "辛島　航",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "1505119",
+      "name": "黒瀬　春樹",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "1605111",
+      "name": "ミンチェ",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "1605117",
+      "name": "横山　徹也",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "1605118",
+      "name": "丈武",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "1703884",
+      "name": "清水　将海",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "1705112",
+      "name": "草野　大輔",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "1705118",
+      "name": "坂田　遼",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "1705119",
+      "name": "嶋村　一輝",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "1805114",
+      "name": "横川　史学",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "1903884",
+      "name": "谷中　真二",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "1903885",
+      "name": "田口　壮",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "1903888",
+      "name": "二岡　智宏",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "1905114",
+      "name": "嶋　基宏",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "1905116",
+      "name": "関口　雄大",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "3105112",
+      "name": "A.グラマン",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "3105118",
+      "name": "B.ファルケンボーグ",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "3105131",
+      "name": "J.モリーヨ",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "3305117",
+      "name": "J.フェルナンデス",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "3305131",
+      "name": "F.カラバイヨ",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "11013884",
+      "name": "濱中　治",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "11015115",
+      "name": "辻　俊哉",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "11015119",
+      "name": "成瀬　善久",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "11215110",
+      "name": "橋本　健太郎",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "11215113",
+      "name": "野田　浩輔",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "11215114",
+      "name": "田中　将大",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "11215119",
+      "name": "馬原　孝浩",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "11313889",
+      "name": "大村　直之",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "11315110",
+      "name": "江川　智晃",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "11315114",
+      "name": "岩﨑　哲也",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "11315116",
+      "name": "伊藤　義弘",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "11315118",
+      "name": "伊原　正樹",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "11513888",
+      "name": "川越　英隆",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "11515114",
+      "name": "大﨑　雄太朗",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "11515117",
+      "name": "尾崎　匡哉",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "11613883",
+      "name": "村松　有人",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "11615114",
+      "name": "福田　秀平",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "11615116",
+      "name": "村田　和哉",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "11815114",
+      "name": "山田　大樹",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "11815117",
+      "name": "和田　毅",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "11915110",
+      "name": "高橋　徹",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "11915111",
+      "name": "田中　賢介",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "11915117",
+      "name": "G　後藤　武敏",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "13315131",
+      "name": "JDダービン",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "21023885",
+      "name": "中村　紀洋",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "21023889",
+      "name": "藪　恵壹",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "21025111",
+      "name": "塀内　久雄",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "21025118",
+      "name": "堂上　隼人",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "21025131",
+      "name": "中村　勝",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "21125114",
+      "name": "糸数　敬作",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "21125115",
+      "name": "有銘　兼久",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "21125119",
+      "name": "岩舘　学",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "21225114",
+      "name": "永井　怜",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "21225116",
+      "name": "服部　泰卓",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "21225117",
+      "name": "中島　俊哉",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "21323887",
+      "name": "菊地原　毅",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "21323889",
+      "name": "金子　誠",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "21425112",
+      "name": "細谷　圭",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "21425114",
+      "name": "長谷川　勇也",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "21525115",
+      "name": "神内　靖",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "21525116",
+      "name": "唐川　侑己",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "21525117",
+      "name": "加藤　大輔",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "21625113",
+      "name": "B.カーライル",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "21625131",
+      "name": "金　泰均",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "21725116",
+      "name": "斉藤　彰吾",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "21825112",
+      "name": "陽　岱鋼",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "21923889",
+      "name": "福浦　和也",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "21925117",
+      "name": "坂口　智隆",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "21925131",
+      "name": "土屋　朋弘",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "23325131",
+      "name": "H.ペン",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "31035113",
+      "name": "鉄平",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "31035117",
+      "name": "下山　真二",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "31035118",
+      "name": "谷元　圭介",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "31133885",
+      "name": "石井　一久",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "31135115",
+      "name": "朝井　秀樹",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "31233882",
+      "name": "宮出　隆自",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "31235112",
+      "name": "中山　慎也",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "31335112",
+      "name": "今成　亮太",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "31335116",
+      "name": "岩嵜　翔",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "31433868",
+      "name": "木田　優夫",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "31435117",
+      "name": "西岡　剛",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "31435119",
+      "name": "渡部　龍一",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "31533889",
+      "name": "小久保　裕紀",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "31535112",
+      "name": "片山　博視",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "31535117",
+      "name": "長田　秀一郎",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "31535119",
+      "name": "城所　龍磨",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "31535131",
+      "name": "岡本　洋介",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "31635110",
+      "name": "涌井　秀章",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "31635112",
+      "name": "松崎　伸吾",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "31635113",
+      "name": "吉見　祐治",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "31635117",
+      "name": "森本　学",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "31733888",
+      "name": "里崎　智也",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "31735119",
+      "name": "G.G.佐藤",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "31833888",
+      "name": "R.ペタジーニ",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "31933884",
+      "name": "髙橋　信二",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "31935110",
+      "name": "髙橋　秀聡",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "31935114",
+      "name": "小松　聖",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "31935115",
+      "name": "杉内　俊哉",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "31935119",
+      "name": "須永　英輝",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "33335118",
+      "name": "J.レスター",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "33335131",
+      "name": "R.ルイーズ",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "33535118",
+      "name": "T.リンデン",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "41043882",
+      "name": "松本　輝",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "41043888",
+      "name": "星野　智樹",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "41045114",
+      "name": "髙谷　裕亮",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "41045117",
+      "name": "武田　久",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "41045118",
+      "name": "中川　大志",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "41143880",
+      "name": "サブロー",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "41145113",
+      "name": "阿部　真宏",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "41243888",
+      "name": "森本　稀哲",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "41245113",
+      "name": "帆足　和幸",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "41245131",
+      "name": "前田　祐二",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "41343888",
+      "name": "金澤　健人",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "41345110",
+      "name": "金子　千尋",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "41345111",
+      "name": "川﨑　宗則",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "41345113",
+      "name": "大久保　勝信",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "41345115",
+      "name": "江尻　慎太郎",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "41345116",
+      "name": "大場　翔太",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "41345119",
+      "name": "金森　敬之",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "41345131",
+      "name": "大谷　智久",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "41445112",
+      "name": "本多　雄一",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "41445113",
+      "name": "秋親",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "41445114",
+      "name": "原　拓也",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "41445116",
+      "name": "宮西　尚生",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "41543884",
+      "name": "小坂　誠",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "41545114",
+      "name": "角中　勝也",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "41545115",
+      "name": "鴨志田　貴司",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "41545116",
+      "name": "菊池　保則",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "41545117",
+      "name": "加藤　武治",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "41545131",
+      "name": "加藤　政義",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "41645112",
+      "name": "森山　周",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "41645113",
+      "name": "A.カブレラ",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "41645114",
+      "name": "宮本　賢",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "41645116",
+      "name": "山崎　正貴",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "41645131",
+      "name": "B.ケッペル",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "41743880",
+      "name": "多村　仁志",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "41743886",
+      "name": "高須　洋介",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "41845114",
+      "name": "吉川　光夫",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "41943880",
+      "name": "福盛　和男",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "41945116",
+      "name": "武隈　祥太",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "41945118",
+      "name": "岳野　竜也",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "43145116",
+      "name": "D.ホールトン",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "51053886",
+      "name": "土肥　義弘",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "51053888",
+      "name": "藤井　彰人",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "51153884",
+      "name": "井口　資仁",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "51153888",
+      "name": "赤田　将吾",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "51155118",
+      "name": "浅村　栄斗",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "51155119",
+      "name": "明石　健志",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "51255119",
+      "name": "三瀬　幸司",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "51355119",
+      "name": "岡本　篤志",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "51453888",
+      "name": "山﨑　浩司",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "51455117",
+      "name": "早坂　圭介",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "51553865",
+      "name": "工藤　公康",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "51555110",
+      "name": "菊地　和正",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "51555112",
+      "name": "甲藤　啓介",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "51555114",
+      "name": "大隣　憲司",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "51555117",
+      "name": "小野寺　力",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "51655112",
+      "name": "松田　宣浩",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "51655131",
+      "name": "李　机浩",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "51755112",
+      "name": "岸田　護",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "51755115",
+      "name": "栗山　巧",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "51855114",
+      "name": "山本　一徳",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "51855119",
+      "name": "B.コーリー",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "51953880",
+      "name": "西口　文也",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "53355112",
+      "name": "陽　耀勲",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "53555118",
+      "name": "A.フィリップス",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "61063884",
+      "name": "松中　信彦",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "61065112",
+      "name": "栂野　雅史",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "61065116",
+      "name": "中田　翔",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "61163884",
+      "name": "今岡　誠",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "61165110",
+      "name": "鵜久森　淳志",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "61165114",
+      "name": "今浪　隆博",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "61165116",
+      "name": "伊志嶺　忠",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "61165118",
+      "name": "井上　雄介",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "61165119",
+      "name": "内　竜也",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "61265111",
+      "name": "迎　祐一郎",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "61265113",
+      "name": "牧田　明久",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "61265116",
+      "name": "聖澤　諒",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "61265119",
+      "name": "吉川　輝昭",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "61365112",
+      "name": "T-岡田",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "61365113",
+      "name": "大沼　幸二",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "61365118",
+      "name": "大野　奨太",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "61365119",
+      "name": "金子　圭輔",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "61465110",
+      "name": "光原　逸裕",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "61465131",
+      "name": "山田　修義",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "61563884",
+      "name": "小林宏",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "61565115",
+      "name": "喜田　剛",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "61565117",
+      "name": "金澤　岳",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "61665112",
+      "name": "八木　智哉",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "61665114",
+      "name": "森福　允彦",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "61665118",
+      "name": "矢貫　俊之",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "61763888",
+      "name": "建山　義紀",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "61765111",
+      "name": "高山　久",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "61765113",
+      "name": "佐藤　友亮",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "61865112",
+      "name": "吉見　太一",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "61965110",
+      "name": "ダルビッシュ　有",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "61965115",
+      "name": "田上　秀則",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "61965118",
+      "name": "巽　真悟",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "63165131",
+      "name": "F.バイナム",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "71075112",
+      "name": "武田　勝",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "71075114",
+      "name": "ダース　ローマシュ匡",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "71173886",
+      "name": "飯山　裕志",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "71175110",
+      "name": "石井　裕也",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "71175112",
+      "name": "相原　勝幸",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "71175113",
+      "name": "青野　毅",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "71273882",
+      "name": "薮田　安彦",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "71275111",
+      "name": "的場　直樹",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "71275112",
+      "name": "西村　弥",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "71275117",
+      "name": "鶴岡　慎也",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "71275118",
+      "name": "西　勇輝",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "71373888",
+      "name": "小椋　真介",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "71373889",
+      "name": "小野　晋吾",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "71375110",
+      "name": "大松　尚逸",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "71375112",
+      "name": "銀次",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "71375116",
+      "name": "内村　賢介",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "71375117",
+      "name": "上本　達之",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "71375131",
+      "name": "岩尾　利弘",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "71475110",
+      "name": "松家　卓弘",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "71475112",
+      "name": "藤岡　好明",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "71475113",
+      "name": "山崎　勝己",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "71475115",
+      "name": "細川　亨",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "71575118",
+      "name": "香月　良仁",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "71575131",
+      "name": "荻野　貴司",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "71675112",
+      "name": "松永　浩典",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "71675113",
+      "name": "渡辺　俊介",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "71675118",
+      "name": "宮田　和希",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "71675131",
+      "name": "B.ウルフ",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "71773884",
+      "name": "塩崎　真",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "71775110",
+      "name": "齋藤　俊雄",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "71775112",
+      "name": "木谷　寿巳",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "71775115",
+      "name": "後藤　光尊",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "71775117",
+      "name": "木佐貫　洋",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "71875114",
+      "name": "山本　淳",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "71973882",
+      "name": "長谷川　昌幸",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "71975110",
+      "name": "竹原　直隆",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "71975117",
+      "name": "小谷野　栄一",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "71975119",
+      "name": "田中　雅彦",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "73175131",
+      "name": "B.マーフィー",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "73375116",
+      "name": "A.バルディリス",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "81083880",
+      "name": "山村　宏樹",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "81085115",
+      "name": "中村　剛也",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "81085131",
+      "name": "比嘉　幹貴",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "81185111",
+      "name": "大島　裕行",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "81185112",
+      "name": "井野　卓",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "81185113",
+      "name": "荒金　久雄",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "81185116",
+      "name": "伊藤　光",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "81285110",
+      "name": "星　秀和",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "81285112",
+      "name": "平野　佳寿",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "81285114",
+      "name": "中村　真人",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "81285116",
+      "name": "平野　将光",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "81285118",
+      "name": "野上　亮磨",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "81285119",
+      "name": "由田　慎太郎",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "81285131",
+      "name": "増井　浩俊",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "81383880",
+      "name": "北川　博敏",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "81383888",
+      "name": "川井　貴志",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "81385118",
+      "name": "岡田　幸文",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "81385119",
+      "name": "川岸　強",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "81483886",
+      "name": "渡辺　正人",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "81485112",
+      "name": "枡田　慎太郎",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "81485113",
+      "name": "山本　省吾",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "81485118",
+      "name": "藤原　紘通",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "81485131",
+      "name": "山室　公志郎",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "81583884",
+      "name": "小山　伸一郎",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "81585116",
+      "name": "久米　勇紀",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "81585118",
+      "name": "楠城　祐介",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "81785114",
+      "name": "神戸　拓光",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "81885114",
+      "name": "渡辺　直人",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "81885131",
+      "name": "D.ブラウン",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "81983882",
+      "name": "日高　剛",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "81983886",
+      "name": "坪井　智哉",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "81985112",
+      "name": "高口　隆行",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "81985116",
+      "name": "多田野　数人",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "81985118",
+      "name": "立岡　宗一郎",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "81985131",
+      "name": "戸村　健次",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "83185118",
+      "name": "D.ラズナー",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "83385113",
+      "name": "B.シコースキー",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "83385118",
+      "name": "J.ムニス",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "91095113",
+      "name": "仲澤　忠厚",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "91095118",
+      "name": "土屋　健二",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "91193880",
+      "name": "稲葉　篤紀",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "91193884",
+      "name": "石井　義人",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "91195112",
+      "name": "青山　浩二",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "91195119",
+      "name": "糸井　嘉男",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "91195131",
+      "name": "阿南　徹",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "91293888",
+      "name": "水田　章雄",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "91295110",
+      "name": "平石　洋介",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "91295116",
+      "name": "根本　朋久",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "91295118",
+      "name": "西川　雅人",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "91393880",
+      "name": "憲史",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "91395118",
+      "name": "上野　大樹",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "91495112",
+      "name": "古谷　拓哉",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "91495117",
+      "name": "前田　大輔",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "91595111",
+      "name": "佐竹　健太",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "91595114",
+      "name": "大引　啓次",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "91695114",
+      "name": "松本　幸大",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "91695119",
+      "name": "G.ラロッカ",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "91793864",
+      "name": "中嶋　聡",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "91793884",
+      "name": "柴原　洋",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "91793886",
+      "name": "鈴木　郁洋",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "91795114",
+      "name": "岸　孝之",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "91795115",
+      "name": "近藤　一樹",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "91795118",
+      "name": "榊原　諒",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "91795131",
+      "name": "清田　育宏",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "91895115",
+      "name": "F.セギノール",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "91895117",
+      "name": "J.オーティズ",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "91993889",
+      "name": "平尾　博嗣",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "91995112",
+      "name": "炭谷　銀仁朗",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "91995114",
+      "name": "佐藤　賢治",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "91995117",
+      "name": "紺田　敏正",
+      "year": 2010,
+      "league": "PL"
+    },
+    {
+      "player_id": "91995118",
+      "name": "攝津　正",
+      "year": 2010,
+      "league": "PL"
+    }
+  ]
+}
