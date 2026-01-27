@@ -1,0 +1,71 @@
+/**
+ * ランキングデータのURL生成ヘルパー
+ * すべてのランキングデータ参照を一元化
+ */
+
+/**
+ * ランキングデータのURLを生成
+ * 
+ * @param path パス（例: 'data/rankings/2025/PL/OPS.json' または '/data/rankings/2025/PL/OPS.json'）
+ * @returns 正規化されたパス（プロキシ経由でアクセスするため、同一オリジンのパスを返す）
+ * 
+ * @example
+ * getRankingsUrl('data/rankings/2025/PL/OPS.json')
+ * // => '/data/rankings/2025/PL/OPS.json'
+ * 
+ * getRankingsUrl('/data/rankings/2025/PL/OPS.json')
+ * // => '/data/rankings/2025/PL/OPS.json'
+ */
+export function getRankingsUrl(path: string): string {
+  // パスを正規化: 必ず / で始まり、二重スラッシュを防ぐ
+  const normalizedPath = '/' + path.replace(/^\/+/, '').replace(/\/+/g, '/')
+  
+  // 段階移行: scope をチェック
+  const scope = process.env.RANKINGS_EXTERNALIZE_SCOPE || ''
+  if (scope) {
+    // scope が設定されている場合、対象外のパスはローカル参照にフォールバック
+    const scopes = scope.split(',').map(s => s.trim().toLowerCase())
+    const pathLower = normalizedPath.toLowerCase()
+    
+    const isInScope = scopes.some(s => pathLower.includes(s))
+    if (!isInScope) {
+      // scope外: ローカルファイル参照（開発環境）またはエラー
+      if (process.env.NODE_ENV === 'development') {
+        // 開発環境ではローカルファイル参照を許可
+        return normalizedPath
+      }
+      // 本番環境ではエラーを投げる（または404を返す）
+      // 注意: この関数はURL生成のみを行うため、エラーチェックは呼び出し側で行う
+      console.warn(`[getRankingsUrl] Path ${normalizedPath} is not in externalization scope: ${scope}`)
+      return normalizedPath // とりあえずパスを返す（プロキシ側で処理）
+    }
+  }
+  
+  // プロキシ経由でアクセス（同一オリジン）
+  return normalizedPath
+}
+
+/**
+ * 外部ストレージのURLを生成（内部使用）
+ * プロキシルートで使用
+ * 
+ * @param path パス（例: '2025/PL/OPS.json'）
+ * @returns 外部ストレージの完全URL
+ */
+export function getExternalRankingsUrl(path: string): string {
+  const baseUrl = process.env.RANKINGS_BASE_URL
+  if (!baseUrl) {
+    throw new Error('RANKINGS_BASE_URL is not configured')
+  }
+  
+  // パスを正規化
+  const normalizedPath = path.replace(/^\/+/, '').replace(/\/+/g, '/')
+  
+  // 外部ストレージのURLを生成
+  // baseUrl が既に /data/rankings を含む場合は追加しない
+  if (baseUrl.endsWith('/data/rankings') || baseUrl.endsWith('/data/rankings/')) {
+    return `${baseUrl.replace(/\/+$/, '')}/${normalizedPath}`
+  }
+  
+  return `${baseUrl.replace(/\/+$/, '')}/data/rankings/${normalizedPath}`
+}
