@@ -29,3 +29,10 @@ logs/
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# 巨大データ（外部ストレージから取得するため、Gitに含めない）
+output/backups/
+output/html_cache/
+output/reports/
+output/master/
+public/data/rankings/

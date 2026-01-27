@@ -1,0 +1,11 @@
+# Vercelデプロイ時に除外する巨大データ
+# Functionサイズ超過を防ぐため
+
+# output ディレクトリ（バックアップ、キャッシュ、レポートなど）
+output/backups/
+output/html_cache/
+output/reports/
+output/master/
+
+# ランキングデータ（外部ストレージから取得するため）
+public/data/rankings/
