@@ -152,21 +152,43 @@ export async function GET(
       )
     }
     
-    // レスポンスボディを取得
-    const data = await fetchResponse.json()
+    // レスポンスボディを取得（streamで返すことでメモリ効率を向上）
+    const responseBody = fetchResponse.body
     
     // キャッシュヘッダーを設定
     const headers = new Headers()
     headers.set('Cache-Control', 'public, max-age=300, s-maxage=300, stale-while-revalidate=600')
-    headers.set('Content-Type', 'application/json')
     
-    // 元のレスポンスヘッダーから必要なものをコピー（オプション）
+    // 元のレスポンスヘッダーからContent-Typeを引き継ぐ
     const contentType = fetchResponse.headers.get('Content-Type')
     if (contentType) {
       headers.set('Content-Type', contentType)
+    } else {
+      // Content-Typeが設定されていない場合は、ファイル拡張子から推測
+      if (relativePath.endsWith('.json')) {
+        headers.set('Content-Type', 'application/json')
+      } else {
+        headers.set('Content-Type', 'application/octet-stream')
+      }
     }
     
-    return NextResponse.json(data, { headers })
+    // その他の有用なヘッダーを引き継ぐ（オプション）
+    const etag = fetchResponse.headers.get('ETag')
+    if (etag) {
+      headers.set('ETag', etag)
+    }
+    
+    const lastModified = fetchResponse.headers.get('Last-Modified')
+    if (lastModified) {
+      headers.set('Last-Modified', lastModified)
+    }
+    
+    // ストリームでレスポンスを返す（メモリ効率が良い）
+    return new NextResponse(responseBody, {
+      status: fetchResponse.status,
+      statusText: fetchResponse.statusText,
+      headers,
+    })
   } catch (error) {
     console.error('[RankingsProxy] Error:', error)
     
