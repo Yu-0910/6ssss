@@ -1,6 +1,14 @@
 /**
  * 規定打席（PA）フィルタリングに関する定数と関数
  * 指標ごとに「規定打席到達が必要 / 不要」を分類
+ *
+ * 仕分け方針（2024年以前のランキングページと同様）:
+ * - 規定打席「必要」: 率・割合・指標系（OPS, 打率, 出塁率, 長打率, IsoP, IsoD, BB%, K%, BB/K, RC, XR, BABIP, SecA, TA, NOI, GPA）
+ * - 規定打席「不要」: カウント系（安打, 本塁打, 打点, 試合, 打席, 打数, 単打, 二塁打, 三塁打, 得点, 四球, 敬遠, 死球, 三振, 塁打, 盗塁, 盗塁死, 犠打, 犠飛, 併殺打）
+ *
+ * Phase 4（後方互換）: 規定用CSVからビルドしたJSONは既に規定到達者のみのため、Client側のフィルタは実質 no-op。
+ * 従来ビルドのJSON（全員入り）の場合はフィルタが効き正しく表示される。フィルタを残すことで後方互換を確保。
+ * 詳細: docs/ranking_qualifying_filter_phase4.md
  */
 
 /**
@@ -54,17 +62,26 @@ export const METRICS_NO_QUALIFYING_PA = new Set([
 ]);
 
 /**
+ * metric_map.json の値（例: bbPct, kPct）と Set 内の小文字キーを一致させる正規化
+ */
+function normalizeMetricKeyForPA(metricKey: string): string {
+  let key = metricKey.toLowerCase().trim();
+  // % を pct に統一（BB% → bbpct, K% → kpct）
+  key = key.replace(/%/g, "pct").replace(/\//g, "").replace(/-/g, "");
+  return key;
+}
+
+/**
  * 指標キーに対して規定打席が必要かどうかを判定
- * @param metricKey 指標の内部キー（小文字推奨）
+ * @param metricKey 指標の内部キー（metric_map.json の値や Record.csv のラベル由来）
  * @returns 規定打席が必要な場合はtrue、不要な場合はfalse
- * @throws 未知の指標キーの場合はエラーを投げる（サイレント無視を防ぐ）
  */
 export function shouldRequireQualifyingPA(metricKey: string): boolean {
-  const normalizedKey = metricKey.toLowerCase();
+  const normalizedKey = normalizeMetricKeyForPA(metricKey);
   
   // デバッグログ（開発時のみ）
-  if (typeof window !== 'undefined' && process.env.NODE_ENV === 'development') {
-    console.log('[QualifyingPA] Checking metric:', {
+  if (typeof window !== "undefined" && process.env.NODE_ENV === "development") {
+    console.log("[QualifyingPA] Checking metric:", {
       original: metricKey,
       normalized: normalizedKey,
       inRequireSet: METRICS_REQUIRE_QUALIFYING_PA.has(normalizedKey),
@@ -80,18 +97,15 @@ export function shouldRequireQualifyingPA(metricKey: string): boolean {
     return false;
   }
   
-  // 未知の指標キーの場合はエラーを投げる（サイレント無視を防ぐ）
-  const error = new Error(
-    `Unknown metricKey: ${metricKey} (normalized: ${normalizedKey}). ` +
-    `Please add it to either METRICS_REQUIRE_QUALIFYING_PA or METRICS_NO_QUALIFYING_PA in lib/ranking/qualifyingPA.ts`
-  );
-  
-  // デバッグログ（開発時のみ）
-  if (typeof window !== 'undefined' && process.env.NODE_ENV === 'development') {
-    console.error('[QualifyingPA] Error:', error);
+  // 未知の指標: 規定未到達でも掲載する（規定不要として扱う）
+  if (typeof window !== "undefined" && process.env.NODE_ENV === "development") {
+    console.warn(
+      `[QualifyingPA] Unknown metricKey: ${metricKey} (normalized: ${normalizedKey}). ` +
+        `Treating as NO_QUALIFYING_PA (all players shown). ` +
+        `Add to METRICS_REQUIRE_QUALIFYING_PA or METRICS_NO_QUALIFYING_PA in lib/ranking/qualifyingPA.ts if needed.`
+    );
   }
-  
-  throw error;
+  return false;
 }
 
 /**
@@ -183,13 +197,14 @@ const TEAM_GAMES_DATA: Record<string, Record<string, number>> = {
   '2018': { CL: 143, PL: 143 },
   '2019': { CL: 143, PL: 143 },
   
-  // 2020年代
+  // 2020年代（2025年は2024年以前と同じ試合数で踏襲）
   '2020': { CL: 120, PL: 120 }, // コロナ禍により短縮
   '2021': { CL: 143, PL: 143 },
   '2022': { CL: 143, PL: 143 },
   '2023': { CL: 143, PL: 143 },
   '2024': { CL: 143, PL: 143 },
   '2025': { CL: 143, PL: 143 },
+  '2026': { CL: 143, PL: 143 }, // 2025年データを流用
 }
 
 /**

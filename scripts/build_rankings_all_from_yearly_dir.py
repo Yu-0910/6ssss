@@ -216,6 +216,19 @@ def process_csv_file(
         })
         return False, {}
     
+    # 規定打席到達版CSV（Phase 2: 規定必須指標用）
+    qualifying_filename = filename.replace("_from_master.csv", "_qualifying.csv")
+    qualifying_csv_path = csv_path.parent / qualifying_filename
+    batting_data_qualifying = None
+    if qualifying_csv_path.exists():
+        try:
+            batting_data_qualifying = load_csv_with_encoding(str(qualifying_csv_path))
+            print(f"   [OK] 規定打席到達版CSV読み込み: {qualifying_filename} ({len(batting_data_qualifying)}件)")
+        except Exception as e:
+            print(f"   [WARN] 規定打席到達版CSV読み込み失敗: {e}（規定あり版は全員用CSV+minPAで生成）")
+    else:
+        print(f"   [WARN] 規定打席到達版CSVなし: {qualifying_filename}（規定あり版は全員用CSV+minPAで生成）")
+    
     # 規定打席を計算
     min_pa, team_games, source = calculate_min_pa(season_key, league, games_map, batting_data)
     source_label = {
@@ -256,15 +269,21 @@ def process_csv_file(
     for metric in metrics:
         file_metric = sanitize_filename(metric)
         
-        # 規定あり版
+        # 規定あり版（規定必須指標かつ規定用CSVありの場合は規定用CSVを min_pa=0 で使用）
         output_path = output_dir / f"{file_metric}.json"
+        use_qualifying_csv = (
+            metric in METRICS_REQUIRE_QUALIFYING_PA_BY_NAME
+            and batting_data_qualifying is not None
+        )
+        data_for_qualifying = batting_data_qualifying if use_qualifying_csv else batting_data
+        min_pa_for_qualifying = 0 if use_qualifying_csv else min_pa
         try:
             success = generate_ranking_for_metric(
-                batting_data,
+                data_for_qualifying,
                 metric,
                 str(output_path),
                 top_n=100,
-                min_pa=min_pa,
+                min_pa=min_pa_for_qualifying,
                 metric_map=metric_map
             )
             if success:

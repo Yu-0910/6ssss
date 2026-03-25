@@ -524,6 +524,7 @@ function getTopNForMetric(
   league: string = 'CL'
 ): LeaderRow[] {
   // 規定打席フィルタを適用（指標ごとに判定）
+  // Phase 4: 規定用CSV由来のJSONでは全行が規定以上のため実質 no-op。従来JSONではフィルタが効き後方互換を確保。
   const requiresQualifyingPA = shouldRequireQualifyingPA(metric.key)
   const minPA = requiresQualifyingPA ? calculateMinPA(season, league) : 0
   

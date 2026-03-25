@@ -55,6 +55,7 @@ try:
         validate_metric_json_mapping,
         normalize_name,
         METRICS_REQUIRE_QUALIFYING_PA_BY_NAME,
+        METRICS_NO_QUALIFYING_PA_BY_NAME,
     )
 except ImportError as e:
     print(f"❌ エラー: build_rankings_2025_PL_full.py から関数をインポートできません: {e}")
@@ -305,10 +306,38 @@ def generate_qualified_ranking_for_metric(
         player_data['romanName'] = roman_name
         player_data['team'] = normalize_string(team_name)
         
-        # その他のフィールドも可能な限り設定
+        # その他のフィールドも可能な限り設定（率系は定義で計算し指標と数値のずれを防ぐ）
+        obp_val, _, _ = get_metric_value(row, '出塁率', normalized_columns)
+        if obp_val is None:
+            obp_val, _, _ = get_metric_value(row, 'OBP', normalized_columns)
+        if obp_val is None:
+            obp_val = row.get('OBP') or row.get('obp')
+        slg_val, _, _ = get_metric_value(row, '長打率', normalized_columns)
+        if slg_val is None:
+            slg_val, _, _ = get_metric_value(row, 'SLG', normalized_columns)
+        if slg_val is None:
+            slg_val = row.get('SLG') or row.get('slg')
+        # 打率 = H/AB（CSV列の混同を避ける）
+        h_val = safe_float(row.get('H') or row.get('hits') or row.get('Hits') or row.get('安打'))
+        ab_val = safe_float(row.get('AB') or row.get('ab') or row.get('打数'))
+        if h_val is not None and ab_val is not None and ab_val > 0:
+            avg_val = h_val / ab_val
+        else:
+            avg_val, _, _ = get_metric_value(row, '打率', normalized_columns)
+            if avg_val is None:
+                avg_val, _, _ = get_metric_value(row, 'AVG', normalized_columns)
+            if avg_val is None:
+                avg_val = row.get('AVG') or row.get('avg')
+        ops_val = (safe_float(obp_val) + safe_float(slg_val)) if (obp_val is not None and slg_val is not None) else None
+        if ops_val is None:
+            ops_val, _, _ = get_metric_value(row, 'OPS', normalized_columns)
+        if ops_val is None:
+            ops_val = row.get('OPS') or row.get('ops')
         player_data['age'] = safe_int(row.get('Age') or row.get('age'), 0)
-        player_data['ops'] = format_value(safe_float(row.get('OPS') or row.get('ops')), 'OPS')
-        player_data['avg'] = format_value(safe_float(row.get('AVG') or row.get('avg')), 'AVG')
+        player_data['ops'] = format_value(safe_float(ops_val), 'OPS')
+        player_data['avg'] = format_value(safe_float(avg_val), 'AVG')
+        player_data['obp'] = format_value(safe_float(obp_val), 'OBP')
+        player_data['slg'] = format_value(safe_float(slg_val), 'SLG')
         player_data['hits'] = safe_int(row.get('H') or row.get('hits') or row.get('Hits'), 0)
         player_data['hr'] = safe_int(row.get('HR') or row.get('hr') or row.get('HR'), 0)
         player_data['rbi'] = safe_int(row.get('RBI') or row.get('rbi') or row.get('RBI'), 0)
@@ -496,6 +525,19 @@ def process_calculated_csv(
         })
         return False, {}
     
+    # 規定打席到達版CSV（Phase 2: 規定必須指標用）
+    qualifying_filename = filename.replace("_from_master.csv", "_qualifying.csv")
+    qualifying_csv_path = csv_path.parent / qualifying_filename
+    batting_data_qualifying = None
+    if qualifying_csv_path.exists():
+        try:
+            batting_data_qualifying = load_csv_with_encoding(str(qualifying_csv_path))
+            print(f"   [OK] 規定打席到達版CSV読み込み: {qualifying_filename} ({len(batting_data_qualifying)}件)")
+        except Exception as e:
+            print(f"   [WARN] 規定打席到達版CSV読み込み失敗: {e}（規定あり版は全員用CSV+minPAで生成）")
+    else:
+        print(f"   [WARN] 規定打席到達版CSVなし: {qualifying_filename}（規定あり版は全員用CSV+minPAで生成）")
+    
     # season_codeを生成（PRE春秋の場合のみ）
     season_code = None
     if league == "PRE" and season_info:
@@ -596,15 +638,26 @@ def process_calculated_csv(
     for metric in metrics:
         file_metric = sanitize_filename(metric)
         
-        # 規定あり版（既存）
+        # 規定あり版（規定必須指標かつ規定用CSVありの場合は規定用CSVを min_pa=0 で使用）
+        # 非規定指標は常に全員データ＋min_pa=0 でメインJSONを生成（規定到達者しか見れない不具合を防ぐ）
         output_path = output_dir / f"{file_metric}.json"
+        use_qualifying_csv = (
+            metric in METRICS_REQUIRE_QUALIFYING_PA_BY_NAME
+            and batting_data_qualifying is not None
+        )
+        is_no_qualifying = metric in METRICS_NO_QUALIFYING_PA_BY_NAME
+        data_for_main = batting_data_qualifying if use_qualifying_csv else batting_data
+        min_pa_for_main = (
+            0 if use_qualifying_csv
+            else (0 if is_no_qualifying else min_pa)
+        )
         try:
             success, error_reason = generate_ranking_for_metric(
-                batting_data,
+                data_for_main,
                 metric,
                 str(output_path),
                 top_n=100,
-                min_pa=min_pa,
+                min_pa=min_pa_for_main,
                 metric_map=metric_map,
                 normalized_columns=normalized_columns,
                 csv_columns=csv_columns

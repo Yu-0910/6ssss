@@ -3,6 +3,21 @@
  * すべてのランキングデータ参照を一元化
  */
 
+/** Windowsで禁止の文字を "_" に置換（Python sanitize_filename と同一） */
+const FORBIDDEN_FILENAME_CHARS = /[\\/:*?"<>|]/g
+
+/**
+ * 指標名をJSONファイル名（拡張子なし）にサニタイズ
+ * ビルドスクリプトの sanitize_filename と同一ルール
+ */
+export function sanitizeMetricForPath(metric: string): string {
+  if (!metric || typeof metric !== 'string') return metric
+  let s = metric.trim()
+  s = s.replace(FORBIDDEN_FILENAME_CHARS, '_')
+  s = s.replace(/\.+$/, '') // 末尾の . を除去
+  return s || metric.trim()
+}
+
 /**
  * ランキングデータのURLを生成
  * 

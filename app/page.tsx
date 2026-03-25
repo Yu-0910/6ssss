@@ -615,7 +615,7 @@ const LeaderRow = ({ leader, stat, index }: { leader: any; index: number; stat: 
       <div className="w-1 h-6 mr-1" style={{ backgroundColor: teamColors[leader.team] || "#666" }} />
       {/* Player Info - 横並び */}
       <Link
-        href={`/players/${leader.name}`}
+        href={`/players/${leader.name}?name=${encodeURIComponent((leader.name || "").replace(/\s+/g, ""))}${romanName ? `&roman=${encodeURIComponent(romanName)}` : ""}`}
         className="flex-1 min-w-0 flex items-center gap-1 hover:opacity-80 transition-opacity"
       >
         <span className="text-white text-sm font-semibold leading-tight">{leader.name}</span>
@@ -629,42 +629,15 @@ const LeaderRow = ({ leader, stat, index }: { leader: any; index: number; stat: 
 }
 
 const MiniLeaderRow = ({ leader, stat }: { leader: any; stat: any }) => {
-  // formatStatを使用して値をフォーマット
   const formattedValue = formatStat(stat, leader.value)
-  
-  // romanNameを取得（データから直接取得、なければ辞書から）
-  // イニシャル.苗字形式に変換（例: "Kiyomiya Kotaro" → "K.Kiyomiya"）
   const romanName = (() => {
-    if (leader.romanName) {
-      const parts = leader.romanName.trim().split(/\s+/)
-      if (parts.length >= 2) {
-        const lastName = parts[0]  // 苗字
-        const firstName = parts[1]  // 名前
-        const initial = firstName.length > 0 ? firstName[0].toUpperCase() : ''
-        return `${initial}.${lastName}`
-      } else if (parts.length === 1 && parts[0].length > 0) {
-        // 名前のみの場合（外国人選手など）
-        // 例: "Fabian" → "F.Fabian"
-        const name = parts[0]
-        return `${name[0].toUpperCase()}.${name}`
-      }
-      return ''
-    }
-    if (playerRomanNames[leader.name]) {
-      const parts = playerRomanNames[leader.name].split(/\s+/)
-      if (parts.length >= 2) {
-        const lastName = parts[0]  // 苗字
-        const firstName = parts[1]  // 名前
-        const initial = firstName.length > 0 ? firstName[0].toUpperCase() : ''
-        return `${initial}.${lastName}`
-      } else if (parts.length === 1 && parts[0].length > 0) {
-        // 名前のみの場合（外国人選手など）
-        // 例: "Fabian" → "F.Fabian"
-        const name = parts[0]
-        return `${name[0].toUpperCase()}.${name}`
-      }
-    }
-    return ''
+    const raw = (leader.romanName || playerRomanNames[leader.name] || "").trim()
+    if (!raw) return ""
+    if (/^[A-Z]\.[A-Za-z]+$/.test(raw)) return raw
+    const parts = raw.split(/\s+/)
+    if (parts.length >= 2) return `${parts[0][0].toUpperCase()}.${parts[1]}`
+    if (parts[0].length > 0) return `${parts[0][0].toUpperCase()}.${parts[0]}`
+    return ""
   })()
   
   return (
@@ -676,7 +649,7 @@ const MiniLeaderRow = ({ leader, stat }: { leader: any; stat: any }) => {
       <div className="w-1 h-10 mr-1" style={{ backgroundColor: teamColors[leader.team] || "#666" }} />
       {/* Player Info - 縦並び */}
       <Link
-        href={`/players/${leader.name}`}
+        href={`/players/${leader.name}?name=${encodeURIComponent((leader.name || "").replace(/\s+/g, ""))}${romanName ? `&roman=${encodeURIComponent(romanName)}` : ""}`}
         className="flex-1 min-w-0 flex flex-col hover:opacity-80 transition-opacity"
       >
         <span className="text-white text-sm font-semibold leading-tight">{leader.name}</span>
@@ -894,7 +867,7 @@ export default function Page() {
             onChange={(e) => handleYearChange(Number(e.target.value))}
             className="bg-[#1a1a1a] text-[#ffff44] border border-[#555] rounded px-2 py-0.5 text-sm bebas cursor-pointer hover:bg-[#2a2a2a] transition-colors"
           >
-            {Array.from({ length: 76 }, (_, i) => 2025 - i).map((year) => (
+            {Array.from({ length: 77 }, (_, i) => 2026 - i).map((year) => (
               <option key={year} value={year}>
                 {year}
               </option>

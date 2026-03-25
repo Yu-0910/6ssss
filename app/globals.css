@@ -137,6 +137,18 @@
     letter-spacing: 0.05em;
   }
 
+  .font-noto {
+    font-family: "Noto Sans JP", sans-serif;
+  }
+
+  .font-noto-serif {
+    font-family: "Noto Serif JP", serif;
+  }
+
+  .font-mplus1p {
+    font-family: "M PLUS 1p", sans-serif;
+  }
+
   .tabular-nums {
     font-variant-numeric: tabular-nums;
     font-feature-settings: "tnum" 1;

@@ -5,7 +5,8 @@ compute_metrics_all_seasons.py
 Record.csvに記載された指標を計算して、全シーズンのbatting_YYYY_(PL|CL)_from_master.csvを
 計算済みCSVとして出力するスクリプト
 
-出力先: _data/master_csv_calculated/
+入力: _data/master_csv/（デフォルト）。--input-dir で _data/master_csv__import_1950_2024 等を指定可。
+出力: _data/master_csv_calculated/
 元CSVは絶対に上書きしない（破壊的変更禁止）
 """
 
@@ -858,6 +859,8 @@ def main():
     parser.add_argument('--max-year', type=int, help='最大年度（この年度以下のみ処理、例: --max-year 2024）')
     parser.add_argument('--dry-run', action='store_true', help='書き込みなしで、対応指標/未対応指標/対象ファイルだけ表示')
     parser.add_argument('--overwrite', action='store_true', help='出力先に同名があれば上書き許可（デフォルトは上書きしない）')
+    parser.add_argument('--input-dir', type=str, default=None,
+                        help='入力CSVディレクトリ（デフォルト: _data/master_csv）。importフォルダを使う場合は _data/master_csv__import_1950_2024 を指定')
     
     args = parser.parse_args()
     
@@ -875,14 +878,19 @@ def main():
     # パス設定
     script_dir = Path(__file__).parent
     project_root = script_dir.parent
-    data_master_csv_dir = project_root / '_data' / 'master_csv'
+    if args.input_dir:
+        data_master_csv_dir = Path(args.input_dir)
+        if not data_master_csv_dir.is_absolute():
+            data_master_csv_dir = project_root / data_master_csv_dir
+    else:
+        data_master_csv_dir = project_root / '_data' / 'master_csv'
     output_dir = project_root / '_data' / 'master_csv_calculated'
     
-    print(f"📁 プロジェクトルート: {project_root}")
-    print(f"📁 入力ディレクトリ: {data_master_csv_dir}")
-    print(f"📁 出力ディレクトリ: {output_dir}")
+    print(f"[DIR] プロジェクトルート: {project_root}")
+    print(f"[DIR] 入力ディレクトリ: {data_master_csv_dir}")
+    print(f"[DIR] 出力ディレクトリ: {output_dir}")
     
-    print(f"\n🔍 実行モード: {'DRY-RUN（書き込みなし）' if args.dry_run else '通常モード（保存あり）'}")
+    print(f"\n[MODE] 実行モード: {'DRY-RUN（書き込みなし）' if args.dry_run else '通常モード（保存あり）'}")
     
     # Record.csv を読み込み
     record_search_paths = [

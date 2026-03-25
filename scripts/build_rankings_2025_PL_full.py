@@ -668,6 +668,8 @@ def generate_ranking_for_metric(
         pa, _ = get_pa_value(row)
         
         formatted_value = format_value(value, metric)
+        # 現在の指標の内部キー（ソートに使った値は正しいのでそれをそのまま使う）
+        current_metric_key = metric_key
         
         player_data = {
             'rank': rank,
@@ -705,27 +707,72 @@ def generate_ranking_for_metric(
         player_data['team'] = normalize_string(team_name)
         
         # その他のフィールドも可能な限り設定
+        # 現在の指標はソートに使った値（正しい）をそのまま使う。他は get_metric_value で取得
+        def _get_metric_val(display_name: str, fallback_eng: str) -> Optional[float]:
+            v, _, _ = get_metric_value(row, display_name, normalized_columns)
+            if v is not None:
+                return v
+            v, _, _ = get_metric_value(row, fallback_eng, normalized_columns)
+            if v is not None:
+                return v
+            return safe_float(row.get(fallback_eng) or row.get(fallback_eng.lower()))
+        obp_val = formatted_value if current_metric_key == 'obp' else _get_metric_val('出塁率', 'OBP')
+        slg_val = formatted_value if current_metric_key == 'slg' else _get_metric_val('長打率', 'SLG')
+        if obp_val is None:
+            obp_val = row.get('OBP') or row.get('obp')
+        if slg_val is None:
+            slg_val = row.get('SLG') or row.get('slg')
+        # 打率は定義上 H/AB。CSVで打率列に長打率など別の値が入っている場合があるため計算値で上書き
+        h_val = safe_float(row.get('H') or row.get('hits') or row.get('Hits') or row.get('安打'))
+        ab_val = safe_float(row.get('AB') or row.get('ab') or row.get('打数'))
+        if h_val is not None and ab_val is not None and ab_val > 0:
+            avg_val = h_val / ab_val
+        else:
+            avg_val = formatted_value if current_metric_key == 'avg' else _get_metric_val('打率', 'AVG')
+            if avg_val is None:
+                avg_val, _, _ = get_metric_value(row, 'AVG', normalized_columns)
+            if avg_val is None:
+                avg_val = row.get('AVG') or row.get('avg')
+        # OPSは定義上 OBP+SLG。CSVでOPS列に別の値が入っている場合があるため計算値で上書き
+        if obp_val is not None and slg_val is not None:
+            ops_val = safe_float(obp_val) + safe_float(slg_val)
+        else:
+            ops_val = formatted_value if current_metric_key == 'ops' else _get_metric_val('OPS', 'OPS')
+        if ops_val is None:
+            ops_val = row.get('OPS') or row.get('ops')
         player_data['age'] = safe_int(row.get('Age') or row.get('age'), 0)
-        player_data['ops'] = format_value(safe_float(row.get('OPS') or row.get('ops')), 'OPS')
-        player_data['avg'] = format_value(safe_float(row.get('AVG') or row.get('avg')), 'AVG')
-        player_data['hits'] = safe_int(row.get('H') or row.get('hits') or row.get('Hits'), 0)
-        player_data['hr'] = safe_int(row.get('HR') or row.get('hr') or row.get('HR'), 0)
-        player_data['rbi'] = safe_int(row.get('RBI') or row.get('rbi') or row.get('RBI'), 0)
-        player_data['games'] = safe_int(row.get('G') or row.get('games') or row.get('G'), 0)
-        player_data['pa'] = safe_int(row.get('PA') or row.get('pa') or row.get('PA'), 0)
-        player_data['ab'] = safe_int(row.get('AB') or row.get('ab') or row.get('AB'), 0)
-        player_data['singles'] = safe_int(row.get('1B') or row.get('singles'), 0)
-        player_data['doubles'] = safe_int(row.get('2B') or row.get('doubles') or row.get('2B'), 0)
-        player_data['triples'] = safe_int(row.get('3B') or row.get('triples') or row.get('3B'), 0)
-        player_data['runs'] = safe_int(row.get('R') or row.get('runs') or row.get('R'), 0)
-        player_data['obp'] = format_value(safe_float(row.get('OBP') or row.get('obp')), 'OBP')
-        player_data['slg'] = format_value(safe_float(row.get('SLG') or row.get('slg')), 'SLG')
+        player_data['ops'] = format_value(safe_float(ops_val), 'OPS')
+        player_data['avg'] = format_value(safe_float(avg_val), 'AVG')
+        # 現在指標がOPSのとき、value も計算した OPS に合わせる
+        if current_metric_key == 'ops' and ops_val is not None:
+            player_data['value'] = format_value(safe_float(ops_val), 'OPS')
+        # 現在指標が打率のとき、value も計算した打率に合わせる
+        if current_metric_key == 'avg' and avg_val is not None:
+            player_data['value'] = format_value(safe_float(avg_val), 'AVG')
+        player_data['hits'] = safe_int(row.get('H') or row.get('hits') or row.get('Hits') or row.get('安打'), 0)
+        player_data['hr'] = safe_int(row.get('HR') or row.get('hr') or row.get('HR') or row.get('本塁打'), 0)
+        player_data['rbi'] = safe_int(row.get('RBI') or row.get('rbi') or row.get('RBI') or row.get('打点'), 0)
+        player_data['games'] = safe_int(row.get('G') or row.get('games') or row.get('G') or row.get('試合'), 0)
+        player_data['pa'] = safe_int(row.get('PA') or row.get('pa') or row.get('PA') or row.get('打席'), 0)
+        player_data['ab'] = safe_int(row.get('AB') or row.get('ab') or row.get('AB') or row.get('打数'), 0)
+        player_data['doubles'] = safe_int(row.get('2B') or row.get('doubles') or row.get('2B') or row.get('二塁打'), 0)
+        player_data['triples'] = safe_int(row.get('3B') or row.get('triples') or row.get('3B') or row.get('三塁打'), 0)
+        player_data['runs'] = safe_int(row.get('R') or row.get('runs') or row.get('R') or row.get('得点'), 0)
+        # 単打: CSVに単打/1B列が空のことがあるため H - 2B - 3B - HR で計算
+        singles_raw = safe_int(row.get('1B') or row.get('singles') or row.get('単打'), 0)
+        if singles_raw > 0:
+            player_data['singles'] = singles_raw
+        else:
+            h, d, t, hr = player_data['hits'], player_data['doubles'], player_data['triples'], player_data['hr']
+            player_data['singles'] = max(0, (h or 0) - (d or 0) - (t or 0) - (hr or 0))
+        player_data['obp'] = format_value(safe_float(obp_val), 'OBP')
+        player_data['slg'] = format_value(safe_float(slg_val), 'SLG')
         player_data['isop'] = format_value(
-            safe_float(row.get('SLG') or row.get('slg')) - safe_float(row.get('AVG') or row.get('avg')),
+            safe_float(slg_val) - safe_float(avg_val) if (slg_val is not None and avg_val is not None) else 0.0,
             'SLG'
         )
         player_data['isod'] = format_value(
-            safe_float(row.get('OBP') or row.get('obp')) - safe_float(row.get('AVG') or row.get('avg')),
+            safe_float(obp_val) - safe_float(avg_val) if (obp_val is not None and avg_val is not None) else 0.0,
             'OBP'
         )
         bb_pct = safe_float(row.get('BB%') or row.get('BBPct') or row.get('bb%'))
@@ -1261,6 +1308,20 @@ def main():
         print(f"❌ バッティングデータの読み込みに失敗: {e}")
         return 1
     
+    # 規定打席到達版CSV（2025年のみ）: 規定必須指標用に使用するとサイト負荷・読み込み軽減
+    batting_data_qualifying = None
+    if year_arg == 2025:
+        qualifying_filename = f'batting_2025_{league_arg}_qualifying.csv'
+        qualifying_csv_path = data_master_csv_calculated_dir / qualifying_filename
+        if qualifying_csv_path.exists():
+            try:
+                batting_data_qualifying = load_csv_with_encoding(str(qualifying_csv_path))
+                print(f"✅ 規定打席到達版CSVを読み込みました: {qualifying_filename} ({len(batting_data_qualifying)}件)")
+            except Exception as e:
+                print(f"⚠️  規定打席到達版CSVの読み込みに失敗（フルCSVで続行）: {e}")
+        else:
+            print(f"   📋 規定打席到達版CSVなし（{qualifying_filename}）。フルCSVで規定フィルタを適用します。")
+
     # 指標リストを抽出
     metrics = extract_metrics_from_record_csv(str(record_csv_path))
     if not metrics:
@@ -1363,21 +1424,28 @@ def main():
         # ファイル名用にサニタイズ（表示名とファイルキーを分離）
         file_metric = sanitize_filename(metric)
         
-        # 規定あり版（min_pa=443）
+        # 規定あり版: 規定必須指標かつ規定打席到達版CSVがある場合はそれを使用（min_pa=0）、それ以外はフルCSVでmin_pa=443
         output_path = output_dir / f"{file_metric}.json"
+        use_qualifying = (
+            metric in METRICS_REQUIRE_QUALIFYING_PA_BY_NAME
+            and batting_data_qualifying is not None
+        )
+        data_for_qual = batting_data_qualifying if use_qualifying else batting_data
+        min_pa_for_qual = 0 if use_qualifying else MIN_PA_2025
         
         try:
             success = generate_ranking_for_metric(
-                batting_data,
+                data_for_qual,
                 metric,
                 str(output_path),
                 top_n=100,
-                min_pa=MIN_PA_2025,  # 規定打席フィルタ（2025年PL/CL）
+                min_pa=min_pa_for_qual,
                 metric_map=metric_map  # metric_mapを渡す
             )
             
             if success:
-                print(f"✅ {metric} → {output_path} (規定あり: min_pa={MIN_PA_2025})")
+                src_note = "規定到達版CSV" if use_qualifying else f"規定あり: min_pa={MIN_PA_2025}"
+                print(f"✅ {metric} → {output_path} ({src_note})")
                 success_count += 1
             else:
                 print(f"⚠️  {metric} → データ不足のためスキップ（数値で並べられない指標の可能性）")

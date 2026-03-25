@@ -4,14 +4,14 @@ export const revalidate = 0
 
 /**
  * 動的ルート: /ranking/[year]/[league]
+ * 第二セグメントは season（CL/PL/PRE_spring/PRE_fall 等）。R2 の data/rankings/{year}/{season}/ と一致。
  * Record.csvの全指標を順番通りに表示（CSVに存在する指標のみ）
  */
 
 import { Suspense } from 'react'
 import { notFound } from 'next/navigation'
 import RankingPageClient from './RankingPageClient'
-import { loadBattingCsv } from '@/lib/ranking/loaders'
-import { buildRankingWithAllMetrics } from '@/lib/ranking/adapter'
+import { loadMetricsFromRecord } from '@/lib/ranking/record'
 import type { RankingViewModel } from '@/lib/ranking/types'
 
 interface RankingPageProps {
@@ -34,22 +34,26 @@ export default async function RankingPage({ params, searchParams }: RankingPageP
     console.log("[ROUTE_HIT] /ranking/[year]/[league]", { year, league, metric }, "CWD=", process.cwd())
   }
 
-  // 年度とリーグのバリデーション
+  // 年度と season（URL 第二セグメント）のバリデーション
   if (!year || !league) {
     notFound()
   }
 
-  // リーグのバリデーション（CLまたはPLのみ）
-  const upperLeague = league.toUpperCase()
-  if (upperLeague !== 'CL' && upperLeague !== 'PL') {
+  // season: 英数字＋アンダースコアのみ許可。R2 の data/rankings/{year}/{season}/ と一致させる
+  const seasonRaw = league.trim()
+  if (!seasonRaw || !/^[A-Za-z0-9_]+$/.test(seasonRaw)) {
     notFound()
   }
 
-  try {
-    // CSVを読み込み、利用可能な指標を取得（Record.csv順）
-    const { rows, availableMetrics, csvPath } = loadBattingCsv(year, upperLeague)
+  // R2 上のキーは CL/PL が大文字、PRE_spring/PRE_fall はそのまま。取得用キーを統一
+  const season =
+    seasonRaw.toUpperCase() === 'CL' ? 'CL' : seasonRaw.toUpperCase() === 'PL' ? 'PL' : seasonRaw
 
-    if (availableMetrics.length === 0) {
+  try {
+    // 指標リストのみ取得（Record.csv順）。ランキングデータはClient側で指標ごとにJSONを取得（案A）
+    const metrics = loadMetricsFromRecord()
+
+    if (metrics.length === 0) {
       return (
         <div className="min-h-screen bg-black text-white flex items-center justify-center">
           <div className="text-center">
@@ -60,44 +64,25 @@ export default async function RankingPage({ params, searchParams }: RankingPageP
       )
     }
 
-    // 重複player_idの統計を計算（開発時のみ）
-    let duplicatePlayerIdCount = 0
-    let duplicateRowCount = 0
-    if (process.env.NODE_ENV === 'development') {
-      const playerIdCounts = new Map<string, number>()
-      for (const row of rows) {
-        const playerId = (row['player_id'] || row['playerId'] || '').toString().trim()
-        if (playerId && playerId !== '0') {
-          playerIdCounts.set(playerId, (playerIdCounts.get(playerId) || 0) + 1)
-        }
-      }
-      for (const count of playerIdCounts.values()) {
-        if (count > 1) {
-          duplicatePlayerIdCount++
-          duplicateRowCount += count - 1 // 重複行数（1つを残すので count - 1）
-        }
-      }
-    }
+    // 表示用ラベル（取得用キーは season のまま）
+    const seasonDisplayName =
+      seasonRaw.toUpperCase() === 'CL'
+        ? 'セ・リーグ'
+        : seasonRaw.toUpperCase() === 'PL'
+          ? 'パ・リーグ'
+          : seasonRaw === 'PRE_spring'
+            ? '春季リーグ'
+            : seasonRaw === 'PRE_fall'
+              ? '秋季リーグ'
+              : seasonRaw
 
-    // 全指標の値を含むランキングデータを生成（ソートはClient側で行う）
-    const rankingRows = buildRankingWithAllMetrics(rows, availableMetrics)
-
-    // リーグ名の表示用
-    const leagueName = upperLeague === 'CL' ? 'セ・リーグ' : 'パ・リーグ'
-
-    // ViewModelを構築
     const viewModel: RankingViewModel = {
-      title: `${leagueName}　打撃成績ランキング (${year}年)`,
+      title: `${seasonDisplayName}　打撃成績ランキング (${year}年)`,
       season: year,
-      league: upperLeague,
-      metrics: availableMetrics,
-      activeMetric: 'ops', // デフォルト（Client側で上書きされる）
-      rows: rankingRows,
-      debug: process.env.NODE_ENV === 'development' ? {
-        csvPath,
-        duplicatePlayerIdCount,
-        duplicateRowCount,
-      } : undefined,
+      league: season,
+      metrics,
+      activeMetric: 'ops',
+      rows: [], // Client側で指標ごとに loadRankingJson して取得
     }
 
     return (
@@ -112,9 +97,8 @@ export default async function RankingPage({ params, searchParams }: RankingPageP
       </Suspense>
     )
   } catch (error) {
-    // 開発環境では例外を再スローして詳細を確認
     if (process.env.NODE_ENV === 'development') {
-      console.error('[loadRankingJson] error:', error)
+      console.error('[RankingPage] error:', error)
       throw error
     }
     

@@ -108,16 +108,18 @@ export function loadBattingCsv(
   league: string
 ): { rows: BattingCsvRow[]; availableMetrics: MetricDefinition[]; csvPath: string } {
   try {
+    // 2026年は2025年データを流用
+    const dataYear = year === '2026' ? '2025' : year
     // CSVファイルのパスを探索
-    const csvPath = findBattingCsv(year, league)
+    const csvPath = findBattingCsv(dataYear, league)
 
     if (process.env.NODE_ENV === 'development') {
-      console.log(`[loadBattingCsv] Searching for CSV: batting_${year}_${league}_from_master.csv`)
+      console.log(`[loadBattingCsv] Searching for CSV: batting_${dataYear}_${league}_from_master.csv`)
       console.log(`[loadBattingCsv] Found path: ${csvPath || 'NOT FOUND'}`)
     }
 
     if (!csvPath) {
-      throw new Error(`CSVファイルが見つかりません: batting_${year}_${league}_from_master.csv`)
+      throw new Error(`CSVファイルが見つかりません: batting_${dataYear}_${league}_from_master.csv`)
     }
 
     // CSVファイルを読み込む（複数エンコーディング対応）

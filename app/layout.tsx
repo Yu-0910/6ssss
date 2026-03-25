@@ -56,7 +56,7 @@ export default function RootLayout({
     <html lang="ja" suppressHydrationWarning>
       <head>
         {/* Bebas Neueフォントはnext/fontで読み込まれているため、このリンクは不要ですが、互換性のために残しています */}
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif+JP:wght@400;500;600;700&display=swap" rel="stylesheet" />
       </head>
       <body 
         className={`font-sans antialiased ${_inter.variable} ${_notoSansJP.variable} ${_bebasNeue.variable}`}

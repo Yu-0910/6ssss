@@ -393,6 +393,7 @@ def get_qualifying_rule(year: int, league: str, season_code: Optional[str] = Non
                 "rule_source": rule_source,
                 "rounding_mode": rounding_mode
             }
+        # 1959-2025: 規定打席 = チーム試合数 × 3.1（2025年は2024年以前と同じルールで踏襲）
         elif 1959 <= year <= 2025:
             special_measures = (year == 2004 or year == 2008)
             return {
@@ -513,6 +514,7 @@ def get_qualifying_rule(year: int, league: str, season_code: Optional[str] = Non
                 "rule_source": rule_source,
                 "rounding_mode": rounding_mode
             }
+        # 1959-2025: 規定打席 = チーム試合数 × 3.1（2025年は2024年以前と同じルールで踏襲）
         elif 1959 <= year <= 2025:
             special_measures = (year == 2004 or year == 2008)
             return {

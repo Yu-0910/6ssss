@@ -103,21 +103,17 @@ function formatRomanName(romanName: string): string {
   return `${initial}.${firstName}`
 }
 
-// sticky列の幅を定数化（隙間防止のため、コンポーネント外で定義して再計算を防ぐ）
+// 左ブロック（順＋フレーム＋選手）を1層にまとめ、隙間を防ぐ（問題29・二層構造の理想に合わせる）
 const RANK_WIDTH = 30
 const PLAYER_WIDTH = 90
-const LEFT_WIDTH = RANK_WIDTH + PLAYER_WIDTH
+const FRAME_WIDTH = 2 // 順列と選手列の間のグレーフレーム
+const LEFT_BLOCK_WIDTH = RANK_WIDTH + FRAME_WIDTH + PLAYER_WIDTH // 122
 
 export default function RankingUI({ viewModel, sortedRows, sortKey, order, onSortChange }: RankingUIProps) {
   const { title, season, league, metrics } = viewModel
   const router = useRouter()
 
-  // デバッグ用（開発時のみ）
-  if (typeof window !== 'undefined') {
-    console.log('RankingUI Debug:', { sortKey, metrics: metrics.map(m => ({ key: m.key, label: m.label })) })
-  }
-
-  // 表示中の指標名を取得
+  // 表示中の指標名を取得（2024年以前と同様に metrics をそのまま使用）
   const activeMetric = metrics.find(m => m.key === sortKey)
   const metricLabel = activeMetric?.label || '打撃成績'
   
@@ -156,7 +152,7 @@ export default function RankingUI({ viewModel, sortedRows, sortKey, order, onSor
             onChange={(e) => handleYearChange(Number(e.target.value))}
             className="bg-[#1a1a1a] text-[#ffff44] border border-[#555] rounded px-2 py-0.5 text-sm bebas cursor-pointer hover:bg-[#2a2a2a] transition-colors"
           >
-            {Array.from({ length: 76 }, (_, i) => 2025 - i).map((year) => (
+            {Array.from({ length: 77 }, (_, i) => 2026 - i).map((year) => (
               <option key={year} value={year}>
                 {year}
               </option>
@@ -167,70 +163,48 @@ export default function RankingUI({ viewModel, sortedRows, sortKey, order, onSor
 
       <main className="max-w-[1400px] mx-auto px-2 py-3">
         {/* Title */}
-        <div className="flex items-center gap-1.5 mb-3">
+        <div className="flex items-center gap-1.5 mb-1">
           <div className="w-0.5 h-5 bg-[#039850]" />
           <h1 className="text-base font-bold text-white">
             {displayTitle}
           </h1>
         </div>
 
-
         {/* ランキングテーブル */}
         <div className="bg-[#1a1a1a] overflow-hidden border border-[#333]">
           <div className="overflow-x-auto pl-0 ml-0">
-            <table className="w-full border-collapse border-spacing-0">
+            <table className="w-full border-collapse border-spacing-0" style={{ tableLayout: 'fixed' }}>
+              <colgroup>
+                <col style={{ width: `${LEFT_BLOCK_WIDTH}px`, minWidth: `${LEFT_BLOCK_WIDTH}px` }} />
+                {metrics.map((metric) => (
+                  <col key={metric.key} style={{ minWidth: '60px' }} />
+                ))}
+              </colgroup>
               <thead>
+                {/* 層1: 順＋グレーフレーム＋選手名を1セルで一塊に（隙間防止） */}
                 <tr className="bg-[#2a2a2a]">
-                  {/* 左stickyブロック（順位＋選手名） */}
                   <th
-                    className="sticky bg-[#ffff44] text-black"
+                    className="sticky border-r-2 border-[#555]"
                     style={{
                       position: 'sticky',
                       top: 0,
                       left: 0,
                       zIndex: 100,
-                      width: `${LEFT_WIDTH}px`,
-                      maxWidth: `${LEFT_WIDTH}px`,
+                      width: `${LEFT_BLOCK_WIDTH}px`,
+                      maxWidth: `${LEFT_BLOCK_WIDTH}px`,
                       boxSizing: 'border-box',
-                      backgroundColor: '#ffff44',
                       padding: 0,
+                      verticalAlign: 'middle',
                     }}
                   >
-                    <div className="flex">
-                      <div
-                        className="px-2 py-3 text-[10px] font-bold border-r-2 border-[#555] bg-[#ffff44] text-black"
-                        style={{
-                          width: `${RANK_WIDTH}px`,
-                          maxWidth: `${RANK_WIDTH}px`,
-                          boxSizing: 'border-box',
-                        }}
-                      >
-                        順
-                      </div>
-                      <div
-                        className="px-2 py-3 text-[10px] font-bold border-r-2 border-[#555] bg-[#ffff44] text-black"
-                        style={{
-                          width: `${PLAYER_WIDTH}px`,
-                          maxWidth: `${PLAYER_WIDTH}px`,
-                          boxSizing: 'border-box',
-                        }}
-                      >
-                        選手名
-                      </div>
+                    <div className="flex flex-nowrap items-stretch w-full" style={{ width: LEFT_BLOCK_WIDTH }}>
+                      <div className="px-2 py-3 text-[10px] font-bold bg-[#ffff44] text-black flex-shrink-0" style={{ width: RANK_WIDTH, boxSizing: 'border-box' }}>順</div>
+                      <div className="flex-shrink-0 bg-[#555]" style={{ width: FRAME_WIDTH }} aria-hidden />
+                      <div className="px-2 py-3 text-[10px] font-bold bg-[#ffff44] text-black flex-shrink-0" style={{ width: PLAYER_WIDTH, boxSizing: 'border-box' }}>選手名</div>
                     </div>
                   </th>
                   {metrics.map((metric, metricIdx) => {
                     const isActive = sortKey === metric.key
-                    // デバッグ用（開発時のみ）
-                    if (typeof window !== 'undefined' && isActive) {
-                      console.log(`[RankingUI] Active metric found:`, { 
-                        sortKey, 
-                        metricKey: metric.key, 
-                        metricLabel: metric.label,
-                        isActive,
-                        match: sortKey === metric.key
-                      })
-                    }
                     return (
                       <th
                         key={metric.key}
@@ -247,11 +221,7 @@ export default function RankingUI({ viewModel, sortedRows, sortKey, order, onSor
                         <button
                           type="button"
                           onClick={() => {
-                            // 現在の指標を表示中の場合は無効化
-                            if (sortKey === metric.key) {
-                              return
-                            }
-                            console.log(`[RankingUI] Header clicked:`, { metricKey: metric.key, metricLabel: metric.label, currentSortKey: sortKey })
+                            if (sortKey === metric.key) return
                             onSortChange(metric.key)
                           }}
                           className="w-full cursor-pointer hover:underline relative z-10 pointer-events-auto flex items-center justify-center gap-1"
@@ -281,43 +251,25 @@ export default function RankingUI({ viewModel, sortedRows, sortKey, order, onSor
                     <Fragment key={`row-${row.playerId}-${idx}`}>
                       {/* 15行ごとにヘッダー行を表示 */}
                       {shouldShowHeader && (
-                        <tr key={`header-${idx}`} className="bg-[#2a2a2a]">
-                          {/* 左stickyブロック（順位＋選手名） */}
+                        <tr key={`header-${idx}`} className="bg-[#4a4a4a] text-white">
+                          {/* 層1: 順＋グレーフレーム＋選手名を1セルで一塊に */}
                           <th
-                            className="sticky bg-[#4a4a4a] text-white"
+                            className="sticky border-r-2 border-[#555]"
                             style={{
                               position: 'sticky',
-                              top: 0,
                               left: 0,
                               zIndex: 100,
-                              width: `${LEFT_WIDTH}px`,
-                              maxWidth: `${LEFT_WIDTH}px`,
+                              width: `${LEFT_BLOCK_WIDTH}px`,
+                              maxWidth: `${LEFT_BLOCK_WIDTH}px`,
                               boxSizing: 'border-box',
-                              backgroundColor: '#4a4a4a',
                               padding: 0,
+                              verticalAlign: 'middle',
                             }}
                           >
-                            <div className="flex">
-                              <div
-                                className="px-2 py-3 text-[10px] font-bold border-r-2 border-[#555] bg-[#4a4a4a] text-white"
-                                style={{
-                                  width: `${RANK_WIDTH}px`,
-                                  maxWidth: `${RANK_WIDTH}px`,
-                                  boxSizing: 'border-box',
-                                }}
-                              >
-                                順
-                              </div>
-                              <div
-                                className="px-2 py-3 text-[10px] font-bold border-r-2 border-[#555] bg-[#4a4a4a] text-white"
-                                style={{
-                                  width: `${PLAYER_WIDTH}px`,
-                                  maxWidth: `${PLAYER_WIDTH}px`,
-                                  boxSizing: 'border-box',
-                                }}
-                              >
-                                選手名
-                              </div>
+                            <div className="flex flex-nowrap items-stretch w-full" style={{ width: LEFT_BLOCK_WIDTH }}>
+                              <div className="px-2 py-3 text-[10px] font-bold bg-[#4a4a4a] text-white flex-shrink-0" style={{ width: RANK_WIDTH, boxSizing: 'border-box' }}>順</div>
+                              <div className="flex-shrink-0 bg-[#555]" style={{ width: FRAME_WIDTH }} aria-hidden />
+                              <div className="px-2 py-3 text-[10px] font-bold bg-[#4a4a4a] text-white flex-shrink-0" style={{ width: PLAYER_WIDTH, boxSizing: 'border-box' }}>選手名</div>
                             </div>
                           </th>
                           {metrics.map((metric, metricIdx) => {
@@ -338,11 +290,7 @@ export default function RankingUI({ viewModel, sortedRows, sortKey, order, onSor
                                 <button
                                   type="button"
                                   onClick={() => {
-                                    // 現在の指標を表示中の場合は無効化
-                                    if (sortKey === metric.key) {
-                                      return
-                                    }
-                                    console.log(`[RankingUI] Header clicked:`, { metricKey: metric.key, metricLabel: metric.label, currentSortKey: sortKey })
+                                    if (sortKey === metric.key) return
                                     onSortChange(metric.key)
                                   }}
                                   className="w-full cursor-pointer hover:underline relative z-10 pointer-events-auto flex items-center justify-center gap-1"
@@ -365,50 +313,41 @@ export default function RankingUI({ viewModel, sortedRows, sortKey, order, onSor
                       )}
                       <tr
                         key={`${row.playerId}-${idx}`}
-                        className={`${idx % 2 === 0 ? "bg-[#1f1f1f]" : "bg-black"} hover:bg-[#2a2a2a] transition-colors border-b border-[#333]`}
+                        className="bg-[#1f1f1f] hover:bg-[#2a2a2a] transition-colors border-b border-[#333]"
                       >
-                      {/* 左stickyブロック（順位＋選手名） */}
+                      {/* 層1: 順位＋グレーフレーム＋選手名を1セルで一塊に */}
                       <td
-                        className="sticky"
+                        className="sticky border-r-2 border-[#555]"
                         style={{
                           position: 'sticky',
                           left: 0,
                           zIndex: 40,
-                          width: `${LEFT_WIDTH}px`,
-                          maxWidth: `${LEFT_WIDTH}px`,
+                          width: `${LEFT_BLOCK_WIDTH}px`,
+                          maxWidth: `${LEFT_BLOCK_WIDTH}px`,
                           boxSizing: 'border-box',
-                          backgroundColor: idx % 2 === 0 ? '#1f1f1f' : '#1a1a1a',
                           padding: 0,
+                          verticalAlign: 'middle',
                         }}
                       >
-                        <div className="flex">
-                          {/* 順位 */}
+                        <div className="flex flex-nowrap items-stretch w-full" style={{ width: LEFT_BLOCK_WIDTH }}>
                           <div
-                            className="px-1.5 py-0.5 text-center tabular-nums font-normal border-r-2 border-[#555] text-white"
-                            style={{
-                              width: `${RANK_WIDTH}px`,
-                              maxWidth: `${RANK_WIDTH}px`,
-                              boxSizing: 'border-box',
-                              backgroundColor: idx % 2 === 0 ? '#1f1f1f' : '#1a1a1a',
-                            }}
+                            className="text-center tabular-nums font-normal text-white flex-shrink-0 flex items-center justify-center"
+                            style={{ width: RANK_WIDTH, minHeight: 32, backgroundColor: '#1f1f1f', padding: '2px 4px', boxSizing: 'border-box' }}
                           >
                             <span className="bebas tabular-nums text-lg tracking-wide">{row.rank}</span>
                           </div>
-                          
-                          {/* 選手名 */}
+                          <div className="flex-shrink-0 bg-[#555]" style={{ width: FRAME_WIDTH }} aria-hidden />
                           <div
-                            className="px-0.5 py-0.5 border-r-2 border-[#555] overflow-hidden"
-                            style={{
-                              width: `${PLAYER_WIDTH}px`,
-                              maxWidth: `${PLAYER_WIDTH}px`,
-                              boxSizing: 'border-box',
-                              backgroundColor: idx % 2 === 0 ? '#1f1f1f' : '#1a1a1a',
-                            }}
+                            className="overflow-hidden flex-shrink-0 flex items-center"
+                            style={{ width: PLAYER_WIDTH, minHeight: 32, backgroundColor: '#1f1f1f', padding: '2px 2px', boxSizing: 'border-box' }}
                           >
-                            <div className="flex items-center gap-0.5">
+                            <div className="flex items-center gap-0.5 w-full min-w-0">
                               <div className="w-1 h-8 flex-shrink-0" style={{ backgroundColor: teamColors[row.team] || '#fff' }} />
                               <div className="flex-1 min-w-0 flex flex-col justify-center leading-[1.05] h-8">
-                                <Link href={`/players/${row.playerId}`} className="block truncate">
+                                <Link
+                                  href={`/players/${row.playerId}?name=${encodeURIComponent(row.name.replace(/\s+/g, ''))}${hasRomanName && row.romanName ? `&roman=${encodeURIComponent(formatRomanName(row.romanName))}` : ''}`}
+                                  className="block truncate"
+                                >
                                   <span className="text-white hover:text-[#ffff44] text-[13px] font-semibold truncate">
                                     {row.name.replace(/\s+/g, '')}
                                   </span>
@@ -423,8 +362,7 @@ export default function RankingUI({ viewModel, sortedRows, sortKey, order, onSor
                           </div>
                         </div>
                       </td>
-                      
-                      {/* 全指標の値 */}
+                      {/* 層2: 指標の値のみ */}
                       {metrics.map((metric, metricIdx) => {
                         const value = row[metric.key]
                         const formattedValue = value !== null && value !== undefined && !isNaN(Number(value))
@@ -432,13 +370,13 @@ export default function RankingUI({ viewModel, sortedRows, sortKey, order, onSor
                           : '-'
                         const isActive = sortKey === metric.key
                         // アクティブな指標の場合、奇数/偶数行で背景色を変える
-                        const activeBgColor = isActive ? (idx % 2 === 0 ? '#3a3a3a' : '#2f2f2f') : 'transparent'
+                        const activeBgColor = isActive ? '#3a3a3a' : 'transparent'
                         
                         return (
                           <td
                             key={metric.key}
                             className={`px-1.5 py-0.5 text-center tabular-nums font-normal border-r border-[#444] text-white ${
-                              isActive ? (idx % 2 === 0 ? 'bg-[#3a3a3a]' : 'bg-[#2f2f2f]') : ''
+                              isActive ? 'bg-[#3a3a3a]' : ''
                             } ${metricIdx === 0 ? 'pl-0 ml-0 -ml-[2px]' : ''}`}
                             style={{
                               minWidth: '60px',

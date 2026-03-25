@@ -47,9 +47,30 @@ const leagueNames: Record<string, { ja: string; en: string }> = {
   PL: { ja: "パ・リーグ", en: "Pacific League" },
 }
 
+function formatRomanForUrl(leader: { romanName?: string; name: string }): string {
+  const playerRomanNames: Record<string, string> = {
+    佐藤輝明: "Sato Teruaki", 岡本和真: "Okamoto Kazuma", 村上宗隆: "Murakami Munetaka",
+    近本光司: "Chikamoto Koji", 牧秀悟: "Maki Shugo", 佐野恵太: "Sano Keita", 青柳晃洋: "Aoyagi Koyo",
+    菅野智之: "Sugano Tomoyuki", 大野雄大: "Ono Yudai", 岩崎優: "Iwasaki Yu", 伊勢大夢: "Ise Hiromu",
+    石田健大: "Ishida Kenta", 戸郷翔征: "Togou Shosei", 山川穂高: "Yamakawa Hotaka",
+    吉田正尚: "Yoshida Masataka", 中村晃: "Nakamura Akira", 源田壮亮: "Genda Sosuke",
+    柳田悠岐: "Yanagita Yuki", 浅村栄斗: "Asamura Hideto", 周東佑京: "Shuto Ukyo",
+    山本由伸: "Yamamoto Yoshinobu", 千賀滉大: "Senga Kodai", 佐々木朗希: "Sasaki Roki",
+    宮城大弥: "Miyagi Hiroya", 森唯斗: "Mori Yuito",
+  }
+  const raw = (leader.romanName || playerRomanNames[leader.name] || "").trim()
+  if (!raw) return ""
+  if (/^[A-Z]\.[A-Za-z]+$/.test(raw)) return raw
+  const parts = raw.split(/\s+/)
+  if (parts.length >= 2) return `${parts[0][0].toUpperCase()}.${parts[1]}`
+  if (parts[0].length > 0) return `${parts[0][0].toUpperCase()}.${parts[0]}`
+  return ""
+}
+
 const LeaderRow = ({ leader, stat, index }: { leader: any; index: number; stat: any }) => {
   const formattedValue = formatStat(stat, leader.value)
-  const romanName = leader.romanName || ""
+  const romanForUrl = formatRomanForUrl(leader)
+  const romanName = romanForUrl || leader.romanName || ""
   
   return (
     <div className="flex items-center gap-0.5 py-0.5">
@@ -58,7 +79,7 @@ const LeaderRow = ({ leader, stat, index }: { leader: any; index: number; stat: 
       </div>
       <div className="w-1 h-6 mr-1" style={{ backgroundColor: teamColors[leader.team] || "#666" }} />
       <Link
-        href={`/players/${leader.name}`}
+        href={`/players/${leader.name}?name=${encodeURIComponent((leader.name || "").replace(/\s+/g, ""))}${romanForUrl ? `&roman=${encodeURIComponent(romanForUrl)}` : ""}`}
         className="flex-1 min-w-0 flex items-center gap-1 hover:opacity-80 transition-opacity"
       >
         <span className="text-white text-sm font-semibold leading-tight">{leader.name}</span>
@@ -73,7 +94,8 @@ const LeaderRow = ({ leader, stat, index }: { leader: any; index: number; stat: 
 
 const MiniLeaderRow = ({ leader, stat }: { leader: any; stat: any }) => {
   const formattedValue = formatStat(stat, leader.value)
-  const romanName = leader.romanName || ""
+  const romanForUrl = formatRomanForUrl(leader)
+  const romanName = romanForUrl || leader.romanName || ""
   
   return (
     <div className="flex items-center gap-0.5 py-0.5">
@@ -82,7 +104,7 @@ const MiniLeaderRow = ({ leader, stat }: { leader: any; stat: any }) => {
       </div>
       <div className="w-1 h-10 mr-1" style={{ backgroundColor: teamColors[leader.team] || "#666" }} />
       <Link
-        href={`/players/${leader.name}`}
+        href={`/players/${leader.name}?name=${encodeURIComponent((leader.name || "").replace(/\s+/g, ""))}${romanForUrl ? `&roman=${encodeURIComponent(romanForUrl)}` : ""}`}
         className="flex-1 min-w-0 flex flex-col hover:opacity-80 transition-opacity"
       >
         <span className="text-white text-sm font-semibold leading-tight">{leader.name}</span>

@@ -32,6 +32,10 @@ export async function GET(
     }
     
     // パスを結合（例: '2025/PL/OPS.json'）
+    // 2026年は2025年データを流用
+    const pathForFetch = pathSegments[0] === '2026'
+      ? ['2025', ...pathSegments.slice(1)].join('/')
+      : pathSegments.join('/')
     const relativePath = pathSegments.join('/')
     
     // 環境変数チェック
@@ -75,7 +79,7 @@ export async function GET(
     const scope = process.env.RANKINGS_EXTERNALIZE_SCOPE || ''
     if (scope) {
       const scopes = scope.split(',').map(s => s.trim().toLowerCase())
-      const pathLower = relativePath.toLowerCase()
+      const pathLower = pathForFetch.toLowerCase()
       
       const isInScope = scopes.some(s => pathLower.includes(s))
       if (!isInScope) {
@@ -112,7 +116,7 @@ export async function GET(
     }
     
     // 外部ストレージのURLを生成
-    const externalUrl = getExternalRankingsUrl(relativePath)
+    const externalUrl = getExternalRankingsUrl(pathForFetch)
     
     if (process.env.NODE_ENV === 'development') {
       console.log(`[RankingsProxy] Fetching from external URL: ${externalUrl}`)

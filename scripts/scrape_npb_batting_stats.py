@@ -701,8 +701,8 @@ def main():
     script_dir = Path(__file__).parent
     project_root = script_dir.parent
     
-    # 既存ファイルのパス
-    existing_path = project_root / '_data' / 'master_csv' / f'batting_{args.year}_{args.league}_from_master.csv'
+    # 既存ファイルのパス（2024年以前の非規定版と同じフォルダ）
+    existing_path = project_root / '_data' / 'master_csv__import_1950_2024' / f'batting_{args.year}_{args.league}_from_master.csv'
     
     print(f"\n{'='*60}")
     print(f"=== NPB公式サイト 打撃成績スクレイピング ===")

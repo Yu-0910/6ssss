@@ -5,21 +5,30 @@
 
 import { getRankingsUrl } from './url'
 
+import { sanitizeMetricForPath } from './url'
+
 /**
  * ランキングJSONファイルを取得
- * 
+ * パス形式: data/rankings/{year}/{season}/{metric}.json または {metric}_all.json
+ * R2 およびローカル構造と一致。
+ *
  * @param year 年度（例: '2025'）
- * @param league リーグ（例: 'PL' または 'CL'）
- * @param metric 指標名（例: 'OPS' または '打率'）
+ * @param season シーズン識別子（例: 'CL', 'PL', 'PRE_spring', 'PRE_fall'）
+ * @param metric 指標名（例: 'OPS' または '打率'、'BB/K' は 'BB_K' にサニタイズ）
+ * @param useAllPlayers 規定打席不要の指標で全選手データを使う場合 true（安打・本塁打などは _all.json を取得）
  * @returns ランキングデータ（JSON形式）
  */
 export async function loadRankingJson(
   year: string,
-  league: string,
-  metric: string
+  season: string,
+  metric: string,
+  useAllPlayers?: boolean
 ): Promise<any> {
-  // パスを生成（プロキシ経由）
-  const path = `data/rankings/${year}/${league}/${metric}.json`
+  // 2026年は2025年データを流用
+  const dataYear = year === '2026' ? '2025' : year
+  const fileBase = sanitizeMetricForPath(metric)
+  const fileName = useAllPlayers ? `${fileBase}_all.json` : `${fileBase}.json`
+  const path = `data/rankings/${dataYear}/${season}/${fileName}`
   const url = getRankingsUrl(path)
   
   // サーバーサイドでは絶対URLが必要
@@ -52,15 +61,15 @@ export async function loadRankingJson(
 
 /**
  * 複数のランキングJSONファイルを取得
- * 
+ *
  * @param year 年度
- * @param league リーグ
+ * @param season シーズン識別子（CL/PL/PRE_spring/PRE_fall 等）
  * @param metrics 指標名の配列
  * @returns 指標名をキーとしたランキングデータのマップ
  */
 export async function loadRankingJsons(
   year: string,
-  league: string,
+  season: string,
   metrics: string[]
 ): Promise<Record<string, any>> {
   const results: Record<string, any> = {}
@@ -68,7 +77,7 @@ export async function loadRankingJsons(
   // 並列で取得（パフォーマンス向上）
   const promises = metrics.map(async (metric) => {
     try {
-      const data = await loadRankingJson(year, league, metric)
+      const data = await loadRankingJson(year, season, metric)
       return { metric, data }
     } catch (error) {
       console.error(`[loadRankingJsons] Failed to load ${metric}:`, error)

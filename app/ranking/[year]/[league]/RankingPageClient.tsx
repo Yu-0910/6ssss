@@ -6,9 +6,10 @@
 "use client"
 
 import { useRouter, useSearchParams } from 'next/navigation'
-import { useMemo, Suspense } from 'react'
+import { useState, useEffect, useMemo, Suspense } from 'react'
 import RankingUI from '@/components/RankingUI'
-import type { RankingViewModel, RankingRow, MetricDefinition } from '@/lib/ranking/types'
+import type { RankingViewModel, RankingRow } from '@/lib/ranking/types'
+import { loadRankingJson } from '@/lib/ranking/jsonLoader'
 import { shouldRequireQualifyingPA, calculateMinPA, get1950MinGames } from '@/lib/ranking/qualifyingPA'
 
 interface RankingPageClientProps {
@@ -25,6 +26,71 @@ function getDefaultSortOrder(metricKey: string): 'asc' | 'desc' {
   return 'desc'
 }
 
+/**
+ * JSON行をUI用に正規化（全年度1950-2024対応: 英字名・キー名の揺れに耐性を持たせる）
+ * romanName / roman_name / RomanName / player_name_en などを romanName に統一
+ * name / player / player_name_ja / 選手名 などを name に統一
+ */
+function normalizeRankingRow(raw: Record<string, unknown>): RankingRow {
+  const romanNameRaw = (
+    raw['romanName'] ?? raw['roman_name'] ?? raw['RomanName'] ?? raw['name_en'] ?? raw['player_name_en'] ?? ''
+  ) as string
+  const romanName =
+    typeof romanNameRaw === 'string' && romanNameRaw.trim() !== '' ? romanNameRaw.trim() : undefined
+  const name = String(
+    raw['name'] ?? raw['player'] ?? raw['player_name_ja'] ?? raw['選手名'] ?? raw['名前'] ?? raw['Name'] ?? ''
+  ).trim()
+  return {
+    ...raw,
+    rank: raw['rank'] as number,
+    playerId: String(raw['playerId'] ?? raw['player_id'] ?? raw['id'] ?? ''),
+    name: name || '不明',
+    romanName,
+    team: String(raw['team'] ?? raw['Team'] ?? raw['チーム'] ?? raw['team_name'] ?? ''),
+  } as RankingRow
+}
+
+/** CSV英字名マップ用のキー（server の normalizeKey と同一） */
+function romanMapKey(name: string, team: string): string {
+  const n = (name ?? '').toString().replace(/\u3000/g, ' ').trim()
+  const t = (team ?? '').toString().trim()
+  return `${n}|${t}`
+}
+
+/** スペース除去キー（照合フォールバック用） */
+function romanMapKeyNoSpace(name: string, team: string): string {
+  const n = (name ?? '').toString().replace(/[\s\u3000]/g, '').trim()
+  const t = (team ?? '').toString().trim()
+  return `${n}|${t}`
+}
+
+/**
+ * CSV参照の英字名マップを取得し、行にromanNameが無い場合に補完する
+ */
+async function mergeRomanNamesFromCsv(
+  rows: RankingRow[],
+  season: string,
+  league: string
+): Promise<RankingRow[]> {
+  const baseUrl = typeof window === 'undefined' ? '' : window.location.origin
+  const url = `${baseUrl}/api/roman-names/${season}/${league}`
+  let map: Record<string, string> = {}
+  try {
+    const res = await fetch(url, { cache: 'no-store' })
+    if (res.ok) map = (await res.json()) as Record<string, string>
+  } catch {
+    return rows
+  }
+  return rows.map(row => {
+    if (row.romanName && row.romanName.trim()) return row
+    const key = romanMapKey(row.name, row.team)
+    const keyNoSpace = romanMapKeyNoSpace(row.name, row.team)
+    const en = map[key]?.trim() || map[keyNoSpace]?.trim()
+    if (!en) return row
+    return { ...row, romanName: en }
+  })
+}
+
 function RankingPageClientInner({ initialViewModel }: RankingPageClientProps) {
   const router = useRouter()
   const searchParams = useSearchParams()
@@ -32,6 +98,52 @@ function RankingPageClientInner({ initialViewModel }: RankingPageClientProps) {
   // URLクエリパラメータからソート情報を取得
   const sortKey = searchParams.get('sort') || 'ops'
   const order = (searchParams.get('order') as 'asc' | 'desc') || getDefaultSortOrder(sortKey)
+
+  // 案A: 表示中の指標ごとにJSONを取得して保持
+  const [rowsFromJson, setRowsFromJson] = useState<RankingRow[]>([])
+  const [loading, setLoading] = useState(true)
+  const [loadError, setLoadError] = useState<string | null>(null)
+
+  const metricDef = initialViewModel.metrics.find(m => m.key === sortKey)
+
+  useEffect(() => {
+    if (!metricDef) {
+      setRowsFromJson([])
+      setLoading(false)
+      setLoadError(null)
+      return
+    }
+    let cancelled = false
+    setLoading(true)
+    setLoadError(null)
+    // loadRankingJson(year, season, metric, useAllPlayers): viewModel.season=年度, viewModel.league=seasonキー(CL/PL/PRE_spring等)として流用
+    loadRankingJson(
+        initialViewModel.season,
+        initialViewModel.league,
+        metricDef.label,
+        !shouldRequireQualifyingPA(metricDef.key)
+      )
+      .then((data: unknown) => {
+        if (cancelled) return
+        const rawRows = Array.isArray(data) ? data : (data as { rows?: unknown[] })?.rows ?? []
+        const rows: RankingRow[] = (rawRows as Record<string, unknown>[]).map(normalizeRankingRow)
+        return mergeRomanNamesFromCsv(rows, initialViewModel.season, initialViewModel.league)
+      })
+      .then((rows) => {
+        if (cancelled || rows == null) return
+        setRowsFromJson(rows)
+        setLoadError(null)
+      })
+      .catch((e: Error) => {
+        if (cancelled) return
+        setLoadError(e.message || 'データの読み込みに失敗しました')
+        setRowsFromJson([])
+      })
+      .finally(() => {
+        if (!cancelled) setLoading(false)
+      })
+    return () => { cancelled = true }
+  }, [initialViewModel.season, initialViewModel.league, sortKey, metricDef?.label])
 
   // デバッグ用（開発時のみ）
   if (typeof window !== 'undefined') {
@@ -43,9 +155,9 @@ function RankingPageClientInner({ initialViewModel }: RankingPageClientProps) {
     })
   }
 
-  // ソート処理
+  // ソート処理（案A: rowsFromJson をソースにする）
   const sortedRows = useMemo(() => {
-    const rows = initialViewModel.rows
+    const rows = rowsFromJson
     const metric = initialViewModel.metrics.find(m => m.key === sortKey)
     
     if (!metric) {
@@ -93,7 +205,7 @@ function RankingPageClientInner({ initialViewModel }: RankingPageClientProps) {
       })
     }
 
-    // 規定打席フィルタを適用
+    // 規定打席フィルタを適用（Phase 4: 規定用CSV由来JSONでは全行が規定以上のため実質 no-op。従来JSONではフィルタが効き後方互換を確保）
     let filteredRows = rows
     if (requiresQualifyingPA && minPA > 0) {
       filteredRows = rows.filter(row => {
@@ -225,7 +337,7 @@ function RankingPageClientInner({ initialViewModel }: RankingPageClientProps) {
       ...row,
       rank: index + 1,
     }))
-  }, [initialViewModel.rows, initialViewModel.metrics, initialViewModel.season, initialViewModel.league, sortKey, order])
+  }, [rowsFromJson, initialViewModel.metrics, initialViewModel.season, initialViewModel.league, sortKey, order])
 
   // ソート切替ハンドラ
   const handleSortChange = (metricKey: string) => {
@@ -244,9 +356,20 @@ function RankingPageClientInner({ initialViewModel }: RankingPageClientProps) {
     router.replace(`/ranking/${initialViewModel.season}/${initialViewModel.league}?sort=${encodeURIComponent(metricKey)}&order=${newOrder}`)
   }
 
+  if (loadError) {
+    return (
+      <div className="min-h-screen bg-black text-white flex items-center justify-center">
+        <div className="text-center">
+          <h1 className="text-2xl font-bold mb-4">エラー</h1>
+          <p className="text-gray-400">{loadError}</p>
+        </div>
+      </div>
+    )
+  }
+
   return (
     <RankingUI
-      viewModel={initialViewModel}
+      viewModel={{ ...initialViewModel, rows: rowsFromJson }}
       sortedRows={sortedRows}
       sortKey={sortKey}
       order={order}

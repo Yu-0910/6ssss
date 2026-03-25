@@ -57,6 +57,10 @@ TopPage/
    - **推奨配置場所**: `_data/master_csv/Record.csv`
    - **代替配置場所**: プロジェクトルート直下（後方互換）
 
+### 規定用・全員用CSVとランキング（全年度）
+
+規定打席到達者用CSVと全員用CSVの役割、実行順序、全年度展開の詳細は **`docs/ranking_qualifying_csv_all_years_plan.md`** および **`docs/DATA_PATHS.md`** を参照してください。
+
 ### データ生成（最小テスト：2025年PL）
 
 ランキングデータを生成するには、以下のコマンドを実行してください：

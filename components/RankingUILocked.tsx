@@ -165,7 +165,7 @@ export default function RankingUILocked({
                   return (
                     <tr
                       key={player.rank}
-                      className={`${idx % 2 === 0 ? "bg-[#1f1f1f]" : "bg-black"} hover:bg-[#2a2a2a] transition-colors border-b border-[#333]`}
+                      className="bg-[#1f1f1f] hover:bg-[#2a2a2a] transition-colors border-b border-[#333]"
                     >
                       {/* 順位 */}
                       <td
@@ -175,7 +175,7 @@ export default function RankingUILocked({
                           left: 0,
                           zIndex: 9,
                           minWidth: '20px',
-                          backgroundColor: idx % 2 === 0 ? '#1f1f1f' : '#1a1a1a',
+                          backgroundColor: '#1f1f1f',
                         }}
                       >
                         <span className="bebas tabular-nums text-lg tracking-wide">{player.rank}</span>
@@ -189,7 +189,7 @@ export default function RankingUILocked({
                           left: '20px',
                           zIndex: 9,
                           minWidth: '120px',
-                          backgroundColor: idx % 2 === 0 ? '#1f1f1f' : '#1a1a1a',
+                          backgroundColor: '#1f1f1f',
                         }}
                       >
                         <div className="flex items-center gap-0.5">

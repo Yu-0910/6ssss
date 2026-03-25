@@ -595,8 +595,10 @@ const getDataForPanel = (league: string, type: string): LeadersConfig => {
 }
 
 const LeaderRow = ({ leader, stat, index }: { leader: any; index: number; stat: any }) => {
-  // formatStatを使用して値をフォーマット
   const formattedValue = formatStat(stat, leader.value)
+  const romanName = playerRomanNames[leader.name]
+    ? `${playerRomanNames[leader.name].split(" ")[0][0]}.${playerRomanNames[leader.name].split(" ")[1]}`
+    : ""
   return (
     <div className="flex items-center gap-0.5 py-0.5">
       <div className="w-4 h-4 rounded-full bg-[#2a2a2a] flex items-center justify-center">
@@ -604,15 +606,11 @@ const LeaderRow = ({ leader, stat, index }: { leader: any; index: number; stat: 
       </div>
       <div className="w-1 h-6 mr-1" style={{ backgroundColor: teamColors[leader.team] || "#666" }} />
       <Link
-        href={`/players/${leader.name}`}
+        href={`/players/${leader.name}?name=${encodeURIComponent((leader.name || "").replace(/\s+/g, ""))}${romanName ? `&roman=${encodeURIComponent(romanName)}` : ""}`}
         className="flex-1 min-w-0 flex items-center gap-1 hover:opacity-80 transition-opacity"
       >
         <span className="text-white text-sm font-semibold leading-tight">{leader.name}</span>
-        <span className="latin text-[10px] text-gray-400 leading-tight">
-          {playerRomanNames[leader.name]
-            ? `${playerRomanNames[leader.name].split(" ")[0][0]}.${playerRomanNames[leader.name].split(" ")[1]}`
-            : ""}
-        </span>
+        <span className="latin text-[10px] text-gray-400 leading-tight">{romanName}</span>
       </Link>
       <div className="text-white text-base bebas tabular-nums font-normal">{formattedValue}</div>
     </div>
@@ -620,8 +618,10 @@ const LeaderRow = ({ leader, stat, index }: { leader: any; index: number; stat: 
 }
 
 const MiniLeaderRow = ({ leader, stat }: { leader: any; stat: any }) => {
-  // formatStatを使用して値をフォーマット
   const formattedValue = formatStat(stat, leader.value)
+  const romanName = playerRomanNames[leader.name]
+    ? `${playerRomanNames[leader.name].split(" ")[0][0]}.${playerRomanNames[leader.name].split(" ")[1]}`
+    : ""
   return (
     <div className="flex items-center gap-0.5 py-0.5">
       <div className="w-4 h-4 rounded-full bg-[#2a2a2a] flex items-center justify-center">
@@ -629,15 +629,11 @@ const MiniLeaderRow = ({ leader, stat }: { leader: any; stat: any }) => {
       </div>
       <div className="w-1 h-10 mr-1" style={{ backgroundColor: teamColors[leader.team] || "#666" }} />
       <Link
-        href={`/players/${leader.name}`}
+        href={`/players/${leader.name}?name=${encodeURIComponent((leader.name || "").replace(/\s+/g, ""))}${romanName ? `&roman=${encodeURIComponent(romanName)}` : ""}`}
         className="flex-1 min-w-0 flex flex-col hover:opacity-80 transition-opacity"
       >
         <span className="text-white text-sm font-semibold leading-tight">{leader.name}</span>
-        <span className="latin text-[10px] text-gray-400 leading-tight">
-          {playerRomanNames[leader.name]
-            ? `${playerRomanNames[leader.name].split(" ")[0][0]}.${playerRomanNames[leader.name].split(" ")[1]}`
-            : ""}
-        </span>
+        <span className="latin text-[10px] text-gray-400 leading-tight">{romanName}</span>
       </Link>
       <div className="text-white text-base bebas tabular-nums font-normal">{formattedValue}</div>
     </div>
@@ -862,7 +858,7 @@ export default function YearPage() {
             onChange={(e) => handleYearChange(Number(e.target.value))}
             className="bg-[#1a1a1a] text-[#ffff44] border border-[#555] rounded px-2 py-0.5 text-sm bebas cursor-pointer hover:bg-[#2a2a2a] transition-colors"
           >
-            {Array.from({ length: 76 }, (_, i) => 2025 - i).map((y) => (
+            {Array.from({ length: 77 }, (_, i) => 2026 - i).map((y) => (
               <option key={y} value={y}>
                 {y}
               </option>
