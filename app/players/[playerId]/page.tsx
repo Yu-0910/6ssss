@@ -2217,7 +2217,7 @@ function PlayerPageClient({ layout }: { layout: ViewportLayout }) {
 
             {/* 菅野智之: 青柳ページの「今季の成績」UIのみ（値は表示しない） */}
             {showSuganoSeasonUI && (
-              <>
+              <div style={{ zoom: 0.7 }}>
                 {/* Detail Tab Buttons */}
                 <div
                   className="relative flex shrink-0 overflow-hidden mb-6"
@@ -2740,7 +2740,7 @@ function PlayerPageClient({ layout }: { layout: ViewportLayout }) {
                     </div>
                   </>
                 )}
-              </>
+              </div>
             )}
           </div>
         )}
