@@ -627,7 +627,7 @@ function PlayerPageClient({ layout }: { layout: ViewportLayout }) {
         </div>
 
         {/* Profile Table */}
-        <div className="mb-12">
+        <div className="mb-12" style={showSuganoSeasonUI ? { zoom: 0.7 } : undefined}>
           <table className="w-full border-collapse" style={{ border: "1px solid #333333" }}>
             <tbody style={{ fontWeight: 900, lineHeight: 1.35, fontSize: "0.875rem" }}>
               <tr>
@@ -2607,7 +2607,51 @@ function PlayerPageClient({ layout }: { layout: ViewportLayout }) {
                         fontWeight: 900,
                       }}
                     >
-                      状況別
+                      球場別の投球成績
+                    </h2>
+                    <div className="text-sm text-gray-400 mb-8">—</div>
+
+                    <h2
+                      className={`${tb} mb-4 pl-4 mt-8`}
+                      style={{
+                        borderLeft: "6px solid #FF4444",
+                        fontWeight: 900,
+                      }}
+                    >
+                      ホーム&ビジター別の投球成績
+                    </h2>
+                    <div className="text-sm text-gray-400 mb-8">—</div>
+
+                    <h2
+                      className={`${tb} mb-4 pl-4 mt-8`}
+                      style={{
+                        borderLeft: "6px solid #FF4444",
+                        fontWeight: 900,
+                      }}
+                    >
+                      イニング別の投球成績
+                    </h2>
+                    <div className="text-sm text-gray-400 mb-8">—</div>
+
+                    <h2
+                      className={`${tb} mb-4 pl-4 mt-8`}
+                      style={{
+                        borderLeft: "6px solid #FF4444",
+                        fontWeight: 900,
+                      }}
+                    >
+                      捕手別の投球成績
+                    </h2>
+                    <div className="text-sm text-gray-400 mb-8">—</div>
+
+                    <h2
+                      className={`${tb} mb-4 pl-4 mt-8`}
+                      style={{
+                        borderLeft: "6px solid #FF4444",
+                        fontWeight: 900,
+                      }}
+                    >
+                      デー&ナイター別の投球成績
                     </h2>
                     <div className="text-sm text-gray-400 mb-12">—</div>
                   </>
