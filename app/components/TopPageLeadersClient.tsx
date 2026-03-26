@@ -10,6 +10,7 @@ import Link from "next/link"
 import { useRouter } from "next/navigation"
 import { formatStat } from "@/lib/formatStat"
 import metricMap from "@/config/metric_map.json"
+import type { TopPageLayoutMode } from "@/app/components/top/TopPagePanels"
 
 type LeadersConfig = {
   top3Metrics: string[]
@@ -20,6 +21,7 @@ type LeadersConfig = {
 type TopPageLeadersClientProps = {
   year: number | string
   league: string
+  layout?: TopPageLayoutMode
 }
 
 const teamColors: Record<string, string> = {
@@ -117,7 +119,7 @@ const MiniLeaderRow = ({ leader, stat }: { leader: any; stat: any }) => {
   )
 }
 
-export default function TopPageLeadersClient({ year, league }: TopPageLeadersClientProps) {
+export default function TopPageLeadersClient({ year, league, layout = "mobile" }: TopPageLeadersClientProps) {
   const [data, setData] = useState<LeadersConfig | null>(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
@@ -234,7 +236,7 @@ export default function TopPageLeadersClient({ year, league }: TopPageLeadersCli
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-1">
+      <div className={layout === "desktop" ? "grid grid-cols-3 gap-1" : "grid grid-cols-1 gap-1"}>
         {data.top3Metrics.map((metric) => (
           <div key={metric} className="bg-black border border-[#555] p-1 relative">
             <div className="flex items-stretch justify-between mb-1">
@@ -268,7 +270,7 @@ export default function TopPageLeadersClient({ year, league }: TopPageLeadersCli
         ))}
       </div>
 
-      <div className="grid grid-cols-2 md:grid-cols-5 gap-1">
+      <div className={layout === "desktop" ? "grid grid-cols-5 gap-1" : "grid grid-cols-2 gap-1"}>
         {data.miniMetrics.map((metric) => {
           const leader = data.leaders[metric]?.[0]
           if (!leader) return null

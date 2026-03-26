@@ -59,10 +59,12 @@ type ZoneStats = {
 
 type Props = {
   playerId: string
+  layout?: ViewportLayout
 }
 
 /** 個人ページ表示項目整理 ブロックG: 球種・コース（25マス）パイロット */
-export default function PitchDetailsPilot({ playerId }: Props) {
+export default function PitchDetailsPilot({ playerId, layout = "mobile" }: Props) {
+  const titleBase = layout === "mobile" ? "text-[1.625rem]" : "text-[1.125rem]"
   const [plateAppearances, setPlateAppearances] = useState<PlateAppearancePitches[]>([])
   const [pitchTypeStats, setPitchTypeStats] = useState<PitchTypeStats[]>([])
   const [zoneStats, setZoneStats] = useState<ZoneStats[]>([])
@@ -112,7 +114,7 @@ export default function PitchDetailsPilot({ playerId }: Props) {
       {/* コース別成績（25マス表） */}
       <div className="mb-8">
         <h2
-          className="text-[1.625rem] md:text-[1.125rem] mb-4 pl-4"
+          className={`${titleBase} mb-4 pl-4`}
           style={{
             borderLeft: "6px solid #FF4444",
             fontWeight: 900,

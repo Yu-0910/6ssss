@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import dynamic from "next/dynamic"
 import type { SeasonStatsRow, PilotBlocksData } from "@/lib/seasonStatsPilot"
 import type { PitchTypeStats } from "@/lib/pitchDetailsPilot"
+import type { ViewportLayout } from "@/lib/viewportLayout"
 
 const PitchTypePieChart = dynamic(() => import("@/app/components/PitchTypePieChart"), { ssr: false })
 
@@ -13,6 +14,7 @@ type Props = {
   playerId: string
   /** 菊池ページの今季サブタブ。未指定時は全ブロックを表示 */
   seasonDetailTab?: PilotSeasonDetailTab
+  layout?: ViewportLayout
 }
 
 /** 火曜始まり・日曜終わりの週範囲を "M/D〜M/D" で返す */
@@ -44,7 +46,9 @@ const TEAM_COLORS: Record<string, string> = {
 }
 
 /** 個人ページ表示項目整理 ブロックA・D 準拠の今季成績 */
-export default function SeasonStatsPilot({ playerId, seasonDetailTab }: Props) {
+export default function SeasonStatsPilot({ playerId, seasonDetailTab, layout = "mobile" }: Props) {
+  const isMobile = layout === "mobile"
+  const titleBase = isMobile ? "text-[1.625rem]" : "text-[1.125rem]"
   const [stats, setStats] = useState<SeasonStatsRow[]>([])
   const [blocks, setBlocks] = useState<PilotBlocksData | null>(null)
   const [pitchTypeStats, setPitchTypeStats] = useState<PitchTypeStats[]>([])
@@ -98,7 +102,7 @@ export default function SeasonStatsPilot({ playerId, seasonDetailTab }: Props) {
           {showPilotTab("basic") && (
             <>
           <h2
-            className="text-[1.625rem] md:text-[1.125rem] mb-4 pl-4"
+            className={`${titleBase} mb-4 pl-4`}
             style={{
               borderLeft: "6px solid #FF4444",
               fontWeight: 900,
@@ -175,7 +179,7 @@ export default function SeasonStatsPilot({ playerId, seasonDetailTab }: Props) {
 
           {/* 打撃指標（セイバーメトリクス） */}
           <h2
-            className="text-[1.625rem] md:text-[1.125rem] mb-4 pl-4 mt-8"
+            className={`${titleBase} mb-4 pl-4 mt-8`}
             style={{
               borderLeft: "6px solid #FF4444",
               fontWeight: 900,
@@ -246,7 +250,7 @@ export default function SeasonStatsPilot({ playerId, seasonDetailTab }: Props) {
             return (
               <>
                 <h2
-                  className="text-[1.625rem] md:text-[1.125rem] mb-4 pl-4 mt-8"
+                  className={`${titleBase} mb-4 pl-4 mt-8`}
                   style={{
                     borderLeft: "6px solid #FF4444",
                     fontWeight: 900,
@@ -318,7 +322,7 @@ export default function SeasonStatsPilot({ playerId, seasonDetailTab }: Props) {
           {showPilotTab("pitch") && pitchTypeStats.length > 0 && (
             <>
               <h2
-                className="text-[1.625rem] md:text-[1.125rem] mb-4 pl-4 mt-8"
+                className={`${titleBase} mb-4 pl-4 mt-8`}
                 style={{
                   borderLeft: "6px solid #FF4444",
                   fontWeight: 900,
@@ -432,7 +436,7 @@ export default function SeasonStatsPilot({ playerId, seasonDetailTab }: Props) {
             return (
               <>
                 <h2
-                  className="text-[1.625rem] md:text-[1.125rem] mb-4 pl-4 mt-8"
+                  className={`${titleBase} mb-4 pl-4 mt-8`}
                   style={{
                     borderLeft: "6px solid #FF4444",
                     fontWeight: 900,
@@ -532,7 +536,7 @@ export default function SeasonStatsPilot({ playerId, seasonDetailTab }: Props) {
             return (
               <>
                 <h2
-                  className="text-[1.625rem] md:text-[1.125rem] mb-4 pl-4 mt-8"
+                  className={`${titleBase} mb-4 pl-4 mt-8`}
                   style={{
                     borderLeft: "6px solid #FF4444",
                     fontWeight: 900,
@@ -652,7 +656,7 @@ export default function SeasonStatsPilot({ playerId, seasonDetailTab }: Props) {
             return (
               <>
                 <h2
-                  className="text-[1.625rem] md:text-[1.125rem] mb-4 pl-4 mt-8"
+                  className={`${titleBase} mb-4 pl-4 mt-8`}
                   style={{
                     borderLeft: "6px solid #FF4444",
                     fontWeight: 900,
@@ -749,7 +753,7 @@ export default function SeasonStatsPilot({ playerId, seasonDetailTab }: Props) {
             return (
               <>
                 <h2
-                  className="text-[1.625rem] md:text-[1.125rem] mb-4 pl-4 mt-8"
+                  className={`${titleBase} mb-4 pl-4 mt-8`}
                   style={{
                     borderLeft: "6px solid #FF4444",
                     fontWeight: 900,
@@ -837,7 +841,7 @@ export default function SeasonStatsPilot({ playerId, seasonDetailTab }: Props) {
             return (
               <>
                 <h2
-                  className="text-[1.625rem] md:text-[1.125rem] mb-4 pl-4 mt-8"
+                  className={`${titleBase} mb-4 pl-4 mt-8`}
                   style={{
                     borderLeft: "6px solid #FF4444",
                     fontWeight: 900,
@@ -922,7 +926,7 @@ export default function SeasonStatsPilot({ playerId, seasonDetailTab }: Props) {
             return (
               <>
                 <h2
-                  className="text-[1.625rem] md:text-[1.125rem] mb-4 pl-4 mt-8"
+                  className={`${titleBase} mb-4 pl-4 mt-8`}
                   style={{
                     borderLeft: "6px solid #FF4444",
                     fontWeight: 900,
@@ -998,7 +1002,7 @@ export default function SeasonStatsPilot({ playerId, seasonDetailTab }: Props) {
             return (
               <>
                 <h2
-                  className="text-[1.625rem] md:text-[1.125rem] mb-4 pl-4 mt-8"
+                  className={`${titleBase} mb-4 pl-4 mt-8`}
                   style={{
                     borderLeft: "6px solid #FF4444",
                     fontWeight: 900,
@@ -1090,7 +1094,7 @@ export default function SeasonStatsPilot({ playerId, seasonDetailTab }: Props) {
             return (
               <>
                 <h2
-                  className="text-[1.625rem] md:text-[1.125rem] mb-4 pl-4 mt-8"
+                  className={`${titleBase} mb-4 pl-4 mt-8`}
                   style={{
                     borderLeft: "6px solid #FF4444",
                     fontWeight: 900,
@@ -1275,7 +1279,7 @@ export default function SeasonStatsPilot({ playerId, seasonDetailTab }: Props) {
             return (
               <>
                 <h2
-                  className="text-[1.625rem] md:text-[1.125rem] mb-4 pl-4 mt-8"
+                  className={`${titleBase} mb-4 pl-4 mt-8`}
                   style={{
                     borderLeft: "6px solid #FF4444",
                     fontWeight: 900,
@@ -1357,7 +1361,7 @@ export default function SeasonStatsPilot({ playerId, seasonDetailTab }: Props) {
             return (
               <>
                 <h2
-                  className="text-[1.625rem] md:text-[1.125rem] mb-4 pl-4 mt-8"
+                  className={`${titleBase} mb-4 pl-4 mt-8`}
                   style={{
                     borderLeft: "6px solid #FF4444",
                     fontWeight: 900,
@@ -1426,7 +1430,7 @@ export default function SeasonStatsPilot({ playerId, seasonDetailTab }: Props) {
             return (
               <>
                 <h2
-                  className="text-[1.625rem] md:text-[1.125rem] mb-4 pl-4 mt-8"
+                  className={`${titleBase} mb-4 pl-4 mt-8`}
                   style={{
                     borderLeft: "6px solid #FF4444",
                     fontWeight: 900,
