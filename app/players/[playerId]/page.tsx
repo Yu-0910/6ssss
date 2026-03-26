@@ -2609,7 +2609,64 @@ function PlayerPageClient({ layout }: { layout: ViewportLayout }) {
                     >
                       球場別の投球成績
                     </h2>
-                    <div className="text-sm text-gray-400 mb-8">—</div>
+                    <div className="overflow-x-auto overflow-y-hidden mb-4">
+                      <table
+                        className="text-xs"
+                        style={{
+                          fontVariantNumeric: "tabular-nums",
+                          borderCollapse: "separate",
+                          borderSpacing: 0,
+                          border: "1px solid #555",
+                          width: "100%",
+                          tableLayout: "fixed",
+                        }}
+                      >
+                        <colgroup>
+                          <col style={{ width: "95px" }} />
+                          <col style={{ width: "50px" }} />
+                          <col style={{ width: "45px" }} />
+                          <col style={{ width: "45px" }} />
+                          <col style={{ width: "51px" }} />
+                          <col style={{ width: "51px" }} />
+                          <col style={{ width: "51px" }} />
+                          <col style={{ width: "45px" }} />
+                          <col style={{ width: "45px" }} />
+                        </colgroup>
+                        <thead>
+                          <tr style={{ backgroundColor: "#FFFF44", color: "#000000" }}>
+                            <th className="px-1 py-1 text-center font-bold text-[10px] latin tabular-nums whitespace-nowrap border-l border-b border-gray-500 first:border-l-0 sticky left-0 bg-[#FFFF44] z-20 shadow-[2px_0_4px_rgba(0,0,0,0.3)]">
+                              球場
+                            </th>
+                            <th className="px-0.5 py-1 text-center font-bold text-[10px] latin tabular-nums whitespace-nowrap border-l border-b border-gray-500">防御率</th>
+                            <th className="px-0.5 py-1 text-center font-bold text-[10px] latin tabular-nums whitespace-nowrap border-l border-b border-gray-500">勝‐敗</th>
+                            <th className="px-0.5 py-1 text-center font-bold text-[10px] latin tabular-nums whitespace-nowrap border-l border-b border-gray-500">回数</th>
+                            <th className="px-0.5 py-1 text-center font-bold text-[10px] latin tabular-nums whitespace-nowrap border-l border-b border-gray-500">K-BB％</th>
+                            <th className="px-0.5 py-1 text-center font-bold text-[10px] latin tabular-nums whitespace-nowrap border-l border-b border-gray-500">K％</th>
+                            <th className="px-0.5 py-1 text-center font-bold text-[10px] latin tabular-nums whitespace-nowrap border-l border-b border-gray-500">WHIP</th>
+                            <th className="px-0.5 py-1 text-center font-bold text-[10px] latin tabular-nums whitespace-nowrap border-l border-b border-gray-500">被打率</th>
+                            <th className="px-0.5 py-1 text-center font-bold text-[10px] latin tabular-nums whitespace-nowrap border-l border-b border-gray-500">QS％</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr key="venue-dummy" style={{ backgroundColor: "rgba(255,255,255,0.03)" }}>
+                            <td
+                              className="px-1 py-1 text-left latin font-black tabular-nums text-[13px] border-l border-b border-gray-500 first:border-l-0 sticky left-0 z-20 whitespace-nowrap shadow-[2px_0_4px_rgba(0,0,0,0.3)]"
+                              style={{ backgroundColor: "#1a1a1a" }}
+                            >
+                              —
+                            </td>
+                            {Array.from({ length: 8 }, (_, i) => (
+                              <td
+                                key={i}
+                                className="px-0.5 py-1 text-center latin font-black tabular-nums text-[14px] border-l border-b border-gray-500"
+                              >
+                                —
+                              </td>
+                            ))}
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
 
                     <h2
                       className={`${tb} mb-4 pl-4 mt-8`}
@@ -2620,7 +2677,66 @@ function PlayerPageClient({ layout }: { layout: ViewportLayout }) {
                     >
                       ホーム&ビジター別の投球成績
                     </h2>
-                    <div className="text-sm text-gray-400 mb-8">—</div>
+                    <div className="overflow-x-auto overflow-y-hidden mb-4">
+                      <table
+                        className="text-xs"
+                        style={{
+                          fontVariantNumeric: "tabular-nums",
+                          borderCollapse: "separate",
+                          borderSpacing: 0,
+                          border: "1px solid #555",
+                          width: "100%",
+                          tableLayout: "fixed",
+                        }}
+                      >
+                        <colgroup>
+                          <col style={{ width: "65px" }} />
+                          <col style={{ width: "50px" }} />
+                          <col style={{ width: "45px" }} />
+                          <col style={{ width: "45px" }} />
+                          <col style={{ width: "51px" }} />
+                          <col style={{ width: "51px" }} />
+                          <col style={{ width: "51px" }} />
+                          <col style={{ width: "45px" }} />
+                          <col style={{ width: "45px" }} />
+                        </colgroup>
+                        <thead>
+                          <tr style={{ backgroundColor: "#FFFF44", color: "#000000" }}>
+                            <th className="px-1 py-1 text-center font-bold text-[10px] latin tabular-nums whitespace-nowrap border-l border-b border-gray-500 first:border-l-0 sticky left-0 bg-[#FFFF44] z-20 shadow-[2px_0_4px_rgba(0,0,0,0.3)]">
+                              種別
+                            </th>
+                            <th className="px-0.5 py-1 text-center font-bold text-[10px] latin tabular-nums whitespace-nowrap border-l border-b border-gray-500">防御率</th>
+                            <th className="px-0.5 py-1 text-center font-bold text-[10px] latin tabular-nums whitespace-nowrap border-l border-b border-gray-500">勝‐敗</th>
+                            <th className="px-0.5 py-1 text-center font-bold text-[10px] latin tabular-nums whitespace-nowrap border-l border-b border-gray-500">回数</th>
+                            <th className="px-0.5 py-1 text-center font-bold text-[10px] latin tabular-nums whitespace-nowrap border-l border-b border-gray-500">K-BB％</th>
+                            <th className="px-0.5 py-1 text-center font-bold text-[10px] latin tabular-nums whitespace-nowrap border-l border-b border-gray-500">K％</th>
+                            <th className="px-0.5 py-1 text-center font-bold text-[10px] latin tabular-nums whitespace-nowrap border-l border-b border-gray-500">WHIP</th>
+                            <th className="px-0.5 py-1 text-center font-bold text-[10px] latin tabular-nums whitespace-nowrap border-l border-b border-gray-500">被打率</th>
+                            <th className="px-0.5 py-1 text-center font-bold text-[10px] latin tabular-nums whitespace-nowrap border-l border-b border-gray-500">QS％</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {["ホーム", "アウェー"].map((type) => (
+                            <tr key={type} style={{ backgroundColor: "rgba(255,255,255,0.03)" }}>
+                              <td
+                                className="px-1 py-1 text-left latin font-black tabular-nums text-[13px] border-l border-b border-gray-500 first:border-l-0 sticky left-0 z-20 whitespace-nowrap shadow-[2px_0_4px_rgba(0,0,0,0.3)]"
+                                style={{ backgroundColor: "#1a1a1a" }}
+                              >
+                                {type}
+                              </td>
+                              {Array.from({ length: 8 }, (_, i) => (
+                                <td
+                                  key={i}
+                                  className="px-0.5 py-1 text-center latin font-black tabular-nums text-[14px] border-l border-b border-gray-500"
+                                >
+                                  —
+                                </td>
+                              ))}
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
 
                     <h2
                       className={`${tb} mb-4 pl-4 mt-8`}
@@ -2631,7 +2747,66 @@ function PlayerPageClient({ layout }: { layout: ViewportLayout }) {
                     >
                       イニング別の投球成績
                     </h2>
-                    <div className="text-sm text-gray-400 mb-8">—</div>
+                    <div className="overflow-x-auto overflow-y-hidden mb-4">
+                      <table
+                        className="text-xs"
+                        style={{
+                          fontVariantNumeric: "tabular-nums",
+                          borderCollapse: "separate",
+                          borderSpacing: 0,
+                          border: "1px solid #555",
+                          width: "100%",
+                          tableLayout: "fixed",
+                        }}
+                      >
+                        <colgroup>
+                          <col style={{ width: "95px" }} />
+                          <col style={{ width: "50px" }} />
+                          <col style={{ width: "45px" }} />
+                          <col style={{ width: "51px" }} />
+                          <col style={{ width: "51px" }} />
+                          <col style={{ width: "51px" }} />
+                          <col style={{ width: "45px" }} />
+                          <col style={{ width: "45px" }} />
+                          <col style={{ width: "45px" }} />
+                        </colgroup>
+                        <thead>
+                          <tr style={{ backgroundColor: "#FFFF44", color: "#000000" }}>
+                            <th className="px-1 py-1 text-center font-bold text-[10px] latin tabular-nums whitespace-nowrap border-l border-b border-gray-500 first:border-l-0 sticky left-0 bg-[#FFFF44] z-20 shadow-[2px_0_4px_rgba(0,0,0,0.3)]">
+                              イニング
+                            </th>
+                            <th className="px-0.5 py-1 text-center font-bold text-[10px] latin tabular-nums whitespace-nowrap border-l border-b border-gray-500">防御率</th>
+                            <th className="px-0.5 py-1 text-center font-bold text-[10px] latin tabular-nums whitespace-nowrap border-l border-b border-gray-500">打数</th>
+                            <th className="px-0.5 py-1 text-center font-bold text-[10px] latin tabular-nums whitespace-nowrap border-l border-b border-gray-500">K-BB％</th>
+                            <th className="px-0.5 py-1 text-center font-bold text-[10px] latin tabular-nums whitespace-nowrap border-l border-b border-gray-500">K％</th>
+                            <th className="px-0.5 py-1 text-center font-bold text-[10px] latin tabular-nums whitespace-nowrap border-l border-b border-gray-500">BB％</th>
+                            <th className="px-0.5 py-1 text-center font-bold text-[10px] latin tabular-nums whitespace-nowrap border-l border-b border-gray-500">WHIP</th>
+                            <th className="px-0.5 py-1 text-center font-bold text-[10px] latin tabular-nums whitespace-nowrap border-l border-b border-gray-500">被打率</th>
+                            <th className="px-0.5 py-1 text-center font-bold text-[10px] latin tabular-nums whitespace-nowrap border-l border-b border-gray-500">被本塁打</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {Array.from({ length: 9 }, (_, i) => `${i + 1}回`).map((label) => (
+                            <tr key={label} style={{ backgroundColor: "rgba(255,255,255,0.03)" }}>
+                              <td
+                                className="px-1 py-1 text-left latin font-black tabular-nums text-[13px] border-l border-b border-gray-500 first:border-l-0 sticky left-0 z-20 whitespace-nowrap shadow-[2px_0_4px_rgba(0,0,0,0.3)]"
+                                style={{ backgroundColor: "#1a1a1a" }}
+                              >
+                                {label}
+                              </td>
+                              {Array.from({ length: 8 }, (_, j) => (
+                                <td
+                                  key={j}
+                                  className="px-0.5 py-1 text-center latin font-black tabular-nums text-[14px] border-l border-b border-gray-500"
+                                >
+                                  —
+                                </td>
+                              ))}
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
 
                     <h2
                       className={`${tb} mb-4 pl-4 mt-8`}
@@ -2642,7 +2817,64 @@ function PlayerPageClient({ layout }: { layout: ViewportLayout }) {
                     >
                       捕手別の投球成績
                     </h2>
-                    <div className="text-sm text-gray-400 mb-8">—</div>
+                    <div className="overflow-x-auto overflow-y-hidden mb-4">
+                      <table
+                        className="text-xs"
+                        style={{
+                          fontVariantNumeric: "tabular-nums",
+                          borderCollapse: "separate",
+                          borderSpacing: 0,
+                          border: "1px solid #555",
+                          width: "100%",
+                          tableLayout: "fixed",
+                        }}
+                      >
+                        <colgroup>
+                          <col style={{ width: "65px" }} />
+                          <col style={{ width: "50px" }} />
+                          <col style={{ width: "45px" }} />
+                          <col style={{ width: "45px" }} />
+                          <col style={{ width: "51px" }} />
+                          <col style={{ width: "51px" }} />
+                          <col style={{ width: "51px" }} />
+                          <col style={{ width: "45px" }} />
+                          <col style={{ width: "45px" }} />
+                        </colgroup>
+                        <thead>
+                          <tr style={{ backgroundColor: "#FFFF44", color: "#000000" }}>
+                            <th className="px-1 py-1 text-center font-bold text-[10px] latin tabular-nums whitespace-nowrap border-l border-b border-gray-500 first:border-l-0 sticky left-0 bg-[#FFFF44] z-20 shadow-[2px_0_4px_rgba(0,0,0,0.3)]">
+                              捕手
+                            </th>
+                            <th className="px-0.5 py-1 text-center font-bold text-[10px] latin tabular-nums whitespace-nowrap border-l border-b border-gray-500">防御率</th>
+                            <th className="px-0.5 py-1 text-center font-bold text-[10px] latin tabular-nums whitespace-nowrap border-l border-b border-gray-500">勝‐敗</th>
+                            <th className="px-0.5 py-1 text-center font-bold text-[10px] latin tabular-nums whitespace-nowrap border-l border-b border-gray-500">回数</th>
+                            <th className="px-0.5 py-1 text-center font-bold text-[10px] latin tabular-nums whitespace-nowrap border-l border-b border-gray-500">K-BB％</th>
+                            <th className="px-0.5 py-1 text-center font-bold text-[10px] latin tabular-nums whitespace-nowrap border-l border-b border-gray-500">K％</th>
+                            <th className="px-0.5 py-1 text-center font-bold text-[10px] latin tabular-nums whitespace-nowrap border-l border-b border-gray-500">WHIP</th>
+                            <th className="px-0.5 py-1 text-center font-bold text-[10px] latin tabular-nums whitespace-nowrap border-l border-b border-gray-500">被打率</th>
+                            <th className="px-0.5 py-1 text-center font-bold text-[10px] latin tabular-nums whitespace-nowrap border-l border-b border-gray-500">QS％</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr style={{ backgroundColor: "rgba(255,255,255,0.03)" }}>
+                            <td
+                              className="px-1 py-1 text-left latin font-black tabular-nums text-[13px] border-l border-b border-gray-500 first:border-l-0 sticky left-0 z-20 whitespace-nowrap shadow-[2px_0_4px_rgba(0,0,0,0.3)]"
+                              style={{ backgroundColor: "#1a1a1a" }}
+                            >
+                              —
+                            </td>
+                            {Array.from({ length: 8 }, (_, i) => (
+                              <td
+                                key={i}
+                                className="px-0.5 py-1 text-center latin font-black tabular-nums text-[14px] border-l border-b border-gray-500"
+                              >
+                                —
+                              </td>
+                            ))}
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
 
                     <h2
                       className={`${tb} mb-4 pl-4 mt-8`}
@@ -2653,7 +2885,66 @@ function PlayerPageClient({ layout }: { layout: ViewportLayout }) {
                     >
                       デー&ナイター別の投球成績
                     </h2>
-                    <div className="text-sm text-gray-400 mb-12">—</div>
+                    <div className="overflow-x-auto overflow-y-hidden mb-12">
+                      <table
+                        className="text-xs"
+                        style={{
+                          fontVariantNumeric: "tabular-nums",
+                          borderCollapse: "separate",
+                          borderSpacing: 0,
+                          border: "1px solid #555",
+                          width: "100%",
+                          tableLayout: "fixed",
+                        }}
+                      >
+                        <colgroup>
+                          <col style={{ width: "65px" }} />
+                          <col style={{ width: "50px" }} />
+                          <col style={{ width: "45px" }} />
+                          <col style={{ width: "45px" }} />
+                          <col style={{ width: "51px" }} />
+                          <col style={{ width: "51px" }} />
+                          <col style={{ width: "51px" }} />
+                          <col style={{ width: "45px" }} />
+                          <col style={{ width: "45px" }} />
+                        </colgroup>
+                        <thead>
+                          <tr style={{ backgroundColor: "#FFFF44", color: "#000000" }}>
+                            <th className="px-1 py-1 text-center font-bold text-[10px] latin tabular-nums whitespace-nowrap border-l border-b border-gray-500 first:border-l-0 sticky left-0 bg-[#FFFF44] z-20 shadow-[2px_0_4px_rgba(0,0,0,0.3)]">
+                              種別
+                            </th>
+                            <th className="px-0.5 py-1 text-center font-bold text-[10px] latin tabular-nums whitespace-nowrap border-l border-b border-gray-500">防御率</th>
+                            <th className="px-0.5 py-1 text-center font-bold text-[10px] latin tabular-nums whitespace-nowrap border-l border-b border-gray-500">勝‐敗</th>
+                            <th className="px-0.5 py-1 text-center font-bold text-[10px] latin tabular-nums whitespace-nowrap border-l border-b border-gray-500">回数</th>
+                            <th className="px-0.5 py-1 text-center font-bold text-[10px] latin tabular-nums whitespace-nowrap border-l border-b border-gray-500">K-BB％</th>
+                            <th className="px-0.5 py-1 text-center font-bold text-[10px] latin tabular-nums whitespace-nowrap border-l border-b border-gray-500">K％</th>
+                            <th className="px-0.5 py-1 text-center font-bold text-[10px] latin tabular-nums whitespace-nowrap border-l border-b border-gray-500">WHIP</th>
+                            <th className="px-0.5 py-1 text-center font-bold text-[10px] latin tabular-nums whitespace-nowrap border-l border-b border-gray-500">被打率</th>
+                            <th className="px-0.5 py-1 text-center font-bold text-[10px] latin tabular-nums whitespace-nowrap border-l border-b border-gray-500">QS％</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {["デー", "ナイター"].map((type) => (
+                            <tr key={type} style={{ backgroundColor: "rgba(255,255,255,0.03)" }}>
+                              <td
+                                className="px-1 py-1 text-left latin font-black tabular-nums text-[13px] border-l border-b border-gray-500 first:border-l-0 sticky left-0 z-20 whitespace-nowrap shadow-[2px_0_4px_rgba(0,0,0,0.3)]"
+                                style={{ backgroundColor: "#1a1a1a" }}
+                              >
+                                {type}
+                              </td>
+                              {Array.from({ length: 8 }, (_, i) => (
+                                <td
+                                  key={i}
+                                  className="px-0.5 py-1 text-center latin font-black tabular-nums text-[14px] border-l border-b border-gray-500"
+                                >
+                                  —
+                                </td>
+                              ))}
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
                   </>
                 )}
 
